@@ -5,8 +5,160 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <h1 class="page-header__page-title">
+        <span class="hidden">Pink</span>
+        <img src="logo.svg" alt="">
+      </h1>
+      <nav class="main-nav">
+        <a href="" class="main-nav__toggle"></a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--checked"><a >Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="">Конкурс</a></li>
+          <li class="main-nav__item"><a href="">Html Academy</a></li>
+        </ul>
+       </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main class="page-main">
+      <section class="intro">
+        <h2 class="intro__title hidden">Загрузка</h2>
+        <div class="intro__tagline">Взгляните на жизнь иначе!</div>
+        <a href="" class="intro__download-btn">Скачать приложение</a>
+        <div class="system-list intro__download-apps">
+          <a href="http://www.appstore.com/" class="system-list__os system-list__os--app"></a>
+          <a href="http://play.google.com/store?hl=ru" class="system-list__os system-list__os--and"></a>
+          <a href="http://www.microsoft.com/store/apps" class="system-list__os system-list__os--win"></a>
+        </div>
+        <div class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+      </section>
+
+      <section class="main-info">
+        <h2 class="main-info__title hidden">Преимущества нашей программы</h2>
+        <div class="main-info__tagline"><p>Устали от серости мегаполиса?</p>
+          <p class="narrow">Нам есть, что вам предложить!</span>
+        </div>
+        <div class="main-info__wrapper">
+          <div class="advantage advantage-mood">
+            <b class="advantage__title">Поднимает настроение</b>
+            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantage advantage-change">
+            <b class="advantage__title">Меняет мир вокруг</b>
+            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantage advantage-friends">
+            <b class="advantage__title">Заводит новых друзей</b>
+            <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-review slider">
+        <h2 class="main-review__title hidden">Отзывы</h2>
+        <div class="main-review__indicators">
+          <input type="radio" class="hidden" id="review-1" name="review">
+          <label for="review-1" class="slider__indicator"></label>
+          <input type="radio" class="hidden" id="review-2" name="review">
+          <label for="review-2" class="slider__indicator"></label>
+          <input type="radio" class="hidden" id="review-3" name="review">
+          <label for="review-3" class="slider__indicator"></label>
+        </div>
+        <div class="main-review__slider-inner slider__slider-inner">
+          <div class="review slider__slide slider__slide--slide-1">
+            <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <b class="review__name">Николай Петров</b>
+            <p class="review__info">25 лет, водитель трамвая</p>
+          </div>
+          <div class="review slider__slide slider__slide--slide-2">
+            <p class="review__text"></p>
+            <b class="review__name"></b>
+            <p class="review__info"></p>
+          </div>
+          <div class="review slider__slide slider__slide--slide-3">
+            <p class="review__text"></p>
+            <b class="review__name"></b>
+            <p class="review__info"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-price">
+        <h2 class="main-price__title hidden">Цены</h2>
+        <div class="main-price__indicators">
+          <input type="radio" class="hidden" id="price-1" name="price">
+          <label for="price-1" class="slider__indicator"></label>
+          <input type="radio" class="hidden" id="price-2" name="price">
+          <label for="price-2" class="slider__indicator"></label>
+          <input type="radio" class="hidden" id="price-3" name="price">
+          <label for="price-3" class="slider__indicator"></label>
+        </div>
+        <div class="main-price__slider-inner slider__slider-inner table-price">
+          <div class="table-price__column table-price__column--name">
+            <div class="table-price__cell table-price__table-head"></div>
+            <div class="table-price__cell">Розовый фильтр</div>
+            <div class="table-price__cell">Смайлики</div>
+            <div class="table-price__cell">Комментарии</div>
+          </div>
+          <div class="table-price__column table-price__column--1">
+            <div class="table-price__cell table-price__table-head"><b>База</b> 1,99 USD</div>
+            <div class="table-price__cell"></div>
+            <div class="table-price__cell"></div>
+            <div class="table-price__cell"></div>
+          </div>
+          <div class="table-price__column table-price__column--2">
+            <div class="table-price__cell table-price__table-head"><b>Стандарт</b> 3,99 USD</div>
+            <div class="table-price__cell"></div>
+            <div class="table-price__cell"></div>
+            <div class="table-price__cell"></div>
+          </div>
+          <div class="table-price__column table-price__column--3">
+            <div class="table-price__cell table-price__table-head"><b>Анлим</b> 9,99 USD</div>
+            <div class="table-price__cell"></div>
+            <div class="table-price__cell"></div>
+            <div class="table-price__cell"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-contact">
+        <h2 class="main-contact__title hidden">Контакты</h2>
+        <div class="main-contact__tagline">
+          Остались вопросы? Свяжитесь с нами!
+        </div>
+        <div class="contact">
+          <div class="contact__description">
+            <b>Звоните:</b>
+            <p><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></p>
+          </div>
+          <div class="contact__description">
+            <b>Пишите:</b>
+            <p>mail@htmlacademy.ru</p>
+          </div>
+          <div class="contact__description">
+            <b>Приезжайте в гости:</b>
+            <p>ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+        <div class="main-contact__map"></div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="logo.svg" alt="">
+      </div>
+      <div class="page-footer__social">
+        <div class="social">
+          <a href="" class="social__link social__link--tw"></a>
+          <a href="" class="social__link social__link--fb"></a>
+          <a href="" class="social__link social__link--yt"></a>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="hidden">в htmlacademy.ru</span></a>
+      </div>
+    </footer>
 
   </body>
 </html>
