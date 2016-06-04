@@ -8,27 +8,29 @@
   </head>
   <body class="nojs">
     <header class="page-header">
+      <!-- Убрать чекбокс -->
       <input type="checkbox" id="nav-cbx" class="page-header__checkbox hidden">
       <div class="page-header__top-line">
         <h1 class="page-header__page-title">
           <span class="hidden">Pink</span>
           <img src="img/logo-pink-white-mobile.svg" alt="">
         </h1>
+        <!-- Должен быть button -->
         <label for="nav-cbx" class="page-header__toggle"></label>
       </div>
-      <nav class="main-nav page-header__nav">
+      <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--checked"><a >Главная</a></li>
+          <li class="main-nav__item main-nav__item--checked"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="">Конкурс</a></li>
-          <li class="main-nav__item"><a href="">Html Academy</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">Html Academy</a></li>
         </ul>
        </nav>
     </header>
 
     <main class="page-main">
       <section class="intro">
-        <h2 class="intro__title hidden">Загрузка</h2>
+        <h2 class="hidden">Загрузка</h2>
         <div class="intro__tagline hidden">Взгляните на жизнь иначе!</div>
         <a href="" class="intro__download-btn">Скачать приложение</a>
         <div class="intro__download-apps">
@@ -78,6 +80,10 @@
           <label for="review-3" class="main-review__indicator  main-review__indicator--3"></label>
         </div>
         <div class="main-review__slider">
+          <!--
+            http://web-standards.ru/articles/cite-blockquote-reloaded/
+            Лучше применить разметку из статьи - цитата с указанием автора
+          -->
           <div class="main-review__card main-review__card--1">
             <div class="main-review__info">
               <b class="main-review__autor">Николай Петров</b>
@@ -98,6 +104,7 @@
           <input type="radio" class="hidden" id="price-3" name="price">
           <label for="price-3" class="slider__indicator"></label>
         </div>
+        <!-- Должен быть table по разметке -->
         <div class="main-price__slider-inner slider__slider-inner table-price">
           <div class="table-price__column table-price__column--name">
             <div class="table-price__cell table-price__table-head"></div>
@@ -132,6 +139,20 @@
           Остались вопросы? Свяжитесь с нами!
         </div>
         <div class="contact">
+
+          <!--
+            <div class="contact-item">
+              <b class="contact-item__title">Звоните:</b>
+              <a class="contact-item__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+
+            <div class="contact-item">
+              <b>Приезжайте в гости:</b>
+              <p class="contact-item__value">ул. Большая Конюшенная, 19/8</p>
+            </div>
+
+           -->
+
           <div class="contact__description">
             <b>Звоните:</b>
             <p><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></p>
@@ -154,9 +175,9 @@
       </div>
       <div class="page-footer__social">
         <div class="social">
-          <a href="" class="social__link social__link--tw"></a>
-          <a href="" class="social__link social__link--fb"></a>
-          <a href="" class="social__link social__link--yt"></a>
+          <a href="" class="social__link social__link--tw">Twitter</a>
+          <a href="" class="social__link social__link--fb">Facebook</a>
+          <a href="" class="social__link social__link--yt">YouTube</a>
         </div>
       </div>
       <div class="page-footer__copyright">

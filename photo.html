@@ -105,10 +105,11 @@
             <img src="" alt="">
           </div>
           <div class="photo-desc photo-desc--photo-card">
-            <p>
+            <!-- Переделать блоки вот так -->
+            <div class="photo-desc__author">
               <b class="photo-desc__name">Сергей</b>
-              <span class="photo-text__pubdata">5 часов назад</span>
-            </p>
+              <time class="photo-text__pubdata">5 часов назад</time> <!-- Посмотри на обязательный аттрибут для тега time -->
+            </div>
             <p class="photo-desc__text">Самая кубанская в мире!</p>
             <div class="like like--photo-card">
               <span class="like__indicator">Нравится: 4</span>
@@ -159,7 +160,7 @@
           <p>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <form action="edit.php" method="post" class="photo-editor">
-          <did class="photo-editor__photo">
+          <div class="photo-editor__photo">
             <img src="" alt="Загружаемое фото">
           </div>
 

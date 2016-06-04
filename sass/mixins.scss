@@ -2,7 +2,7 @@
 @mixin oblique-angle {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 30px;
@@ -14,4 +14,21 @@
   font-size: 18px;
   line-height: 16px;
   font-weight: bold;
+}
+
+@mixin line-height($font-size, $line-height) {
+  font-size: $font-size + 'px';
+  line-height: ($line-height / $font-size) + 'em';
+}
+
+@mixin inline-block($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin no-btn {
+  background: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
 }
