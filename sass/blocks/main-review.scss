@@ -1,19 +1,40 @@
 
 .main-review {
   position: relative;
-  min-height: 350px;
+  min-height: 200px;
   position: relative;
   padding:  20px;
-  padding-top: 45px;
+  padding-top: 50px;
+  padding-bottom: 90px;
   text-align: center;
 }
 
 .main-review * {
   outline: 1px solid red;
-
 }
 
-.main-review__indicators {}
+.main-review__indicators {
+  min-width: 50px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+
+.main-review__indicator {
+  display: inline-block;
+  vertical-align: top;
+  width: 5px;
+  height: 5px;
+  background-color: #bec2c7;
+  // border: 2px solid #000;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .main-review__slider {}
 
@@ -29,4 +50,8 @@
   display: none;
 }
 
-.main-review__text {}
+.main-review__text {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 18px;
+}
