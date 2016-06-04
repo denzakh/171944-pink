@@ -1,0 +1,19 @@
+
+body {
+  background: #ffffff;
+  width: 320px;
+  outline: 1px solid gray;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Georgia", sans-serif;
+  font-size: 14px;
+}
+
+body > *,
+body > * > * {
+  outline: 1px solid red;
+}
+
+.hidden {
+  display: none;
+}

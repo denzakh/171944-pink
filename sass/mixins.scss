@@ -1,0 +1,17 @@
+
+@mixin oblique-angle {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-image: -webkit-linear-gradient(-85deg,
+    $body-bg 49%, $bg-color-block-1 51%);
+}
+
+@mixin mobile-title {
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+
+.main-review {
+  position: relative;
+  min-height: 350px;
+  position: relative;
+  padding:  20px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.main-review * {
+  outline: 1px solid red;
+
+}
+
+.main-review__indicators {}
+
+.main-review__slider {}
+
+.main-review__card {}
+
+.main-review__info {}
+
+.main-review__autor {
+  @include mobile-title
+}
+
+.main-review__autor-desc {
+  display: none;
+}
+
+.main-review__text {}

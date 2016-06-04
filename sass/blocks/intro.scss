@@ -1,0 +1,42 @@
+
+.intro {
+  background-color: $main-bg-color;
+  padding: 26px 20px;
+  text-align: center;
+  color: $text-color-2;
+}
+
+.intro__download-btn {
+  display: block;
+  color: $text-color-2;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 16px;
+  border: 3px solid $text-color-2;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.intro__download-apps {
+  text-align: center;
+  font-size: 0;
+}
+
+.intro__download-os {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0 18px;
+}
+
+.intro__download-os--win {
+  padding-bottom: 5px;
+}
+
+.intro__description {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  line-height: 24px;
+}

@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__page-title">
-        <span class="hidden">Pink</span>
-        <img src="logo.svg" alt="">
-      </h1>
-      <nav class="main-nav">
-        <a href="" class="main-nav__toggle"></a>
+      <input type="checkbox" id="nav-cbx" class="page-header__checkbox hidden">
+      <div class="page-header__top-line">
+        <h1 class="page-header__page-title">
+          <span class="hidden">Pink</span>
+          <img src="img/logo-pink-white-mobile.svg" alt="">
+        </h1>
+        <label for="nav-cbx" class="page-header__toggle"></label>
+      </div>
+      <nav class="main-nav page-header__nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--checked"><a >Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
@@ -24,38 +29,45 @@
     <main class="page-main">
       <section class="intro">
         <h2 class="intro__title hidden">Загрузка</h2>
-        <div class="intro__tagline">Взгляните на жизнь иначе!</div>
+        <div class="intro__tagline hidden">Взгляните на жизнь иначе!</div>
         <a href="" class="intro__download-btn">Скачать приложение</a>
-        <div class="system-list intro__download-apps">
-          <a href="http://www.appstore.com/" class="system-list__os system-list__os--app"></a>
-          <a href="http://play.google.com/store?hl=ru" class="system-list__os system-list__os--and"></a>
-          <a href="http://www.microsoft.com/store/apps" class="system-list__os system-list__os--win"></a>
+        <div class="intro__download-apps">
+          <a href="http://www.appstore.com/" class="intro__download-os intro__download-os--app">
+            <img src="img/logo-apple.svg" alt="Download Pink for Apple OS">
+          </a>
+          <a href="http://play.google.com/store?hl=ru" class="intro__download-os intro__download-os--and">
+            <img src="img/logo-android.svg" alt="Download Pink for Android">
+          </a>
+          <a href="http://www.microsoft.com/store/apps" class="intro__download-os intro__download-os--win">
+            <img src="img/logo-microsoft.svg" alt="Download Pink for Windows">
+          </a>
         </div>
         <div class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </section>
 
-      <section class="main-info">
-        <h2 class="main-info__title hidden">Преимущества нашей программы</h2>
-        <div class="main-info__tagline"><p>Устали от серости мегаполиса?</p>
-          <p class="narrow">Нам есть, что вам предложить!</span>
+      <section class="advantage">
+        <h2 class="advantage__title hidden">Преимущества нашей программы</h2>
+        <div class="advantage__tagline">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
         </div>
-        <div class="main-info__wrapper">
-          <div class="advantage advantage-mood">
+        <div class="advantage__wrapper">
+          <div class="advantage__card  advantage__card--mood">
             <b class="advantage__title">Поднимает настроение</b>
             <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <div class="advantage advantage-change">
+          <div class="advantage__card advantage__card--change">
             <b class="advantage__title">Меняет мир вокруг</b>
             <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-          <div class="advantage advantage-friends">
+          <div class="advantage__card advantage__card--friends">
             <b class="advantage__title">Заводит новых друзей</b>
             <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
       </section>
 
-      <section class="main-review slider">
+      <section class="main-review">
         <h2 class="main-review__title hidden">Отзывы</h2>
         <div class="main-review__indicators">
           <input type="radio" class="hidden" id="review-1" name="review">
@@ -65,21 +77,13 @@
           <input type="radio" class="hidden" id="review-3" name="review">
           <label for="review-3" class="slider__indicator"></label>
         </div>
-        <div class="main-review__slider-inner slider__slider-inner">
-          <div class="review slider__slide slider__slide--slide-1">
-            <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            <b class="review__name">Николай Петров</b>
-            <p class="review__info">25 лет, водитель трамвая</p>
-          </div>
-          <div class="review slider__slide slider__slide--slide-2">
-            <p class="review__text"></p>
-            <b class="review__name"></b>
-            <p class="review__info"></p>
-          </div>
-          <div class="review slider__slide slider__slide--slide-3">
-            <p class="review__text"></p>
-            <b class="review__name"></b>
-            <p class="review__info"></p>
+        <div class="main-review__slider">
+          <div class="main-review__card main-review__card--1">
+            <div class="main-review__info">
+              <b class="main-review__autor">Николай Петров</b>
+              <span  class="main-review__autor-desc">25 лет, водитель трамвая</span>
+            </div>
+            <div class="main-review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</div>
           </div>
         </div>
       </section>
