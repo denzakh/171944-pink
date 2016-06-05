@@ -9,14 +9,13 @@
   <body class="nojs">
     <header class="page-header">
       <!-- Убрать чекбокс -->
-      <input type="checkbox" id="nav-cbx" class="page-header__checkbox hidden">
       <div class="page-header__top-line">
         <h1 class="page-header__page-title">
           <span class="hidden">Pink</span>
           <img src="img/logo-pink-white-mobile.svg" alt="">
         </h1>
-        <!-- Должен быть button -->
-        <label for="nav-cbx" class="page-header__toggle"></label>
+        <!-- button -->
+        <button class="page-header__toggle"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -72,64 +71,78 @@
       <section class="main-review">
         <h2 class="main-review__title hidden">Отзывы</h2>
         <div class="main-review__indicators">
-          <input type="radio" class="hidden" id="review-1" name="review">
-          <label for="review-1" class="main-review__indicator  main-review__indicator--1"></label>
-          <input type="radio" class="hidden" id="review-2" name="review">
-          <label for="review-2" class="main-review__indicator  main-review__indicator--2"></label>
-          <input type="radio" class="hidden" id="review-3" name="review">
-          <label for="review-3" class="main-review__indicator  main-review__indicator--3"></label>
+          <button class="main-review__indicator"  id="review-1" ></button>
+          <button class="main-review__indicator"  id="review-2" ></button>
+          <button class="main-review__indicator"  id="review-3" ></button>
         </div>
         <div class="main-review__slider">
           <!--
             http://web-standards.ru/articles/cite-blockquote-reloaded/
             Лучше применить разметку из статьи - цитата с указанием автора
           -->
-          <div class="main-review__card main-review__card--1">
-            <div class="main-review__info">
-              <b class="main-review__autor">Николай Петров</b>
+          <blockquote class="main-review__card">
+            <cite class="main-review__info">
+              <b class="main-review__author">Николай Петров</b>
               <span  class="main-review__autor-desc">25 лет, водитель трамвая</span>
-            </div>
-            <div class="main-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-          </div>
+            </cite>
+            <p class="main-review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </bloquote>
         </div>
       </section>
 
       <section class="main-price">
         <h2 class="main-price__title hidden">Цены</h2>
         <div class="main-price__indicators">
-          <input type="radio" class="hidden" id="price-1" name="price">
-          <label for="price-1" class="slider__indicator"></label>
-          <input type="radio" class="hidden" id="price-2" name="price">
-          <label for="price-2" class="slider__indicator"></label>
-          <input type="radio" class="hidden" id="price-3" name="price">
-          <label for="price-3" class="slider__indicator"></label>
+          <button class="main-price__indicator"  id="price-1" ></button>
+          <button class="main-price__indicator"  id="price-2" ></button>
+          <button class="main-price__indicator"  id="price-3" ></button>
         </div>
         <!-- Должен быть table по разметке -->
-        <div class="main-price__slider-inner slider__slider-inner table-price">
-          <div class="table-price__column table-price__column--name">
-            <div class="table-price__cell table-price__table-head"></div>
-            <div class="table-price__cell">Розовый фильтр</div>
-            <div class="table-price__cell">Смайлики</div>
-            <div class="table-price__cell">Комментарии</div>
-          </div>
-          <div class="table-price__column table-price__column--1">
-            <div class="table-price__cell table-price__table-head"><b>База</b> 1,99 USD</div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-          </div>
-          <div class="table-price__column table-price__column--2">
-            <div class="table-price__cell table-price__table-head"><b>Стандарт</b> 3,99 USD</div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-          </div>
-          <div class="table-price__column table-price__column--3">
-            <div class="table-price__cell table-price__table-head"><b>Анлим</b> 9,99 USD</div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-          </div>
+        <div class="main-price__slider">
+          <table class="main-price__table main-price__table--2">
+            <tr>
+              <th class="main-price__first-cell">
+                Тариф
+              </th>
+              <th>
+                <b class="main-price__price-name">База</b>
+                <span class="main-price__price">1,99 USD</span>
+              </th>
+              <th>
+                <b class="main-price__price-name">Стандарт</b>
+                <span class="main-price__price">3,99 USD</span>
+              </th>
+              <th>
+                <b class="main-price__price-name">Анлим</b>
+                <span class="main-price__price">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="main-price__legend-cell">
+                <span class="main-price__legend main-price__legend--2">Розовый фильтр</span>
+              </td>
+              <td class="foo-yes"><span class="hidden">Да</span></td>
+              <td class="foo-yes"><span class="hidden">Да</span></td>
+              <td class="foo-yes"><span class="hidden">Да</span></td>
+            </tr>
+            <tr>
+              <td class="main-price__legend-cell">
+                <span class="main-price__legend main-price__legend--2">Смайлики</span>
+              </td>
+              <td class="foo-no"><span class="hidden">Нет</span></td>
+              <td class="foo-yes"><span class="hidden">Да</span></td>
+              <td class="foo-yes"><span class="hidden">Да</span></td>
+            </tr>
+            <tr>
+              <td class="main-price__legend-cell">
+                <span class="main-price__legend main-price__legend--2">Комментарии</span>
+              </td>
+              <td class="foo-no"><span class="hidden">Нет</span></td>
+              <td class="foo-no"><span class="hidden">Нет</span></td>
+              <td class="foo-yes"><span class="hidden">Да</span></td>
+            </tr>
+          </table>
+
         </div>
       </section>
 

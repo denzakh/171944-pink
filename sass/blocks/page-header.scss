@@ -15,29 +15,25 @@
 }
 
 .page-header__toggle {
+ @include no-btn
+
   width: 50px;
   height: 24px;
   outline: 1px solid red;
   position: absolute;
   top: 20px;
   right: 20px;
+  background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-position: 100% 0 ;
 }
 
 
-.page-header__checkbox ~ .page-header__nav {
+.page-header__nav-closed {
   display: none;
 }
 
-.page-header__checkbox:checked ~ .page-header__nav {
-  display: block;
-}
-
-.page-header__checkbox ~ .page-header__top-line .page-header__toggle {
+.page-header__toggle--closed {
  background-image: url("../img/icon-menu-burger.svg");
 }
 
-.page-header__checkbox:checked ~ .page-header__top-line .page-header__toggle {
-  background-image: url("../img/icon-menu-cross.svg");
-}

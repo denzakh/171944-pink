@@ -16,6 +16,27 @@
   font-weight: bold;
 }
 
+@mixin indicators {
+  min-width: 50px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  position: absolute;
+  bottom: 44px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+
+@mixin indicator {
+  width: 5px;
+  height: 5px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 @mixin line-height($font-size, $line-height) {
   font-size: $font-size + 'px';
   line-height: ($line-height / $font-size) + 'em';
@@ -27,7 +48,6 @@
 }
 
 @mixin no-btn {
-  background: none;
   box-sizing: border-box;
   border: 0;
   padding: 0;
