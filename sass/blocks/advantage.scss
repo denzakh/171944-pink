@@ -5,13 +5,7 @@
 }
 
 .advantage__tagline p {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0 20px;
+  @include tagline
 }
 
 .advantage__wrapper {

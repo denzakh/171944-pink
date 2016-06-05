@@ -2,14 +2,15 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-
 @import "general/normalize.css";
 @import "general/general.scss";
+
+@import "blocks/page-header.scss";
 
 @import "blocks/main-nav.scss";
 @import "blocks/advantage.scss";
 @import "blocks/intro.scss";
 @import "blocks/main-price.scss";
-@import "blocks/page-header.scss";
+
 @import "blocks/main-review.scss";
-@import "blocks/slider.scss";
+@import "blocks/main-contact.scss";

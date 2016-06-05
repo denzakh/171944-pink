@@ -1,0 +1,50 @@
+
+.main-contact {
+  position: relative;
+  padding-top:25px;
+  text-align: center;
+}
+
+.main-contact__tagline {
+  @include tagline
+}
+
+.contact {
+  padding: 0 25px 40px;
+}
+
+.contact-item {
+  margin-top: 24px;
+}
+.contact-item__title {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.contact-item__value {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $text-color-3;
+  text-decoration: none;
+}
+
+.main-contact__map {
+  position: relative;
+  box-sizing: border-box;
+  height: 320px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    min-width: 320px;
+    background: $bg-color-block-0 url('../img/bg-triangle-white-footer1.svg') right top no-repeat;
+    background-size: 100%;
+    z-index: 1;
+  }
+}

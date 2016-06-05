@@ -16,6 +16,17 @@
   font-weight: bold;
 }
 
+@mixin tagline {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+
 @mixin indicators {
   min-width: 50px;
   margin: 0 auto;

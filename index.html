@@ -152,36 +152,24 @@
           Остались вопросы? Свяжитесь с нами!
         </div>
         <div class="contact">
-
-          <!--
-            <div class="contact-item">
-              <b class="contact-item__title">Звоните:</b>
-              <a class="contact-item__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </div>
-
-            <div class="contact-item">
-              <b>Приезжайте в гости:</b>
-              <p class="contact-item__value">ул. Большая Конюшенная, 19/8</p>
-            </div>
-
-           -->
-
-          <div class="contact__description">
-            <b>Звоните:</b>
-            <p><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></p>
+          <div class="contact-item">
+            <b class="contact-item__title">Звоните:</b>
+            <a class="contact-item__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
-          <div class="contact__description">
-            <b>Пишите:</b>
-            <p>mail@htmlacademy.ru</p>
+          <div class="contact-item">
+            <b class="contact-item__title">Пишите:</b>
+            <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
           </div>
-          <div class="contact__description">
-            <b>Приезжайте в гости:</b>
-            <p>ул. Большая Конюшенная, 19/8</p>
+          <div class="contact-item">
+            <b class="contact-item__title">Приезжайте в гости:</b>
+            <a href="https://yandex.ru/maps/-/CVTDy04c" class="contact-item__value">ул. Большая Конюшенная, 19/8</a>
           </div>
         </div>
-        <div class="main-contact__map"></div>
+        <div class="main-contact__map" id="ymapsid"></div>
+
       </section>
     </main>
+
     <footer class="page-footer">
       <div class="page-footer__logo">
         <img src="logo.svg" alt="">
@@ -197,6 +185,9 @@
         <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="hidden">в htmlacademy.ru</span></a>
       </div>
     </footer>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=T4aW4Tr2eRiqbZKckEo77M_Oq_y9KhrM&width=100%&height=240&lang=ru_RU&sourceType=constructor&scroll=true&id=ymapsid"></script>
+
 
   </body>
 </html>
