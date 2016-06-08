@@ -1,19 +1,43 @@
 
 body {
   background: #ffffff;
-  width: 320px;
   outline: 1px solid gray;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Georgia", sans-serif;
   font-size: 14px;
+  min-width: 320px;
+
+  @media #{$tablet-widths} {
+    background: rgba(200,100,0,0.2);
+  }
+
+  @media #{$desktop-widths} {
+    background: rgba(10,100,100,0.1);
+  }
 }
 
-body > *,
-body > * > * {
-  outline: 1px solid red;
-}
+
+// body > *,
+// body > * > * {
+//   outline: 1px solid red;
+// }
 
 .hidden {
   display: none;
+}
+
+
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  // margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 700px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 940px;
+  }
 }

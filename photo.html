@@ -2,36 +2,41 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк - Фотографии пользователей</title>
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__logo">
-        <span class="hidden">Pink</span>
-        <img src="logo.svg" alt="">
+  <body class="no-js">
+    <header class="page-header page-header--photo">
+      <div class="page-header__top-line">
+        <div class="page-header__page-title">
+          <span class="hidden">Pink</span>
+          <img src="img/logo-pink-white-mobile.svg" alt="">
+        </div>
+        <button class="page-header__toggle"></button>
       </div>
-      <nav class="main-nav">
-        <a href="" class="main-nav__toggle"></a>
+      <nav class="main-nav page-header__nav-closed">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="">Конкурс</a></li>
-          <li class="main-nav__item"><a href="">Html Academy</a></li>
+          <li class="main-nav__item main-nav__item--checked"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a >Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">Html Academy</a></li>
         </ul>
        </nav>
-       <h1 class="page-main__title">Фотографии пользователей</h1>
+       <h1 class="page-header__tagline">Фотографии пользователей</h1>
     </header>
+    <div class="1">222</div>
 
-    <main class="page-main">
-      <section class="page-main__intro">
-        <div class="page-main__title">
+    <main class="page-photo">
+      <section class="photo-intro">
+        <div class="photo-intro__tagline">
           <p>Взгляните на фотографии, которые выкладывают пользователи!</p>
           <p>Видите, как не хватает ваших?</p>
         </div>
-        <div class="page-main__panorama">
-          <div class="panorama__photo">
+        <div class="photo-intro__panorama">
+          <div class="photo-intro__panorama-photo">
             <img src="" alt="">
-            <h2 class="panorama__title">Панорама дня</h2>
+            <h2 class="photo-intro__panorama-title">Панорама дня</h2>
           </div>
           <div class="photo-desc photo-desc--panorama">
             <p>
@@ -47,7 +52,7 @@
         </div>
       </section>
 
-      <section class="page-main__photos">
+      <section class="page-photo__photos">
         <h2 class="hidden">Другие фото</h2>
         <div class="photo-card">
           <div class="photo-card__photo">
@@ -153,13 +158,13 @@
         </div>
       </section>
 
-      <section class="page-main__editor">
+      <section class="page-photo__editor">
         <h2 class="hidden">Загрузка фото</h2>
-        <div class="page-main__title">
+        <div class="page-main__tagline">
           <p>Затмите их всех!</p>
           <p>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <form action="edit.php" method="post" class="photo-editor">
+        <form class="photo-editor" action="edit.php" method="post" >
           <div class="photo-editor__photo">
             <img src="" alt="Загружаемое фото">
           </div>
@@ -202,15 +207,16 @@
       </div>
       <div class="page-footer__social">
         <div class="social">
-          <a href="" class="social__link social__link--tw"></a>
-          <a href="" class="social__link social__link--fb"></a>
-          <a href="" class="social__link social__link--yt"></a>
+          <a href="" class="social__link social__link--tw">Twitter</a>
+          <a href="" class="social__link social__link--fb">Facebook</a>
+          <a href="" class="social__link social__link--yt">YouTube</a>
         </div>
       </div>
       <div class="page-footer__copyright">
         <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="hidden">в htmlacademy.ru</span></a>
       </div>
     </footer>
+
 
   </body>
 </html>

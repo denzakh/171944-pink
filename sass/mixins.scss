@@ -5,9 +5,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 30px;
-  background-image: -webkit-linear-gradient(-85deg,
-    $body-bg 49%, $bg-color-block-1 51%);
+  // background-image: -webkit-linear-gradient(-85deg, $body-bg 49%, $bg-color-block-1 51%);
+  background-image: url(../img/bg-triangle-white.svg);
+  background-size: cover;
+  outline: 1px solid green;
 }
 
 @mixin mobile-title {
@@ -16,16 +17,23 @@
   font-weight: bold;
 }
 
-@mixin tagline {
+@mixin tagline ($margin-top: 20px, $margin-bottom: 30px) {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
   padding: 0 20px;
 }
 
+@mixin big-tagline {
+  display: block;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+}
 
 @mixin indicators {
   min-width: 50px;
@@ -62,4 +70,9 @@
   box-sizing: border-box;
   border: 0;
   padding: 0;
+  outline: none;
+  background-color: transparent;
 }
+
+
+

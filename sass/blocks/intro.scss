@@ -40,3 +40,57 @@
   margin-bottom: 5px;
   line-height: 24px;
 }
+
+.intro__tagline {
+  display: none;
+}
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+
+.intro {
+  outline: 1px solid red;
+  position: absolute;
+  left: 40px;
+  top: 202px;
+  width: 300px;
+  padding: 0;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.intro__tagline {
+  @include big-tagline
+
+  padding: 0 50px;
+}
+
+.intro__download-btn {
+  margin: 30px 0 45px;
+}
+
+.intro__download-os--win {
+  padding-bottom: 0;
+}
+
+.intro__description {
+
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+}
