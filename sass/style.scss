@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+@import "general/fonts.scss";
 @import "general/normalize.css";
 @import "general/general.scss";
 
@@ -18,3 +19,5 @@
 @import "blocks/photo-intro.scss";
 @import "blocks/photo-card.scss";
 @import "blocks/photo-editor.scss";
+
+@import "blocks/page-footer.scss";

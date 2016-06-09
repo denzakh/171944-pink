@@ -3,20 +3,9 @@
   position: relative;
   min-height: 200px;
   position: relative;
-  padding:  20px;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding: 50px 20px 5px;
   text-align: center;
-
-  &:before {}
-
-  &:after {}
-
-  &:hover {}
-}
-
-.main-review * {
-  outline: 1px solid red;
+  background-color: $body-bg;
 }
 
 .main-review__indicators {
@@ -44,7 +33,7 @@
   @include mobile-title
 }
 
-.main-review__autor-desc {
+.main-review__author-desc {
   display: none;
 }
 
@@ -62,3 +51,65 @@
   }
 }
 
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+.main-review {
+  padding: 15px 40px;
+
+  &:before {
+
+    height: 58px;
+  }
+}
+
+.main-review * {
+  outline: 1px solid red;
+}
+
+.main-review__card {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.main-review__text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 35px;
+
+  &:before {
+    content: "\ab";
+  }
+
+  &:after {
+    content: "\bb";
+  }
+}
+
+.main-review__author {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.main-review__author-desc {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.main-review__indicators {
+  @include indicators
+
+  margin-bottom: 6px;
+}
+
+
+
+
+
+}

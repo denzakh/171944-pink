@@ -12,13 +12,14 @@
   position: relative;
   margin-top: 30px;
   padding: 85px 20px 280px;
-  background: $bg-color-block-1  url("../img/iphone-screen-mobile@1x.png") 50% 110% no-repeat;
-}
+  background: $bg-color-block-1  url("../img/iphone-screen-mobile@1x.png") 50% 109% no-repeat;
 
-.advantage__wrapper:before {
-  @include oblique-angle
+  &:before {
+    @include oblique-angle
 
-  height: 30px;
+    height: 30px;
+  }
+
 }
 
 .advantage__card {
@@ -71,18 +72,16 @@
 
 .advantage__wrapper {
   position: relative;
-  margin-top: 30px;
+  margin-top: 40px;
   height: 407px;
   padding: 0;
-  padding-top: 94px;
-  padding-left: 50%;
-  padding-right: 40px;
+  padding: 84px 40px 0 50%;
   background: $bg-color-block-1;
   background-image: none;
-}
 
-.advantage__wrapper:before {
-  height: 58px;
+  &:before  {
+    height: 58px;
+  }
 }
 
 .advantage__wrapper:after {
@@ -92,7 +91,7 @@
   height: 100%;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 10% -50%;
+  background-position: 10% -22%;
   background-size: 38%;
   top: 0;
   left: 0;
@@ -105,20 +104,28 @@
 
 .advantage__effect {
   display: block;
-  height: 410px;
-  padding-top: 94px;
-  padding-left: 50%;
-  padding-right: 40px;
+  padding: 94px 45px 94px 50%;
   background: $bg-color-block-0;
+  outline: 1px solid red;
+  background: #fff url("../img/") 0 0 no-repeat;
 }
 
 .advantage__effect-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
-  padding-right: 100px;
+
 }
 
+.advantage__effect-title span {
+  display: block;
+}
+
+.advantage__effect p {
+  margin-top: 10px;
+  padding: 0;
+  line-height: 24px;
+}
 
 
 
