@@ -26,6 +26,13 @@
   padding: 0 20px;
 }
 
+@mixin medium-tagline {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
 @mixin big-tagline {
   display: block;
   font-size: 40px;
@@ -68,6 +75,30 @@
 }
 
 
-@mixin visuality-hidden {
-  display: none;
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin big-btn {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  outline: none;
 }

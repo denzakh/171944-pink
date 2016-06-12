@@ -1,18 +1,79 @@
 
 .page-photo {
   outline: 1px solid blue;
+  background-color: $main-bg-color-1;
 }
 
 .photo-intro {
 
 }
 
-.photo-intro__tagline p {
-  font-size: 14px;
+.photo-intro__tagline {
+  padding: 45px 20px 50px;
   line-height: 30px;
-  font-weight: 300;
   text-align: center;
+}
+
+.photo-intro__tagline p {
   margin: 0;
-  padding: 0 20px;
+}
+
+.photo-intro__panorama-photo {
+  position: relative;
+}
+
+.photo-intro__panorama-title {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 6px 20px;
+  color: $text-color-2;
+  background-color: $text-color-3;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.photo-intro__panorama-photo img {
+  width: 100%;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .photo-intro__tagline {
+    @include medium-tagline
+
+    padding: 92px 100px 78px;
+  }
+
+  .photo-intro__tagline p {
+    display: inline-block;
+  }
+
+  .vanishing {
+    display: none;
+  }
+
+  .photo-intro__panorama-photo {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .photo-intro__panorama-photo img {
+    width: auto;
+    height: 506px;
+    // непонятно, как выравнивать
+  }
+
+  .photo-intro__panorama-title {
+    position: absolute;
+    top: 55px;
+    right: 40px;
+  }
 
 }

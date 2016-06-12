@@ -1,11 +1,12 @@
 
 body {
-  background: #ffffff;
+  background: $body-bg;
   outline: 1px solid gray;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Georgia", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
+  color: $text-color-1;
   min-width: 320px;
 
   @media #{$tablet-widths} {
@@ -18,15 +19,37 @@ body {
 }
 
 
-// body > *,
-// body > * > * {
-//   outline: 1px solid red;
-// }
+body > * > *
+{
+  outline: 1px solid red;
+}
+
+body > * > * > *
+{
+  outline: 1px blue red;
+}
+
+body > * > * > * > *
+{
+  outline: 1px dotted green;
+}
+
+body > * > * > * > * > *,
+body > * > * > * > * > *
+{
+  outline: 1px dotted gray;
+}
+
+
 
 .hidden {
   display: none;
 }
 
+
+.visually-hidden {
+  @include visually-hidden
+}
 
 .container {
   box-sizing: border-box;
@@ -40,4 +63,9 @@ body {
   @media #{$desktop-widths} {
     width: 940px;
   }
+}
+
+
+img {
+  vertical-align:bottom
 }

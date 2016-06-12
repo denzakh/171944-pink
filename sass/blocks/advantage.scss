@@ -28,6 +28,7 @@
 
 .advantage__title {
   @include mobile-title
+  color: $text-color-4;
 }
 
 .advantage__text {

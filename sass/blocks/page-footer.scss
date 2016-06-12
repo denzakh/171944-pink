@@ -1,16 +1,13 @@
 
 .page-footer {
   background-color: $main-bg-color-1;
-  padding: 36px 40px;
+  min-height: 275px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-
+  align-items: center;
+  padding: 36px;
 }
-
-.page-footer * {
-  outline: 1px solid red;
-}
-
 
 .page-footer__logo {
   width: 150px;
@@ -23,7 +20,46 @@
 }
 
 .page-footer__copyright {
-  width: 150px;
-  padding-left: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 35px;
+  min-width: 130px;
+  padding: 0;
+  background: transparent url('../img/logo-htmlacademy.svg') 100% 50% no-repeat;
+}
+
+.page-footer__copyright a,
+.page-footer__copyright a:hover,
+.page-footer__copyright a:active,
+.page-footer__copyright a:visited
+ {
+  color: $text-color-1;
+  text-decoration: none;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+  .page-footer {
+    min-height: none;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+  .page-footer__social {
+    margin-left: 12px;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    width: 150px;
+  }
+
 
 }

@@ -1,0 +1,40 @@
+
+.like {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  outline: 1px solid red;
+}
+
+.like__indicator {
+  margin: 0 18px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-color-3;
+}
+
+.like__get-like {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+}
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .like__indicator {
+    margin-right: 18px;
+  }
+
+}
