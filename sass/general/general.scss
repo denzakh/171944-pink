@@ -40,17 +40,6 @@ body > * > * > * > * > *
   outline: 1px dotted gray;
 }
 
-
-
-.hidden {
-  display: none;
-}
-
-
-.visually-hidden {
-  @include visually-hidden
-}
-
 .container {
   box-sizing: border-box;
   width: 320px;
@@ -65,7 +54,19 @@ body > * > * > * > * > *
   }
 }
 
-
 img {
   vertical-align:bottom
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  @include visually-hidden
+}
+
+.inactive {
+  color: $br-color-2-inactive;
+  border-color: $br-color-2-inactive;
 }

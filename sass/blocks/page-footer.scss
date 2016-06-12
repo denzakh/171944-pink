@@ -41,13 +41,18 @@
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
+
   .page-footer {
-    min-height: none;
-    padding: 36px 40px;
+    min-height: 10px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
+    justify-content: space-between;
+  }
+
+.page-footer__logo {
+    align-self: flex-start;
+  }
 
   .page-footer__social {
     margin-left: 12px;
