@@ -1,0 +1,41 @@
+
+
+.form-main__tagline {
+  padding: 45px 0 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form-main__tagline-onlytab {
+  display: none;
+}
+
+.form {
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form-main {
+    padding: 0 40px ;
+  }
+
+  .form-main__tagline {
+    @include medium-tagline
+    padding: 92px 60px 70px;
+  }
+
+  .form-main__tagline-onlytab {
+    display: inline;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

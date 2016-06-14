@@ -1,0 +1,15 @@
+
+
+
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form__part--os {
+    background-color: none;
+    order: 2;
+  }
+}
+

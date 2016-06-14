@@ -55,7 +55,6 @@
   margin-right: 10px;
 }
 
-
 @mixin line-height($font-size, $line-height) {
   font-size: $font-size + 'px';
   line-height: ($line-height / $font-size) + 'em';
@@ -74,17 +73,13 @@
   background-color: transparent;
 }
 
-
 @mixin visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -101,4 +96,24 @@
   border-radius: 30px;
   text-decoration: none;
   outline: none;
+}
+
+@mixin form-border {
+  border: 2px solid $br-color-1;
+}
+
+@mixin form-label {
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color-3;
+  text-transform: uppercase;
+}
+
+@mixin form-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-3;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
 }

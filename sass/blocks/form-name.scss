@@ -1,0 +1,47 @@
+
+.form__part--name {
+  padding-bottom: 40px;
+}
+
+.form__item--name {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item--name label {
+  @include form-label
+
+  margin: 17px 20px 5px;
+}
+
+.form__item--name input {
+  flex-grow: 2;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form__part--name {
+    padding-bottom: 0;
+    order: 1;
+  }
+
+  .form__item--name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .form__item--name label {
+    margin: auto 0;
+    margin-right: 20px;
+  }
+
+  .form__item--name {
+    margin-bottom: 53px;
+  }
+
+
+
+}

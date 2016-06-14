@@ -1,0 +1,27 @@
+
+
+.form__part {
+
+}
+
+.form__item input {
+  @include form-border
+
+  box-sizing: border-box;
+  background: $main-bg-color-1;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  color: $text-color-1;
+}
+
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+
+
+}

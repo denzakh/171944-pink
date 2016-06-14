@@ -1,0 +1,29 @@
+
+.form__part--achievement {
+  background-color: $bg-color-block-1;
+}
+
+.form__part-title {
+  @include form-title
+
+  text-align: center;
+  margin: 40px auto;
+
+}
+
+.form__item--achievement label {
+  display: flex;
+  align-items: center;
+  min-height: 39px;
+
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form__part--achievement {
+    background-color: none;
+    order: 4;
+  }
+}

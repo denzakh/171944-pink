@@ -1,0 +1,14 @@
+
+
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form__part--contact {
+    background-color: none;
+    order: 3;
+  }
+}
+
