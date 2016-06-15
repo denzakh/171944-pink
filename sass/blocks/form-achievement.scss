@@ -1,28 +1,38 @@
 
-.form__part--achievement {
+.achievement {
   background-color: $bg-color-block-1;
+  padding-bottom: 5px;
 }
 
-.form__part-title {
+.achievement__title {
   @include form-title
 
   text-align: center;
-  margin: 40px auto;
-
+  padding: 36px 20px 40px;
 }
 
-.form__item--achievement label {
-  display: flex;
-  align-items: center;
-  min-height: 39px;
+.achievement label {
+  position: relative;
+  display: block;
+  padding: 4px 0 48px 70px;
+}
 
+.achievement label:before {
+  @include pseudo-mark
+}
+
+
+.achievement__checkbox:checked + label:before {
+  background: $bg-color-block-0 url('../img/icon-yes-pink.svg') 93% 50% no-repeat;
+  background-size: 22px;
+  background-position: 50%;
 }
 
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
 
-  .form__part--achievement {
+  .achievement {
     background-color: none;
     order: 4;
   }

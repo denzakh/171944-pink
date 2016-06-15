@@ -1,4 +1,22 @@
 
+@mixin padding-section
+{
+    @media #{$phone-widths-only} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$tablet-widths} {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media #{$desktop-widths} {
+
+  }
+}
+
+
 @mixin oblique-angle {
   content: "";
   position: absolute;
@@ -84,6 +102,17 @@
   overflow: hidden;
 }
 
+@mixin visually-view {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border: auto;
+  clip: none;
+  overflow: auto;
+}
+
 @mixin big-btn {
   box-sizing: border-box;
   width: 100%;
@@ -96,6 +125,23 @@
   border-radius: 30px;
   text-decoration: none;
   outline: none;
+  border: none;
+}
+
+@mixin submit-btn {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 3px;
+  outline: none;
+  border: none;
 }
 
 @mixin form-border {
@@ -117,3 +163,17 @@
   font-weight: normal;
   margin: 0;
 }
+
+@mixin pseudo-mark {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 39px;
+  height: 39px;
+  left: 0;
+  top: 0;
+  background: $main-bg-color-1;
+
+  @include form-border
+}
+

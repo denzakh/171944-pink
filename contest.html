@@ -51,30 +51,30 @@
           </div>
         </div>
 
-        <div class="form__part  form__part--achievement">
-          <h2 class="form__part-title">Ваши безбашенные достижения в путешествии</h2>
+        <div class="form__part  form__part--achievement  achievement">
+          <h2 class="achievement__title">Ваши безбашенные достижения в путешествии</h2>
           <div class="form__item form__item--achievement">
-            <input type="checkbox" class="visually-hidden" id="achievement-1" name="achievement-1">
+            <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-1" name="achievement-1">
             <label for="achievement-1">Сделал селфи с акулой</label>
           </div>
           <div class="form__item form__item--achievement">
-            <input type="checkbox" class="visually-hidden" id="achievement-2" name="achievement-2">
+            <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-2" name="achievement-2">
             <label for="achievement-2">Обгорел на пляже</label>
           </div>
           <div class="form__item form__item--achievement">
-            <input type="checkbox" class="visually-hidden" id="achievement-3" name="achievement-3">
+            <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-3" name="achievement-3">
             <label for="achievement-3">Видел Чака Норриса</label>
           </div>
           <div class="form__item form__item--achievement">
-            <input type="checkbox" class="visually-hidden" id="achievement-4" name="achievement-4">
+            <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-4" name="achievement-4">
             <label for="achievement-4">Накупил сувениров</label>
           </div>
           <div class="form__item form__item--achievement">
-            <input type="checkbox" class="visually-hidden" id="achievement-5" name="achievement-5">
+            <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-5" name="achievement-5">
             <label for="achievement-5">Удержал башню</label>
           </div>
           <div class="form__item form__item--achievement">
-            <input type="checkbox" class="visually-hidden" id="achievement-6" name="achievement-6">
+            <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-6" name="achievement-6">
             <label for="achievement-6">Разгромил отель</label>
           </div>
         </div>
@@ -82,8 +82,9 @@
         <div class="form__part  form__part--contact">
           <h2 class="form__part-title form__part-title--contact">Контактная информация</h2>
           <div class="form__item form__item--contact-tel">
-            <label for="contact-tel">Номер телефончика</label>
+            <label for="contact-tel">Номерок телефончика</label>
             <input type="tel" id="contact-tel" name="contact-tel" placeholder="Номер, пожалуйста">
+          </div>
           <div class="form__item form__item--contact-email">
             <label for="contact-email">Адресок почты</label>
             <input type="email" id="contact-email" name="contact-email" placeholder="E-mail, пожалуйста">
@@ -91,25 +92,29 @@
         </div>
 
         <div class="form__part  form__part--os">
-          <h2 class="form__part-title  form__part-title--os">С каким приложением путешествовали?</h2>
-          <div class="form__item form__item--os-1">
-            <input type="radio" class="visually-hidden" id="os-1" name="os">
-            <label for="os-1">Pink для iOS</label>
-          </div>
-          <div class="form__item form__item--os-2">
-            <input type="radio" class="visually-hidden" id="os-2" name="os">
-            <label for="os-2">Pink на Android</label>
-          </div>
-          <div class="form__item form__item--os-3">
-            <input type="radio" class="visually-hidden" id="os-3" name="os">
-            <label for="os-3">Windows Phone</label>
-          </div>
+          <fieldset>
+            <legend>
+              <h2 class="form__part-title  form__part-title--os">С каким приложением путешествовали?</h2>
+            </legend>
+            <div class="form__item form__item--os-1">
+              <input type="radio" class="visually-hidden radio" id="os-1" name="os">
+              <label for="os-1">Pink для iOS</label>
+            </div>
+            <div class="form__item form__item--os-2">
+              <input type="radio" class="visually-hidden radio" id="os-2" name="os">
+              <label for="os-2">Pink на Android</label>
+            </div>
+            <div class="form__item form__item--os-3">
+              <input type="radio" class="visually-hidden radio" id="os-3" name="os">
+              <label for="os-3">Windows Phone</label>
+            </div>
+          </fieldset>
         </div>
 
         <div class="form__part  form__part--emotion">
           <h2 class="form__part-title  form__part-title--emotion">Опишите свои эмоции</h2>
           <div class="form__item">
-            <textarea name="emotion" id="" cols="30" rows="10"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea name="emotion" id="" cols="30"   placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </div>
 
@@ -118,7 +123,7 @@
             <button class="form__btn form__btn--submit" type="submit" value="">Отправить форму</button>
           </div>
           <div class="form__note">
-            <span class="form__requre-field">*</span> &mdash; обязательные для заполнения поля.
+            <span class="form__requre-field">*</span> &mdash; обязательные <span class="form__requre-onlytab">для заполнения</span> поля.
           </div>
         </div>
 

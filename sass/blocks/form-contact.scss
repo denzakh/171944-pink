@@ -1,6 +1,27 @@
 
+.form__part--contact {
+  padding-top: 13px;
+  padding-bottom: 54px;
+}
 
+.form__part-title--contact {
+  @include visually-hidden
+}
 
+.form__part--contact label {
+  @include form-title
+
+  box-sizing: border-box;
+  display: block;
+  min-height: 51px;
+  vertical-align: bottom;
+  padding: 22px 0 0 22px;
+
+}
+
+.form__part--contact input {
+  width: 100%;
+}
 
 /////////////// Tablet /////////////////////
 
@@ -10,5 +31,12 @@
     background-color: none;
     order: 3;
   }
+
+  .form__part-title--contact {
+    @include visually-view
+  }
+
+
+
 }
 

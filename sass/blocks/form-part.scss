@@ -1,7 +1,7 @@
 
 
 .form__part {
-
+  @include  padding-section
 }
 
 .form__item input {
@@ -21,7 +21,5 @@
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
-
-
 
 }

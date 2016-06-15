@@ -1,11 +1,30 @@
 
+.form__part--emotion {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 
+.form__part-title--emotion {
+  @include form-title
 
+  text-align: center;
+  margin: 0;
+  padding: 0 0 15px;
+}
+
+.form__part--emotion textarea {
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 20px;
+  max-width: 100%;
+  height: 200px;
+}
 
 
 @media #{$tablet-widths} {
 
-  .form__part--os {
+  .form__part--emotion {
     background-color: none;
     order: 5;
   }
