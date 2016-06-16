@@ -51,8 +51,8 @@
           </div>
         </div>
 
-        <div class="form__part  form__part--achievement  achievement">
-          <h2 class="achievement__title">Ваши безбашенные достижения в путешествии</h2>
+        <div class="form__part  form__part--achievement  achievement  for-fieldset">
+          <h2 class="achievement__title  for-legend">Ваши безбашенные достижения в путешествии</h2>
           <div class="form__item form__item--achievement">
             <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-1" name="achievement-1">
             <label for="achievement-1">Сделал селфи с акулой</label>
@@ -79,8 +79,8 @@
           </div>
         </div>
 
-        <div class="form__part  form__part--contact">
-          <h2 class="form__part-title form__part-title--contact">Контактная информация</h2>
+<!--         <div class="form__part  form__part--contact  for-fieldset">
+          <h2 class="form__part-title form__part-title--contact  for-legend">Контактная информация</h2>
           <div class="form__item form__item--contact-tel">
             <label for="contact-tel">Номерок телефончика</label>
             <input type="tel" id="contact-tel" name="contact-tel" placeholder="Номер, пожалуйста">
@@ -91,11 +91,8 @@
           </div>
         </div>
 
-        <div class="form__part  form__part--os">
-          <fieldset>
-            <legend>
-              <h2 class="form__part-title  form__part-title--os">С каким приложением путешествовали?</h2>
-            </legend>
+        <div class="form__part  form__part--os  for-fieldset" id="os">
+              <h2 class="form__part-title  form__part-title--os  for-legend">С каким приложением путешествовали?</h2>
             <div class="form__item form__item--os-1">
               <input type="radio" class="visually-hidden radio" id="os-1" name="os">
               <label for="os-1">Pink для iOS</label>
@@ -108,11 +105,10 @@
               <input type="radio" class="visually-hidden radio" id="os-3" name="os">
               <label for="os-3">Windows Phone</label>
             </div>
-          </fieldset>
         </div>
 
-        <div class="form__part  form__part--emotion">
-          <h2 class="form__part-title  form__part-title--emotion">Опишите свои эмоции</h2>
+        <div class="form__part  form__part--emotion  for-fieldset">
+          <h2 class="form__part-title  form__part-title--emotion  for-legend">Опишите свои эмоции</h2>
           <div class="form__item">
             <textarea name="emotion" id="" cols="30"   placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
@@ -125,7 +121,7 @@
           <div class="form__note">
             <span class="form__requre-field">*</span> &mdash; обязательные <span class="form__requre-onlytab">для заполнения</span> поля.
           </div>
-        </div>
+        </div> -->
 
       </form>
 
@@ -154,6 +150,7 @@
     </footer>
 
   <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/insert.js"></script>
 
   </body>
 </html>

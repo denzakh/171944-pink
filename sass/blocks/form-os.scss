@@ -37,9 +37,11 @@
   z-index: 3;
 }
 
-.form__part--os fieldset {
-
-}
+// .form__part--os fieldset {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+// }
 
 /////////////// Tablet /////////////////////
 
@@ -49,5 +51,15 @@
     background-color: none;
     order: 2;
   }
+
+
+  .form__part-title--os {
+    padding: 0;
+  }
+
+
+
+
+
 }
 
