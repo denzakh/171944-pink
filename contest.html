@@ -37,22 +37,22 @@
       <form action="contest.php" method="post" class="form">
 
         <div class="form__part  form__part--name">
-          <div class="form__item form__item--name">
+          <div class="form__item form__item--name form__item--name-1">
+            <input type="text" id="name-1" name="name-1" placeholder="">
             <label for="name-1" class="">Фамилия:</label>
-            <input type="text" id="name-1" name="name-1" placeholder="Укажите фамилию">
           </div>
-          <div class="form__item form__item--name">
+          <div class="form__item form__item--name form__item--name-2">
+            <input type="text" id="name-2" name="name-2" placeholder="">
             <label for="name-2" class="">Имя:</label>
-            <input type="text" id="name-2" name="name-2" placeholder="Введите ваше имя">
           </div>
-          <div class="form__item form__item--name">
+          <div class="form__item form__item--name form__item--name-3">
+            <input type="text" id="name-3" name="name-3" placeholder="">
             <label for="name-3" class="">Отчество:</label>
-            <input type="text" id="name-3" name="name-3" placeholder="Ну и отчество тоже">
           </div>
         </div>
 
         <div class="form__part  form__part--achievement  achievement  for-fieldset">
-          <h2 class="achievement__title  for-legend">Ваши безбашенные достижения в путешествии</h2>
+          <h2 class="form__part-title for-legend">Ваши безбашенные достижения в путешествии</h2>
           <div class="form__item form__item--achievement">
             <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-1" name="achievement-1">
             <label for="achievement-1">Сделал селфи с акулой</label>
@@ -79,20 +79,20 @@
           </div>
         </div>
 
-<!--         <div class="form__part  form__part--contact  for-fieldset">
-          <h2 class="form__part-title form__part-title--contact  for-legend">Контактная информация</h2>
-          <div class="form__item form__item--contact-tel">
-            <label for="contact-tel">Номерок телефончика</label>
-            <input type="tel" id="contact-tel" name="contact-tel" placeholder="Номер, пожалуйста">
+        <div class="form__part  form__part--contact  for-fieldset">
+          <h2 class="form__part-title for-legend">Контактная информация</h2>
+          <div class="form__item form__item--contact  form__item--contact-tel">
+            <input type="tel" id="contact-tel" name="contact-tel" data-placeholder-tel="Номер, пожалуйста" data-placeholder-tab="+7 XXX XXX-XX-XX">
+            <label for="contact-tel" data-phone="Номерок телефончика">Номер телефона</label>
           </div>
-          <div class="form__item form__item--contact-email">
-            <label for="contact-email">Адресок почты</label>
-            <input type="email" id="contact-email" name="contact-email" placeholder="E-mail, пожалуйста">
+          <div class="form__item form__item--contact  form__item--contact-email">
+            <input type="email" id="contact-email" name="contact-email" data-placeholder-tel="E-mail, пожалуйста" data-placeholder-tab="Введите почту">
+            <label for="contact-email" data-phone="Адресок почты">Адрес почты</label>
           </div>
         </div>
 
-        <div class="form__part  form__part--os  for-fieldset" id="os">
-              <h2 class="form__part-title  form__part-title--os  for-legend">С каким приложением путешествовали?</h2>
+        <div class="form__part  form__part--os  for-fieldset" >
+              <h2 class="form__part-title  for-legend">С каким приложением путешествовали?</h2>
             <div class="form__item form__item--os-1">
               <input type="radio" class="visually-hidden radio" id="os-1" name="os">
               <label for="os-1">Pink для iOS</label>
@@ -107,10 +107,11 @@
             </div>
         </div>
 
-        <div class="form__part  form__part--emotion  for-fieldset">
-          <h2 class="form__part-title  form__part-title--emotion  for-legend">Опишите свои эмоции</h2>
-          <div class="form__item">
-            <textarea name="emotion" id="" cols="30"   placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <div class="form__part  form__part--emotion emotion  for-fieldset">
+          <h2 class="form__part-title  for-legend">Опишите свои эмоции</h2>
+          <div class="form__item form__item--emotion-box">
+            <textarea name="emotion" id="" cols="30"   placeholder=""  class="emotion__textarea"></textarea>
+            <div class="emotion__placeholder">Можно прям в красках, не стесняясь в выражениях</div>
           </div>
         </div>
 
@@ -119,9 +120,9 @@
             <button class="form__btn form__btn--submit" type="submit" value="">Отправить форму</button>
           </div>
           <div class="form__note">
-            <span class="form__requre-field">*</span> &mdash; обязательные <span class="form__requre-onlytab">для заполнения</span> поля.
+            <span class="form__requre-field">*</span> &mdash; обязательные <span class="form__requre-only-desktop">для заполнения</span> поля
           </div>
-        </div> -->
+        </div>
 
       </form>
 

@@ -21,19 +21,35 @@
   color: $text-color-3;
 }
 
-.form__requre-onlytab {
+.form__requre-only-desktop {
   display: none;
 }
 
 @media #{$tablet-widths} {
 
   .form__part--footer {
-    background-color: none;
+
     order: 6;
+    padding-top: 48px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 36px;
   }
 
-  .form__requre-onlytab {
-    display: inline;
+  .form__btns,
+  .form__note {
+    width: 50%;
+  }
+
+  .form__btns {
+    padding-right: 20px;
+  }
+
+  .form__note {
+    text-align: right;
+    padding-top: 38px;
+    font-weight: normal;
   }
 }
 

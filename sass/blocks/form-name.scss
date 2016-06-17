@@ -5,17 +5,41 @@
 
 .form__item--name {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.form__item--name input {
+  flex-grow: 2;
 }
 
 .form__item--name label {
   @include form-label
 
   margin: 17px 20px 5px;
+  position: relative;
 }
 
-.form__item--name input {
-  flex-grow: 2;
+.form__item--name label:before {
+  @include placeholder
+
+  left: -20px;
+  top: 36px;
+}
+
+.form__item--name-1 label:before {
+  content: "Укажите фамилию";
+}
+
+.form__item--name-2 label:before {
+  content: "Введите ваше имя";
+}
+
+.form__item--name-3 label:before {
+  content: "Ну и отчество тоже";
+}
+
+.form__item--name input:focus + label:before {
+  display: none;
 }
 
 /////////////// Tablet /////////////////////
@@ -29,7 +53,7 @@
 
   .form__item--name {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
 
@@ -42,6 +66,13 @@
     margin-bottom: 53px;
   }
 
+  .form__item--name label:before {
 
+    min-width: 200px;
+    min-width: 400px;
+    left: 100%;
+    margin-left: 20px;
+    top: -15px;
+  }
 
 }
