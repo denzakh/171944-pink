@@ -30,3 +30,36 @@
   color: #ffffff;
 }
 
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+.main-nav {
+  width: auto;
+  top: 45px;
+  right: 130px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-nav__item {
+  display: inline-flex;
+  margin-left: 77px;
+}
+
+.main-nav__item a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+}

@@ -111,11 +111,50 @@
 }
 
 
+}
 
 
+/////////////// Desktop /////////////////////
 
+@media #{$desktop-widths} {
 
+.main-contact {
+  padding: 64px 0 0;
+}
 
+.main-contact__tagline p {
+  font-size: 50px;
+  outline: 1px solid red;
+}
 
+.contact {
+  padding: 20px 120px 0;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-item--mail {
+  order: 3;
+}
+
+.contact-item__value {
+  margin-top: 25px;
+}
+
+.main-contact__map {
+  position: relative;
+  box-sizing: border-box;
+  height: 500px;
+
+  &:before {
+    height: 105px;
+    background: url('../img/bg-triangle-white-footer.svg') 50% top no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+    outline: 1px solid red;
+  }
+}
 
 }

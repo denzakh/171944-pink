@@ -66,5 +66,26 @@
     width: 150px;
   }
 
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+  .page-footer {
+    padding: 74px 130px;
+  }
+
+  .page-footer__copyright-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+    .page-footer__copyright {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 20px;
+}
 
 }

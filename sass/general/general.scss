@@ -19,18 +19,18 @@ body {
 }
 
 
-// body > * > *
-// {
-//   outline: 1px solid red;
+body > * > *
+{
+  outline: 1px solid red;
 
-//   & > * {
-//     outline: 1px solid blue;
+  & > * {
+    outline: 1px solid blue;
 
-//     & * {
-//       outline: 1px dotted gray;
-//     }
-//   }
-// }
+    & * {
+      outline: 1px dotted gray;
+    }
+  }
+}
 
 
 .container {
@@ -43,7 +43,7 @@ body {
   }
 
   @media #{$desktop-widths} {
-    width: 940px;
+    width: 1200px;
   }
 }
 

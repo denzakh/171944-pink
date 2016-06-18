@@ -166,25 +166,25 @@
   border-bottom: 2px solid $br-color-1;
 }
 
-  .main-price__price-name {
-    display: block;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.main-price__price-name {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-  .main-price__price {
-    display: block;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-  }
+.main-price__price {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
 
 .main-price__legend {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: none;
-  width: 100%;
+font-size: 14px;
+line-height: 30px;
+text-transform: none;
+width: 100%;
 }
 
 .main-price__table .foo-yes {
@@ -198,7 +198,42 @@
 }
 
 
+}
 
+/////////////// Desktop /////////////////////
 
+@media #{$desktop-widths} {
+
+  .main-price {
+    padding: 154px 130px 50px;
+
+    &:before {
+      @include oblique-angle
+
+      height: 94px;
+    }
+  }
+
+.main-price__price-name {
+  font-size: 18px;
+}
+
+.main-price__price {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.main-price__table th,
+.main-price__table td {
+  padding: 15px;
+}
+
+.main-price__legend {
+font-size: 18px;
+}
+
+.main-price__table .main-price__legend-cell {
+  padding-left: 20px;
+}
 
 }
