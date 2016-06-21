@@ -1,0 +1,39 @@
+.form-main {
+  background-color: $bg-color-block-0;
+}
+
+.form-main__tagline {
+  padding: 45px 20px 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form-main__tagline-onlytab {
+  display: none;
+}
+
+.form {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form-main__tagline {
+    @include medium-tagline
+
+    padding: 92px 70px 70px;
+  }
+
+  .form-main__tagline-onlytab {
+    display: block;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

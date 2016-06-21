@@ -1,19 +1,66 @@
 
 body {
-  background: #ffffff;
-  width: 320px;
+  background: $body-bg;
   outline: 1px solid gray;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Georgia", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
+  color: $text-color-1;
+  min-width: 320px;
+
+  @media #{$tablet-widths} {
+    background: rgba(200,100,0,0.2);
+  }
+
+  @media #{$desktop-widths} {
+    background: rgba(10,100,100,0.1);
+  }
 }
 
-body > *,
-body > * > * {
+
+body > * > *
+{
   outline: 1px solid red;
+
+  & > * {
+    outline: 1px solid blue;
+
+    & * {
+      outline: 1px dotted gray;
+    }
+  }
+}
+
+
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  // margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 700px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px;
+  }
+}
+
+img {
+  vertical-align:bottom
 }
 
 .hidden {
   display: none;
 }
+
+.visually-hidden {
+  @include visually-hidden
+}
+
+.inactive {
+  color: $br-color-2-inactive;
+  border-color: $br-color-2-inactive;
+}
+

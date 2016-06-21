@@ -1,0 +1,160 @@
+
+.main-contact {
+  position: relative;
+  padding-top: 40px;
+  text-align: center;
+  background-color: $main-bg-color-1;
+}
+
+.main-contact__tagline p {
+  @include tagline
+  margin: 0 auto;
+}
+
+.contact {
+  padding: 10px 25px 40px;
+}
+
+.contact-item {
+  margin-top: 24px;
+}
+.contact-item__title {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact-item__value {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $text-color-3;
+  text-decoration: none;
+}
+
+.main-contact__map {
+  position: relative;
+  box-sizing: border-box;
+  height: 200px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    min-width: 320px;
+    background: url('../img/bg-triangle-white-footer.svg') right top no-repeat;
+    background-size: 100%;
+    z-index: 1;
+  }
+}
+
+.main-contact__map [class$="controls__toolbar"] {
+  display: none;
+}
+
+//icon-map-marker.svg
+// 55.75399400, 37.62209300
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+.main-contact {
+  position: relative;
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+.main-contact__tagline {
+  margin: 0;
+}
+
+.main-contact__tagline p {
+  @include big-tagline
+
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6px 40px 10px;
+}
+
+.contact-item {
+  width: 250px;
+  margin: 30px auto 10px;
+}
+
+.contact-item__title {
+  margin: 5px 0;
+}
+
+.main-contact__map {
+  position: relative;
+  box-sizing: border-box;
+  height: 380px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 73px;
+    background: url('../img/bg-triangle-white-footer.svg') 50% top no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+}
+
+
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+.main-contact {
+  padding: 64px 0 0;
+}
+
+.main-contact__tagline p {
+  font-size: 50px;
+  outline: 1px solid red;
+}
+
+.contact {
+  padding: 20px 120px 0;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-item--mail {
+  order: 3;
+}
+
+.contact-item__value {
+  margin-top: 25px;
+}
+
+.main-contact__map {
+  position: relative;
+  box-sizing: border-box;
+  height: 500px;
+
+  &:before {
+    height: 105px;
+    background: url('../img/bg-triangle-white-footer.svg') 50% top no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+    outline: 1px solid red;
+  }
+}
+
+}

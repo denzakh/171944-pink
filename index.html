@@ -2,36 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
+    <script>// Маркер работающего javascript
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
   </head>
-  <body class="nojs">
-    <header class="page-header">
-      <!-- Убрать чекбокс -->
-      <input type="checkbox" id="nav-cbx" class="page-header__checkbox hidden">
+  <body class="no-js">
+    <header class="page-header  container  page-header--closed">
       <div class="page-header__top-line">
-        <h1 class="page-header__page-title">
-          <span class="hidden">Pink</span>
+        <h1 class="page-header__logo">
+          <span class="visually-hidden">Pink</span>
           <img src="img/logo-pink-white-mobile.svg" alt="">
         </h1>
-        <!-- Должен быть button -->
-        <label for="nav-cbx" class="page-header__toggle"></label>
+        <button class="page-header__toggle"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--checked"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">Html Academy</a></li>
+          <li class="main-nav__item"><a href="contest.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
         </ul>
-       </nav>
+      </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <section class="intro">
-        <h2 class="hidden">Загрузка</h2>
-        <div class="intro__tagline hidden">Взгляните на жизнь иначе!</div>
+        <h2 class="visually-hidden">Загрузка</h2>
+        <div class="intro__tagline">Взгляните на жизнь иначе!</div>
         <a href="" class="intro__download-btn">Скачать приложение</a>
         <div class="intro__download-apps">
           <a href="http://www.appstore.com/" class="intro__download-os intro__download-os--app">
@@ -48,7 +49,7 @@
       </section>
 
       <section class="advantage">
-        <h2 class="advantage__title hidden">Преимущества нашей программы</h2>
+        <h2 class="advantage__title visually-hidden">Преимущества нашей программы</h2>
         <div class="advantage__tagline">
           <p>Устали от серости мегаполиса?</p>
           <p>Нам есть, что вам предложить!</p>
@@ -67,123 +68,138 @@
             <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
+        <div class="advantage__effect">
+          <b class="advantage__effect-title"><span>Эффект</span> на 24 часа!</b>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится
+          целые сутки!</p>
+          <a href="" class="advantage__know-more">Узнать больше об исследовании</a>
+        </div>
       </section>
 
       <section class="main-review">
-        <h2 class="main-review__title hidden">Отзывы</h2>
-        <div class="main-review__indicators">
-          <input type="radio" class="hidden" id="review-1" name="review">
-          <label for="review-1" class="main-review__indicator  main-review__indicator--1"></label>
-          <input type="radio" class="hidden" id="review-2" name="review">
-          <label for="review-2" class="main-review__indicator  main-review__indicator--2"></label>
-          <input type="radio" class="hidden" id="review-3" name="review">
-          <label for="review-3" class="main-review__indicator  main-review__indicator--3"></label>
-        </div>
+        <h2 class="main-review__title visually-hidden">Отзывы</h2>
         <div class="main-review__slider">
-          <!--
-            http://web-standards.ru/articles/cite-blockquote-reloaded/
-            Лучше применить разметку из статьи - цитата с указанием автора
-          -->
-          <div class="main-review__card main-review__card--1">
-            <div class="main-review__info">
-              <b class="main-review__autor">Николай Петров</b>
-              <span  class="main-review__autor-desc">25 лет, водитель трамвая</span>
-            </div>
-            <div class="main-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-          </div>
+          <blockquote class="main-review__card">
+            <cite class="main-review__info">
+              <b class="main-review__author">Николай Петров</b>
+              <span  class="main-review__author-desc">25 лет, водитель трамвая</span>
+            </cite>
+            <p class="main-review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </bloquote>
+        </div>
+        <div class="main-review__indicators">
+          <button class="main-review__indicator"  id="review-1" ></button>
+          <button class="main-review__indicator"  id="review-2" ></button>
+          <button class="main-review__indicator"  id="review-3" ></button>
         </div>
       </section>
 
       <section class="main-price">
-        <h2 class="main-price__title hidden">Цены</h2>
-        <div class="main-price__indicators">
-          <input type="radio" class="hidden" id="price-1" name="price">
-          <label for="price-1" class="slider__indicator"></label>
-          <input type="radio" class="hidden" id="price-2" name="price">
-          <label for="price-2" class="slider__indicator"></label>
-          <input type="radio" class="hidden" id="price-3" name="price">
-          <label for="price-3" class="slider__indicator"></label>
+        <h2 class="main-price__title visually-hidden">Цены</h2>
+        <!-- table по разметке -->
+        <div class="main-price__slider">
+          <table class="main-price__table main-price__table--2">
+            <tr>
+              <th class="main-price__first-cell">
+                Тариф
+              </th>
+              <th>
+                <b class="main-price__price-name">База</b>
+                <span class="main-price__price">1,99 USD</span>
+              </th>
+              <th>
+                <b class="main-price__price-name">Стандарт</b>
+                <span class="main-price__price">3,99 USD</span>
+              </th>
+              <th>
+                <b class="main-price__price-name">Анлим</b>
+                <span class="main-price__price">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="main-price__legend-cell">
+                <span class="main-price__legend main-price__legend--2">Розовый фильтр</span>
+              </td>
+              <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+              <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+              <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+            </tr>
+            <tr>
+              <td class="main-price__legend-cell">
+                <span class="main-price__legend main-price__legend--2">Смайлики</span>
+              </td>
+              <td class="foo-no"><span class="visually-hidden">Нет</span></td>
+              <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+              <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+            </tr>
+            <tr>
+              <td class="main-price__legend-cell">
+                <span class="main-price__legend main-price__legend--2">Комментарии</span>
+              </td>
+              <td class="foo-no"><span class="visually-hidden">Нет</span></td>
+              <td class="foo-no"><span class="visually-hidden">Нет</span></td>
+              <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+            </tr>
+          </table>
+
         </div>
-        <!-- Должен быть table по разметке -->
-        <div class="main-price__slider-inner slider__slider-inner table-price">
-          <div class="table-price__column table-price__column--name">
-            <div class="table-price__cell table-price__table-head"></div>
-            <div class="table-price__cell">Розовый фильтр</div>
-            <div class="table-price__cell">Смайлики</div>
-            <div class="table-price__cell">Комментарии</div>
-          </div>
-          <div class="table-price__column table-price__column--1">
-            <div class="table-price__cell table-price__table-head"><b>База</b> 1,99 USD</div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-          </div>
-          <div class="table-price__column table-price__column--2">
-            <div class="table-price__cell table-price__table-head"><b>Стандарт</b> 3,99 USD</div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-          </div>
-          <div class="table-price__column table-price__column--3">
-            <div class="table-price__cell table-price__table-head"><b>Анлим</b> 9,99 USD</div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-            <div class="table-price__cell"></div>
-          </div>
+        <div class="main-price__indicators">
+          <button class="main-price__indicator"  id="price-1" ></button>
+          <button class="main-price__indicator"  id="price-2" ></button>
+          <button class="main-price__indicator"  id="price-3" ></button>
         </div>
       </section>
 
       <section class="main-contact">
-        <h2 class="main-contact__title hidden">Контакты</h2>
+        <h2 class="main-contact__title visually-hidden">Контакты</h2>
         <div class="main-contact__tagline">
-          Остались вопросы? Свяжитесь с нами!
+          <p>Остались вопросы? </p>
+          <p>Свяжитесь с нами!</p>
         </div>
         <div class="contact">
-
-          <!--
-            <div class="contact-item">
-              <b class="contact-item__title">Звоните:</b>
-              <a class="contact-item__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </div>
-
-            <div class="contact-item">
-              <b>Приезжайте в гости:</b>
-              <p class="contact-item__value">ул. Большая Конюшенная, 19/8</p>
-            </div>
-
-           -->
-
-          <div class="contact__description">
-            <b>Звоните:</b>
-            <p><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></p>
+          <div class="contact-item">
+            <b class="contact-item__title">Звоните:</b>
+            <a class="contact-item__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
-          <div class="contact__description">
-            <b>Пишите:</b>
-            <p>mail@htmlacademy.ru</p>
+          <div class="contact-item  contact-item--mail">
+            <b class="contact-item__title">Пишите:</b>
+            <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
           </div>
-          <div class="contact__description">
-            <b>Приезжайте в гости:</b>
-            <p>ул. Большая Конюшенная, 19/8</p>
+          <div class="contact-item">
+            <b class="contact-item__title">Приезжайте в гости:</b>
+            <a href="https://yandex.ru/maps/-/CVTDy04c" class="contact-item__value">ул. Большая Конюшенная, 19/8</a>
           </div>
         </div>
-        <div class="main-contact__map"></div>
+        <div class="main-contact__map" id="ymapsid"></div>
+
       </section>
     </main>
-    <footer class="page-footer">
+
+    <footer class="page-footer container">
       <div class="page-footer__logo">
-        <img src="logo.svg" alt="">
+        <img src="img/logo-pink-blue-mobile.svg" alt="">
       </div>
       <div class="page-footer__social">
         <div class="social">
-          <a href="" class="social__link social__link--tw">Twitter</a>
-          <a href="" class="social__link social__link--fb">Facebook</a>
-          <a href="" class="social__link social__link--yt">YouTube</a>
+          <a href="" class="social__link social__link--tw">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+          <a href="" class="social__link social__link--fb">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+          <a href="" class="social__link social__link--yt">
+            <span class="visually-hidden">YouTube</span>
+          </a>
         </div>
       </div>
       <div class="page-footer__copyright">
-        <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="hidden">в htmlacademy.ru</span></a>
+        <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="visually-hidden">в htmlacademy.ru</span></a>
       </div>
     </footer>
+
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=T4aW4Tr2eRiqbZKckEo77M_Oq_y9KhrM&width=100%&height=100%&lang=ru_RU&sourceType=constructor&id=ymapsid"></script>
+
 
   </body>
 </html>

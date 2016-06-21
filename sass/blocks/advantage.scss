@@ -3,31 +3,22 @@
   text-align: center;
   padding-top: 20px;
 }
-.advantage > * {
-  outline: 1px solid red;
-}
 
 .advantage__tagline p {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0 20px;
+  @include tagline
 }
 
 .advantage__wrapper {
   position: relative;
   margin-top: 30px;
   padding: 85px 20px 280px;
-  background: $bg-color-block-1
-  url("../img/iphone-screen-mobile@1x.png")
-  50% 110% no-repeat;
+  background: $bg-color-block-1  url("../img/iphone-screen-mobile@1x.png") 50% 109% no-repeat;
 }
 
 .advantage__wrapper:before {
   @include oblique-angle
+
+  height: 30px;
 }
 
 .advantage__card {
@@ -36,9 +27,195 @@
 
 .advantage__title {
   @include mobile-title
+  color: $text-color-4;
 }
 
 .advantage__text {
   font-size: 14px;
   line-height: 24px;
+}
+
+.advantage__effect {
+  display: none;
+}
+
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+.advantage {
+  text-align: left;
+  padding-top: 50px;
+  background-color: $body-bg;
+}
+
+.advantage__tagline p {
+  @include big-tagline
+
+  padding: 0;
+  margin: 0;
+}
+
+.advantage__tagline p+p {
+  padding: 0 100px;
+  margin: 0;
+}
+
+.advantage__wrapper {
+  position: relative;
+  margin-top: 40px;
+  height: 407px;
+  padding: 0;
+  padding: 84px 40px 0 50%;
+  background: $bg-color-block-1;
+  background-image: none;
+}
+
+.advantage__wrapper:before  {
+  height: 58px;
+}
+
+.advantage__wrapper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 10% -22%;
+  background-size: 38%;
+  top: 0;
+  left: 0;
+}
+
+.advantage__card {
+  text-align: left;
+}
+
+.advantage__effect {
+  display: block;
+  padding: 94px 45px 94px 50%;
+  background: $bg-color-block-0;
+  outline: 1px solid red;
+  background: #fff url("../img/") 0 0 no-repeat;
+}
+
+.advantage__effect-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+
+}
+
+.advantage__effect-title span {
+  display: block;
+}
+
+.advantage__effect p {
+  margin-top: 10px;
+  padding: 0;
+  line-height: 24px;
+}
+
+
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+.advantage {
+  text-align: left;
+  padding-top: 68px;
+  background-color: $body-bg;
+}
+
+.advantage__tagline p {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  padding: 0 200px;
+}
+
+.advantage__tagline p+p {
+  padding: 0 330px;
+}
+
+.advantage__wrapper {
+  width: auto;
+  height: auto;
+  margin-top: 76px;
+  padding: 0 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage__wrapper:before  {
+  height: 94px;
+}
+
+.advantage__wrapper:after {
+  display: none;
+}
+
+.advantage__card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 600px;
+  margin: 0;
+  padding-top: 355px;
+  z-index: 5;
+  text-align: center;
+}
+
+.advantage__title {
+  color: $text-color-4;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+
+.advantage__text {
+  @include medium-tagline
+  margin: 25px 28px;
+}
+
+.advantage__effect {
+  position: relative;
+  display: block;
+  padding: 118px 180px 114px 495px;
+  background: $bg-color-block-1;
+}
+
+.advantage__effect-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+
+}
+
+.advantage__effect-title span {
+  display: inline;
+}
+
+.advantage__effect p {
+  @include medium-tagline
+
+  margin-top: 20px;
+  padding: 0;
+  text-align: left;
+}
+
+.advantage__know-more {
+  @include medium-tagline
+
+  display: block;
+  text-align: left;
+  margin-top: 30px;
+}
+
+
 }

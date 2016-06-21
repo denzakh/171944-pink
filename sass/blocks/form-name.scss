@@ -1,0 +1,78 @@
+
+.form__part--name {
+  padding-bottom: 44px;
+}
+
+.form__item--name {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.form__item--name input {
+  flex-grow: 2;
+}
+
+.form__item--name label {
+  @include form-label
+
+  margin: 17px 20px 5px;
+  position: relative;
+}
+
+.form__item--name label:before {
+  @include placeholder
+
+  left: -20px;
+  top: 36px;
+}
+
+.form__item--name-1 label:before {
+  content: "Укажите фамилию";
+}
+
+.form__item--name-2 label:before {
+  content: "Введите ваше имя";
+}
+
+.form__item--name-3 label:before {
+  content: "Ну и отчество тоже";
+}
+
+.form__item--name input:focus + label:before {
+  display: none;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form__part--name {
+    padding-bottom: 0;
+    order: 1;
+  }
+
+  .form__item--name {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .form__item--name label {
+    margin: auto 0;
+    margin-right: 20px;
+  }
+
+  .form__item--name {
+    margin-bottom: 53px;
+  }
+
+  .form__item--name label:before {
+
+    min-width: 200px;
+    min-width: 400px;
+    left: 100%;
+    margin-left: 20px;
+    top: -15px;
+  }
+
+}
