@@ -1,0 +1,69 @@
+
+.form__part--emotion {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.emotion .form__part-title {
+  @include form-title
+
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 15px;
+}
+
+.form__item--emotion-box {
+  position: relative;
+}
+
+.emotion__textarea {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-color-1;
+  padding: 15px 20px;
+  max-width: 100%;
+  height: 200px;
+}
+
+.emotion__placeholder {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.emotion__textarea:focus + .emotion__placeholder {
+  display: none;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .form__part--emotion {
+    background-color: none;
+    order: 5;
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .form__part--emotion .no-mobile-fieldset {
+   padding-top: 30px;
+   padding-bottom: 45px;
+  }
+
+.form__part--emotion textarea {
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 20px;
+  width: 100%;
+  height: 190px;
+}
+
+}
+

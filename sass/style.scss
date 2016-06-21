@@ -1,0 +1,46 @@
+
+// основные подключаемые файлы
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "general/fonts.scss";
+@import "general/normalize.css";
+@import "general/general.scss";
+
+// повторяющиеся элементы
+
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/main-nav.scss";
+@import "blocks/social.scss";
+@import "blocks/like.scss";
+@import "blocks/range.scss";
+
+// главная страница
+
+@import "blocks/advantage.scss";
+@import "blocks/intro.scss";
+@import "blocks/main-price.scss";
+
+@import "blocks/main-review.scss";
+@import "blocks/main-contact.scss";
+
+// страница фото
+
+@import "blocks/photo-intro.scss";
+@import "blocks/photo-card.scss";
+@import "blocks/photo-photos.scss";
+@import "blocks/photo-editor.scss";
+
+// страница формы
+
+@import "blocks/form.scss";
+@import "blocks/form-achievement.scss";
+@import "blocks/form-contact.scss";
+@import "blocks/form-emotion.scss";
+@import "blocks/form-footer.scss";
+@import "blocks/form-name.scss";
+@import "blocks/form-os.scss";
+@import "blocks/form-part.scss";

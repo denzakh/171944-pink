@@ -1,0 +1,164 @@
+
+.main-review {
+  position: relative;
+  min-height: 200px;
+  position: relative;
+  padding: 50px 20px 5px;
+  text-align: center;
+  background-color: $body-bg;
+}
+
+.main-review__indicators {
+  @include indicators
+}
+
+.main-review__indicator {
+  @include inline-block
+  @include no-btn
+  @include indicator
+}
+
+.main-review__slider {}
+
+.main-review__card {
+  margin: 0;
+}
+
+.main-review__info {
+  font-style: normal;
+  margin: 0;
+}
+
+.main-review__author {
+  @include mobile-title
+}
+
+.main-review__author-desc {
+  display: none;
+}
+
+.main-review__text {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 18px;
+
+  &:before {
+    content: "\ab";
+  }
+
+  &:after {
+    content: "\bb";
+  }
+}
+
+
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+.main-review {
+  padding: 15px 40px;
+
+  &:before {
+
+    height: 58px;
+  }
+}
+
+.main-review * {
+  outline: 1px solid red;
+}
+
+.main-review__card {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.main-review__text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 35px;
+
+  &:before {
+    content: "\ab";
+  }
+
+  &:after {
+    content: "\bb";
+  }
+}
+
+.main-review__author {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.main-review__author-desc {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.main-review__indicators {
+  @include indicators
+
+  margin-bottom: 6px;
+}
+
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+.main-review {
+  min-height: 200px;
+  padding: 185px 130px 25px;
+}
+
+.main-review__text {
+  position: relative;
+  padding: 0 125px;
+  margin: 0 0 30px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid $br-color-1;
+    border-right: 3px solid $br-color-1;
+    top: 36%;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+    right: 5px;
+  }
+
+  &:after {
+    transform: rotate(-135deg);
+    left: 5px;
+  }
+}
+
+.main-review__author {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 5px;
+}
+
+.main-review__author-desc {
+  @include medium-tagline
+}
+
+.main-review__indicators {
+  @include visually-hidden
+}
+
+}

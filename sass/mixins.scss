@@ -1,0 +1,195 @@
+
+@mixin padding-section
+{
+    @media #{$phone-widths-only} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$tablet-widths} {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media #{$desktop-widths} {
+
+  }
+}
+
+
+@mixin oblique-angle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-size: cover;
+  // outline: 1px solid green;
+}
+
+@mixin mobile-title {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+@mixin tagline ($margin-top: 20px, $margin-bottom: 30px) {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+  padding: 0 20px;
+}
+
+@mixin medium-tagline {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
+@mixin big-tagline {
+  display: block;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+}
+
+@mixin indicators {
+  margin: 37px auto;
+  font-size: 0;
+}
+
+@mixin indicator {
+  width: 5px;
+  height: 5px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@mixin line-height($font-size, $line-height) {
+  font-size: $font-size + 'px';
+  line-height: ($line-height / $font-size) + 'em';
+}
+
+@mixin inline-block($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin no-btn {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin visually-view {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border: auto;
+  clip: none;
+  overflow: auto;
+}
+
+@mixin big-btn {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+@mixin submit-btn {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+@mixin form-border {
+  border: 2px solid $br-color-1;
+}
+
+@mixin form-label {
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color-3;
+  text-transform: uppercase;
+}
+
+@mixin form-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-3;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+@mixin pseudo-mark {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 39px;
+  height: 39px;
+  left: 0;
+  top: 0;
+  background: $main-bg-color-1;
+
+  @include form-border
+}
+
+@mixin placeholder {
+  content: "";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 60px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: none;
+  color: $text-color-1;
+  padding-left: 20px;
+  z-index: 2;
+}

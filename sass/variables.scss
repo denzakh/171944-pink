@@ -1,0 +1,44 @@
+
+$body-bg: #ffffff;
+
+$main-bg-color-1: #ffffff;
+$main-bg-color: #283645; // синий
+$main-bg-color-light: #485461;
+$main-bg-color-dark: #000000;
+$header-top-bg-color: rgba(0,0,0,0.3);
+
+$bg-color-block-0: #ffffff;
+$bg-color-block-1: #f2f2f2; // серый
+$bg-color-block-2: #283645;
+
+$text-color-1: #283645; // темный текст
+$text-color-2: #ffffff; // светлый текст
+$text-color-3: #d22856; // розовый
+$text-color-4: #000000; // некоторые заголовки
+
+$color-yes: #3dc644;
+$color-yes-2: #2aab6d;
+$color-no: #f25b26;
+
+$social-br: #e9ebec;
+$social-bg: #ffffff;
+
+$br-color-1: #e5e5e5;
+$br-color-2-inactive: #dddfe0;
+
+$table-cell-width: 278;
+
+
+
+
+// -----Адаптивность------
+
+// Мобильная ширина 320/280
+// Планшет 700/620
+// Компьютер 1200/940
+
+$phone-widths-only: "(max-width: 699px)";
+$tablet-widths: "(min-width: 700px)";
+$desktop-widths: "(min-width: 1200px)";
+
+

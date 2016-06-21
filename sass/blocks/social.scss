@@ -1,0 +1,30 @@
+.social {
+  font-size: 0;
+  padding: 4px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 3px solid $social-br;
+  background-color: $social-bg;
+  border-radius: 50%;
+  font-size: 1rem;
+  margin: 0 6px;
+}
+
+.social__link--tw {
+  background: url('../img/icon-twitter.svg') 50% 50% no-repeat;
+}
+
+.social__link--fb {
+  background: url('../img/icon-facebook.svg') 50% 50% no-repeat;
+}
+
+.social__link--yt {
+  background: url('../img/icon-youtube.svg') 50% 50% no-repeat;
+}
+
+
+
