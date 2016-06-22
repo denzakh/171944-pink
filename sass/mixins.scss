@@ -16,26 +16,45 @@
   }
 }
 
-
-@mixin oblique-angle2 {
+@mixin angle {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-image: url(../img/bg-triangle-white.svg);
-  background-size: cover;
   // outline: 1px solid green;
 }
 
+// @mixin oblique-angle2 {
+//   @include angle
+
+//   left: 0;
+//   width: 100%;
+//   background-image: url(../img/bg-triangle-white.svg);
+//   background-size: cover;
+//   z-index: 2;
+// }
+
 @mixin oblique-angle {
-  content: "";
-  position: absolute;
-  top: 0;
+  @include angle
+
   left: 0;
   width: 100%;
-  background-image: linear-gradient(to top left, $bg-color-block-1 50%, $bg-color-block-0 51% );
-  outline: 1px solid green;
+  background-image: linear-gradient(to top left, $bg-color-block-1 49%, $bg-color-block-0 50% );
+}
+
+@mixin oblique-angle-map-l ($border-sharp: 50%) {
+  @include angle
+
+  left: 0;
+  width: 50%;
+  background-image: linear-gradient(to top right, transparent 49%, $bg-color-block-0 $border-sharp );
+}
+
+@mixin oblique-angle-map-r ($border-sharp: 50%) {
+  @include angle
+
+  right: 0;
+  width: 50%;
+  background-image: linear-gradient(to top left, transparent 49%, $bg-color-block-0 $border-sharp );
 }
 
 @mixin mobile-title {

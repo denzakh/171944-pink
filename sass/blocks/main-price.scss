@@ -104,7 +104,7 @@
 @media #{$tablet-widths} {
 
   .main-price {
-    padding: 93px 40px 25px;
+    padding: 93px 0 25px;
 
     &:before {
       @include oblique-angle
@@ -205,7 +205,7 @@ width: 100%;
 @media #{$desktop-widths} {
 
   .main-price {
-    padding: 154px 130px 50px;
+    padding: 154px 0 50px;
 
     &:before {
       @include oblique-angle

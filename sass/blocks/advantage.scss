@@ -11,6 +11,7 @@
 .advantage__container {
   position: relative;
   padding: 86px 0 282px;
+  background-color: $bg-color-block-1;
 }
 
 .advantage__container:before {
@@ -149,6 +150,7 @@
   width: auto;
   height: auto;
   padding: 0;
+  background-color: $bg-color-block-1;
 }
 
 .advantage__card-wrapper {
@@ -190,11 +192,16 @@
   margin: 25px 28px;
 }
 
+.advantage__effect-container {
+  background: $bg-color-block-1;
+}
+
 .advantage__effect {
+  background: $bg-color-block-1;
   position: relative;
   display: block;
   padding: 116px 40px 116px 365px;
-  background: $bg-color-block-1;
+
 }
 
 .advantage__effect-title {
