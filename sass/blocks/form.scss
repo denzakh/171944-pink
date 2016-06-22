@@ -3,7 +3,7 @@
 }
 
 .form-main__tagline {
-  padding: 45px 20px 18px;
+  padding: 45px 0 18px;
   line-height: 30px;
   text-align: center;
 }
@@ -24,7 +24,7 @@
   .form-main__tagline {
     @include medium-tagline
 
-    padding: 92px 70px 70px;
+    padding: 92px 40px 70px;
   }
 
   .form-main__tagline-onlytab {
@@ -36,4 +36,25 @@
     flex-direction: column;
   }
 
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+  .form .container {
+    margin: 0;
+  }
+
+  .form {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+    // заменить на margin: auto;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

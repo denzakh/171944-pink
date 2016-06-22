@@ -73,12 +73,12 @@
   outline: 1px solid red;
 }
 
-.advantage__card-wrapper {
+.advantage__card-container {
   padding: 0;
   padding-left: 310px;
 }
 
-.advantage__card-wrapper:before {
+.advantage__card-container:before {
   // content: "";
   // position: absolute;
   // width: 100%;
@@ -153,7 +153,7 @@
   background-color: $bg-color-block-1;
 }
 
-.advantage__card-wrapper {
+.advantage__card-container {
   height: auto;
   margin-top: 76px;
   padding: 0;

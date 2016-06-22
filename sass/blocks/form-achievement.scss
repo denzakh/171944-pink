@@ -1,5 +1,5 @@
 
-.achievement {
+.form__section--achievement {
   background-color: $bg-color-block-1;
   padding-bottom: 5px;
 }
@@ -30,7 +30,7 @@
 
 @media #{$tablet-widths} {
 
-  .achievement {
+  .form__section--achievement {
     background-color: $bg-color-block-0;
     order: 4;
   }

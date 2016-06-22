@@ -25,13 +25,17 @@
   display: none;
 }
 
+/////////////// Tablet /////////////////////
+
 @media #{$tablet-widths} {
 
-  .form__part--footer {
-
+  .form__section--footer {
     order: 6;
     padding-top: 48px;
     background-color: none;
+  }
+
+  .form__part--footer {
     display: flex;
     flex-direction: row;
     padding-bottom: 36px;
@@ -39,7 +43,7 @@
 
   .form__btns,
   .form__note {
-    width: 50%;
+    width: 300px;
   }
 
   .form__btns {
@@ -48,8 +52,9 @@
 
   .form__note {
     text-align: right;
-    padding-top: 38px;
+    padding: 38px 0 0;
     font-weight: normal;
   }
+
 }
 

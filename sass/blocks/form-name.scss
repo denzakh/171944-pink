@@ -1,5 +1,5 @@
 
-.form__part--name {
+.form__section--name {
   padding-bottom: 44px;
 }
 
@@ -46,7 +46,7 @@
 
 @media #{$tablet-widths} {
 
-  .form__part--name {
+  .form__section--name {
     padding-bottom: 0;
     order: 1;
   }

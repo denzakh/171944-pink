@@ -1,5 +1,5 @@
 
-.form__part--contact {
+.form__section--contact {
   padding-top: 13px;
   padding-bottom: 54px;
 }
@@ -52,55 +52,55 @@
 
 @media #{$tablet-widths} {
 
-  .form__part--contact {
+  .form__section--contact {
     background-color: none;
     order: 3;
     padding-top: 54px;
     padding-bottom: 52px;
   }
 
-.form__item--contact {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-}
+  .form__item--contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
 
   .form__part--contact .no-mobile-fieldset {
-   padding-top: 20px;
-   padding-bottom: 4px;
+    padding-top: 20px;
+    padding-bottom: 4px;
   }
 
 .form__item--contact label {
-  padding: 10px 20px 20px;
-  position: relative;
-}
+    padding: 10px 20px 20px;
+    position: relative;
+  }
 
 .form__item--contact label:before {
-  top: -61px;
-}
+    top: -61px;
+  }
 
 .form__item--contact-tel label:before {
-  content: "+7 XXX XXX-XX-XX";
+    content: "+7 XXX XXX-XX-XX";
   }
 
 .form__item--contact-email label:before {
-  content: "Введите почту";
+    content: "Введите почту";
   }
 
 .form__item--contact input:focus + label:before {
-  display: none;
-}
+    display: none;
+  }
 
 .form__item--contact label:after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 59px;
-  right: 2px;
-  top: -61px;
-  background-color: $br-color-1;
-  z-index: 2;
-}
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    right: 2px;
+    top: -61px;
+    background-color: $br-color-1;
+    z-index: 2;
+  }
 
 }
 

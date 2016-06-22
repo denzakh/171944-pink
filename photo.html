@@ -12,13 +12,13 @@
   </head>
 
   <body class="no-js">
-    <header class="page-header  page-header--photo  container  page-header--closed">
+    <header class="page-header page-header--photo page-header--closed">
       <div class="page-header__top-line">
-        <div class="wrapper">
-          <div class="page-header__logo">
+        <div class="container page-header__top-line-container">
+          <h1 class="page-header__logo">
             <span class="visually-hidden">Pink</span>
             <img src="img/logo-pink-white-mobile.svg" alt="">
-          </div>
+          </h1>
           <button class="page-header__toggle"></button>
           <nav class="main-nav">
             <ul class="main-nav__list">
@@ -30,8 +30,9 @@
           </nav>
         </div>
       </div>
-
-      <h1 class="page-header__tagline">Фотографии пользователей</h1>
+      <div class="container">
+        <h1 class="page-header__tagline">Фотографии пользователей</h1>
+      </div>
     </header>
 
     <main class="page-photo   container">
@@ -199,25 +200,27 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="">
-      </div>
-      <div class="page-footer__social">
-        <div class="social">
-          <a href="" class="social__link social__link--tw">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-          <a href="" class="social__link social__link--fb">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-          <a href="" class="social__link social__link--yt">
-            <span class="visually-hidden">YouTube</span>
-          </a>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" alt="">
         </div>
-      </div>
-      <div class="page-footer__copyright">
-        <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="visually-hidden">в htmlacademy.ru</span></a>
+        <div class="page-footer__social">
+          <div class="social">
+            <a href="" class="social__link social__link--tw">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+            <a href="" class="social__link social__link--fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a href="" class="social__link social__link--yt">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <a href="http://htmlacademy.ru" class="page-footer__copyright-link">Разработано <span class="visually-hidden">в htmlacademy.ru</span></a>
+        </div>
       </div>
     </footer>
 

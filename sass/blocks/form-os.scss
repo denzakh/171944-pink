@@ -1,4 +1,4 @@
-.form__part--os {
+.form__section--os {
   background-color: $bg-color-block-1;
   padding-top: 36px;
   padding-bottom: 5px;
@@ -24,7 +24,6 @@
   border-radius: 50%;
 }
 
-
 .form__part--os .radio:checked + label:after {
   content: "";
   position: absolute;
@@ -47,14 +46,13 @@
 
 @media #{$tablet-widths} {
 
-  .form__part--os {
+  .form__section--os {
     background-color: none;
     order: 2;
     padding: 0;
     margin-top: -4px;
     background-color: $bg-color-block-0;
   }
-
 
   .form__part-title--os {
     padding: 0;
@@ -71,4 +69,5 @@
 
 
 }
+
 

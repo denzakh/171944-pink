@@ -1,19 +1,19 @@
 
 @mixin padding-section
 {
-    @media #{$phone-widths-only} {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  //   @media #{$phone-widths-only} {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
 
-  @media #{$tablet-widths} {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+  // @media #{$tablet-widths} {
+  //   padding-left: 40px;
+  //   padding-right: 40px;
+  // }
 
-  @media #{$desktop-widths} {
+  // @media #{$desktop-widths} {
 
-  }
+  // }
 }
 
 @mixin angle {
