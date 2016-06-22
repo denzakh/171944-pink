@@ -35,16 +35,43 @@ body > * > *
 
 .container {
   box-sizing: border-box;
-  width: 320px;
+  width: 100%px;
   // margin: 0 auto;
 
   @media #{$tablet-widths} {
-    width: 700px;
+    width: 100%;
   }
 
   @media #{$desktop-widths} {
-    width: 1200px;
+    // width: 1200px;
+    width: 100%;
   }
+}
+
+.wrapper {
+  box-sizing: border-box;
+
+  width: 280px;
+  // заменить на margin: auto;
+  margin-left: 20px;
+  margin-right: auto;
+
+  @media #{$tablet-widths} {
+    width: 620px;
+    // заменить на margin: auto;
+    margin-left: 40px;
+    margin-right: auto;
+  }
+
+  @media #{$desktop-widths} {
+    width: 940px;
+    min-width: 940px;
+    // заменить на margin: auto;
+    margin-left: 130px;
+    // margin-right: auto;
+    outline: 1px solid green;
+  }
+
 }
 
 img {

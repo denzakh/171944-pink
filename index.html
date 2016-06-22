@@ -13,72 +13,84 @@
   <body class="no-js">
     <header class="page-header  container  page-header--closed">
       <div class="page-header__top-line">
-        <h1 class="page-header__logo">
-          <span class="visually-hidden">Pink</span>
-          <img src="img/logo-pink-white-mobile.svg" alt="">
-        </h1>
-        <button class="page-header__toggle"></button>
+        <div class="wrapper page-header__top-line-wrapper">
+          <h1 class="page-header__logo">
+            <span class="visually-hidden">Pink</span>
+            <img src="img/logo-pink-white-mobile.svg" alt="">
+          </h1>
+          <button class="page-header__toggle"></button>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--checked"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="contest.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--checked"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="contest.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
-      </nav>
+
     </header>
 
     <main class="page-main container">
       <section class="intro">
-        <h2 class="visually-hidden">Загрузка</h2>
-        <div class="intro__tagline">Взгляните на жизнь иначе!</div>
-        <a href="" class="intro__download-btn">Скачать приложение</a>
-        <div class="intro__download-apps">
-          <a href="http://www.appstore.com/" class="intro__download-os intro__download-os--app">
-            <img src="img/logo-apple.svg" alt="Download Pink for Apple OS">
-          </a>
-          <a href="http://play.google.com/store?hl=ru" class="intro__download-os intro__download-os--and">
-            <img src="img/logo-android.svg" alt="Download Pink for Android">
-          </a>
-          <a href="http://www.microsoft.com/store/apps" class="intro__download-os intro__download-os--win">
-            <img src="img/logo-microsoft.svg" alt="Download Pink for Windows">
-          </a>
+        <div class="intro__wrapper wrapper">
+          <div class="intro_inner">
+            <h2 class="visually-hidden">Загрузка</h2>
+            <div class="intro__tagline">Взгляните на жизнь иначе!</div>
+            <a href="" class="intro__download-btn">Скачать приложение</a>
+            <div class="intro__download-apps">
+              <a href="http://www.appstore.com/" class="intro__download-os intro__download-os--app">
+                <img src="img/logo-apple.svg" alt="Download Pink for Apple OS">
+              </a>
+              <a href="http://play.google.com/store?hl=ru" class="intro__download-os intro__download-os--and">
+                <img src="img/logo-android.svg" alt="Download Pink for Android">
+              </a>
+              <a href="http://www.microsoft.com/store/apps" class="intro__download-os intro__download-os--win">
+                <img src="img/logo-microsoft.svg" alt="Download Pink for Windows">
+              </a>
+            </div>
+            <div class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+          </div>
         </div>
-        <div class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </section>
 
       <section class="advantage">
-        <h2 class="advantage__title visually-hidden">Преимущества нашей программы</h2>
-        <div class="advantage__tagline">
+
+        <div class="advantage__tagline wrapper">
+           <h2 class="advantage__title visually-hidden">Преимущества нашей программы</h2>
           <p>Устали от серости мегаполиса?</p>
           <p>Нам есть, что вам предложить!</p>
         </div>
-        <div class="advantage__wrapper">
-          <div class="advantage__card  advantage__card--mood">
-            <b class="advantage__title">Поднимает настроение</b>
-            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="advantage__card advantage__card--change">
-            <b class="advantage__title">Меняет мир вокруг</b>
-            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="advantage__card advantage__card--friends">
-            <b class="advantage__title">Заводит новых друзей</b>
-            <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+
+        <div class="advantage__container">
+          <div class="wrapper advantage__card-wrapper">
+            <div class="advantage__card  advantage__card--mood">
+              <b class="advantage__title">Поднимает настроение</b>
+              <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="advantage__card advantage__card--change">
+              <b class="advantage__title">Меняет мир вокруг</b>
+              <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="advantage__card advantage__card--friends">
+              <b class="advantage__title">Заводит новых друзей</b>
+              <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
         </div>
-        <div class="advantage__effect">
+        <div class="advantage__effect wrapper">
           <b class="advantage__effect-title"><span>Эффект</span> на 24 часа!</b>
           <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится
           целые сутки!</p>
           <a href="" class="advantage__know-more">Узнать больше об исследовании</a>
         </div>
+
       </section>
 
       <section class="main-review">
         <h2 class="main-review__title visually-hidden">Отзывы</h2>
-        <div class="main-review__slider">
+        <div class="main-review__slider wrapper">
           <blockquote class="main-review__card">
             <cite class="main-review__info">
               <b class="main-review__author">Николай Петров</b>

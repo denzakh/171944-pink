@@ -4,6 +4,8 @@
  position: absolute;
  width: 100%;
  z-index: 10;
+ top: 70px;
+ left: 0;
 }
 
 .main-nav__list {
@@ -30,14 +32,23 @@
   color: #ffffff;
 }
 
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+  .main-nav {
+    top: 110px;
+  }
+}
+
+
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
 
 .main-nav {
+  position: static;
   width: auto;
-  top: 45px;
-  right: 130px;
 }
 
 .main-nav__list {

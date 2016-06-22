@@ -17,7 +17,7 @@
 }
 
 
-@mixin oblique-angle {
+@mixin oblique-angle2 {
   content: "";
   position: absolute;
   top: 0;
@@ -26,6 +26,16 @@
   background-image: url(../img/bg-triangle-white.svg);
   background-size: cover;
   // outline: 1px solid green;
+}
+
+@mixin oblique-angle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to top left, $bg-color-block-1 50%, $bg-color-block-0 51% );
+  outline: 1px solid green;
 }
 
 @mixin mobile-title {
