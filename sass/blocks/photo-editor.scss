@@ -1,11 +1,11 @@
 
 .photo-editor {
-  padding: 20px;
+  padding: 20px 0;
   background-color: $bg-color-block-1;
 }
 
 .page-photo__editor-tagline {
-  padding: 22px 20px 42px ;
+  padding: 22px 0 42px ;
   line-height: 30px;
   text-align: center;
 }
@@ -25,7 +25,7 @@
 
 .photo-editor__ranges {
   position: relative;
-  padding: 110px 20px 40px;
+  padding: 110px 0 40px;
 }
 
 .photo-editor__range {
@@ -85,7 +85,7 @@
 @media #{$tablet-widths} {
 
 .page-photo__editor-tagline {
-  padding: 18px 20px 65px;
+  padding: 18px 0 65px;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@
 .photo-editor {
   display: flex;
   justify-content: space-between;
-  padding: 58px 40px;
+  padding: 58px 0;
 }
 
 .photo-editor * {
@@ -179,7 +179,57 @@
 }
 
 
+/////////////// Desktop /////////////////////
 
+@media #{$desktop-widths} {
+
+  .photo-editor {
+    padding: 60px 60px 60px 80px;
+  }
+
+  .photo-editor__preference {
+    width: 410px;
+    padding: 0;
+  }
+
+.photo-editor__ranges {
+  width: 100%;
+  margin-top: -18px;
+}
+
+.photo-editor__range {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  margin: 0 auto 0;
+}
+
+.photo-editor__range .photo-editor__range-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.photo-editor__range input {
+  display: inline-block;
+  margin: 0 30px;
+  padding: 0;
+  width: 290px;
+  height: 24px;
+}
+
+.photo-editor__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.photo-editor__button {
+  margin: 0;
+  width: 180px;
+}
+
+}
 
 
 

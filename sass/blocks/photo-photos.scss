@@ -9,9 +9,9 @@
 .page-photo__photos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-content: space-between;
-  padding: 40px 30px;
+  padding: 40px 0;
 }
 
 

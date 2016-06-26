@@ -11,7 +11,7 @@
 }
 
 .page-header--photo {
-  min-height: 236px;
+  min-height: 240px;
   background-size: 220%;
 }
 
@@ -175,6 +175,11 @@
 
   .page-header--form .page-header__tagline {
     margin: 60px auto 0;
+  }
+
+  .page-header--photo .page-header__tagline {
+    margin: 60px auto 0;
+    padding: 0 160px;
   }
 
 }
