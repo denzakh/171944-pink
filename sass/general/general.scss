@@ -19,18 +19,18 @@ body {
 }
 
 
-body > * > *
-{
-  outline: 1px solid red;
+// body > * > *
+// {
+//   outline: 1px solid red;
 
-  & > * {
-    outline: 1px solid blue;
+//   & > * {
+//     outline: 1px solid blue;
 
-    & * {
-      outline: 1px dotted gray;
-    }
-  }
-}
+//     & * {
+//       outline: 1px dotted gray;
+//     }
+//   }
+// }
 
 
 .container {
@@ -54,7 +54,7 @@ body > * > *
     // заменить на margin: auto;
     margin-left: 130px;
     // margin-right: auto;
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 
 }

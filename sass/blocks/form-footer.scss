@@ -61,8 +61,20 @@
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
-    .form__section--footer {
+  .form__section--footer {
     padding-bottom: 0;
+  }
+
+  .form__part--footer {
+    content-justify: space-between;
+  }
+
+  .form__requre-only-desktop {
+    display: inline;
+  }
+
+  .form__note {
+    flex-grow: 3;
   }
 
 }

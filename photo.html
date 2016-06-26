@@ -171,38 +171,43 @@
         </section>
       </div>
 
-      <section class="page-photo__editor container">
-        <h2 class="visually-hidden">Загрузка фото</h2>
-        <div class="page-photo__editor-tagline">
-          <p>Затмите их всех!</p>
-          <p>Выкладывайте все, что накопилось в телефоне!</p>
+      <section class="page-photo__editor">
+        <div class="container">
+          <h2 class="visually-hidden">Загрузка фото</h2>
+          <div class="page-photo__editor-tagline">
+            <p>Затмите их всех!</p>
+            <p>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
         </div>
         <form class="photo-editor" action="edit.php" method="post" >
-          <div class="photo-editor__photo">
-            <img src="img/photo-7-mobile@1x.jpg" alt="Загружаемое фото">
-          </div>
-
-          <div class="photo-editor__preference">
-            <div class="photo-editor__ranges">
-              <div class="photo-editor__range  photo-editor__range-1">
-                <div class="photo-editor__range-icon"><label for="editor-range-1" class="visually-hidden">Обрезать</label></div>
-                <input type="range" id="editor-range-1" class="active">
-              </div>
-              <div class="photo-editor__range  photo-editor__range-2">
-                <div class="photo-editor__range-icon"><label for="editor-range-2" class="visually-hidden">Цветность</label></div>
-                <input type="range" id="editor-range-2" class="">
-              </div>
-              <div class="photo-editor__range  photo-editor__range-3">
-                <div class="photo-editor__range-icon"><label for="editor-range-3" class="visually-hidden">Яркость</label></div>
-                <input type="range" id="editor-range-3" class="">
-              </div>
+          <div class="container  page-photo__editor-container">
+            <div class="photo-editor__photo">
+              <img src="img/photo-7-mobile@1x.jpg" alt="Загружаемое фото">
             </div>
-            <div class="photo-editor__buttons">
-              <input type="submit" value="Запостить" class="photo-editor__button ">
-              <input type="reset"  value="Отмена" class="photo-editor__button" disabled>
+
+            <div class="photo-editor__preference">
+              <div class="photo-editor__ranges">
+                <div class="photo-editor__range  photo-editor__range-1">
+                  <div class="photo-editor__range-icon"><label for="editor-range-1" class="visually-hidden">Обрезать</label></div>
+                  <input type="range" id="editor-range-1" class="active">
+                </div>
+                <div class="photo-editor__range  photo-editor__range-2">
+                  <div class="photo-editor__range-icon"><label for="editor-range-2" class="visually-hidden">Цветность</label></div>
+                  <input type="range" id="editor-range-2" class="">
+                </div>
+                <div class="photo-editor__range  photo-editor__range-3">
+                  <div class="photo-editor__range-icon"><label for="editor-range-3" class="visually-hidden">Яркость</label></div>
+                  <input type="range" id="editor-range-3" class="">
+                </div>
+              </div>
+              <div class="photo-editor__buttons">
+                <input type="submit" value="Запостить" class="photo-editor__button ">
+                <input type="reset"  value="Отмена" class="photo-editor__button" disabled>
+              </div>
             </div>
           </div>
         </form>
+
       </section>
 
     </main>
