@@ -4,9 +4,8 @@
   padding-bottom: 5px;
 }
 
-.form__part--achievement .form__part-title {
-
-  padding: 36px 20px 40px;
+.form__part-title-box--achievement {
+    padding: 35px 0 40px;
 }
 
 .achievement label {
@@ -18,7 +17,6 @@
 .achievement label:before {
   @include pseudo-mark
 }
-
 
 .achievement__checkbox:checked + label:before {
   background: $bg-color-block-0 url('../img/icon-yes-pink.svg') 93% 50% no-repeat;
@@ -35,11 +33,48 @@
     order: 4;
   }
 
-  .achievement .no-mobile-fieldset {
-    padding-bottom: 0;
+  .form__part--achievement {
+    @include form-part-tab
+    padding: 52px 60px 5px;
+  }
+
+  .form__item--achievement {
+   margin: 0;
   }
 
   .form__item--achievement label {
     padding-left: 60px;
+    padding-right: 50px;
   }
 }
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+  .form__section--achievement {
+    background-color: $bg-color-block-0;
+    order: 4;
+  }
+
+  .form__part--achievement {
+    @include form-part-tab
+    padding: 55px 0 0;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  .form__item--achievement {
+   padding-left: 10px;
+   margin: 0;
+  }
+
+  .form__item--achievement label {
+    padding-left: 60px;
+    padding-right: 50px;
+  }
+}
+

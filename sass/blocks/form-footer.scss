@@ -31,14 +31,14 @@
 
   .form__section--footer {
     order: 6;
-    padding-top: 48px;
+    padding-top: 0;
+    padding-bottom: 36px;
     background-color: none;
   }
 
   .form__part--footer {
     display: flex;
     flex-direction: row;
-    padding-bottom: 36px;
   }
 
   .form__btns,
@@ -58,3 +58,11 @@
 
 }
 
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+    .form__section--footer {
+    padding-bottom: 0;
+  }
+
+}

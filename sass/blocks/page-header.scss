@@ -15,8 +15,8 @@
   background-size: 220%;
 }
 
-.page-header--photo {
-  min-height: 236px;
+.page-header--form {
+  min-height: 240px;
   background-size: 220%;
 }
 
@@ -126,6 +126,10 @@
     color: $text-color-2;
   }
 
+  .page-header--form .page-header__tagline {
+    margin: 68px auto 0;
+  }
+
 }
 
 
@@ -167,6 +171,10 @@
 
   .page-header--closed .main-nav__list {
     display: block;
+  }
+
+  .page-header--form .page-header__tagline {
+    margin: 60px auto 0;
   }
 
 }

@@ -1,16 +1,11 @@
 
 .form__section--emotion {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
-.emotion .form__part-title {
-  @include form-title
-
-  position: relative;
-  text-align: center;
-  margin: 0;
-  padding: 0 0 15px;
+.emotion .form__part-title-box {
+  padding-bottom: 5px;
 }
 
 .form__item--emotion-box {
@@ -18,6 +13,7 @@
 }
 
 .emotion__textarea {
+  @include  form-border
   box-sizing: border-box;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -30,7 +26,7 @@
 
 .emotion__placeholder {
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: 20px;
   right: 20px;
   z-index: 2;
@@ -49,11 +45,12 @@
     order: 5;
     margin: 0;
     padding-top: 50px;
+    padding-bottom: 48px;
   }
 
-  .form__part--emotion .no-mobile-fieldset {
-   padding-top: 30px;
-   padding-bottom: 45px;
+  .form__part--emotion {
+    @include form-part-tab
+    padding: 45px 60px 45px;
   }
 
   .form__part--emotion textarea {
@@ -67,3 +64,21 @@
 
 }
 
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+  .form__section--emotion {
+    margin: 0;
+    padding-top: 52px;
+    padding-bottom: 48px;
+  }
+
+  .form__part--emotion {
+    padding: 45px 60px 35px;
+  }
+
+  .form__part--emotion textarea {
+    height: 125px;
+  }
+}

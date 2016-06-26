@@ -175,6 +175,7 @@
 
 @mixin form-border {
   border: 2px solid $br-color-1;
+  border-radius: 3px;
 }
 
 @mixin form-label {
@@ -184,14 +185,33 @@
   text-transform: uppercase;
 }
 
+@mixin form-part {
+  border: 2px solid $br-color-1;
+  background-color: $bg-color-block-0;
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+@mixin form-part-tab {
+  @include form-part
+  padding: 50px 60px 20px;
+}
+
 @mixin form-title {
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 18px;
   color: $text-color-3;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin form-title-tab {
+  @include form-title
+  padding: 0 35px;
 }
 
 @mixin pseudo-mark {
@@ -222,3 +242,4 @@
   padding-left: 20px;
   z-index: 2;
 }
+
