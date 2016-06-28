@@ -8,14 +8,15 @@
 
 .photo-card__photo {
   width: 280px;
-  height: 180px;
+  min-height: 180px;
   overflow: hidden;
 }
 
-.photo-card__photo {
-  height: 100%;
-  width: auto;
-}
+  .photo-card__photo img {
+    width: 100%;
+    height: auto;
+  }
+
 
 .photo-desc {
   padding: 18px;
@@ -58,18 +59,12 @@
     margin: 10px 0;
     width: 300px;
     min-height: 455px;
-    outline: 1px solid red;
   }
 
   .photo-card__photo {
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     overflow: hidden;
-  }
-
-  .photo-card__photo img {
-    height: 100%;
-
   }
 
   .photo-desc {
@@ -80,11 +75,10 @@
     padding: 26px 28px 22px;
     background-color: $bg-color-block-1;
     line-height: 24px;
-    outline: none;
   }
 
   .photo-desc--panorama {
-    padding: 24px 0;
+    padding: 24px;
   }
 
   .photo-desc__text {
@@ -105,10 +99,13 @@
 
 @media #{$desktop-widths} {
 
-  .photo-desc--panorama {
-    padding: 20px 30px;
+  .photo-card {
+    min-height: 555px;
+    margin: 26px 0;
   }
 
+  .photo-desc--panorama {
+  }
 
 }
 

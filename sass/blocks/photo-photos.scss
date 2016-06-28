@@ -12,3 +12,12 @@
   }
 
 }
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+  .page-photo__photos {
+    padding: 25px 0 15px;
+  }
+}
