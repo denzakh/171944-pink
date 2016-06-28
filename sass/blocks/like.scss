@@ -4,7 +4,6 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  outline: 1px solid red;
 }
 
 .like__indicator {
@@ -17,9 +16,10 @@
 
 .like__get-like {
   display: block;
-  width: 12px;
-  height: 12px;
-  border: 1px solid #000;
+  width: 13px;
+  height: 13px;
+  background: no-repeat url("../img/icon-heart.svg");
+  background-size: cover;
 }
 
 
@@ -38,4 +38,12 @@
     margin-right: 18px;
   }
 
+}
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+  .like--photo-card {
+    padding-right: 5px;
+  }
 }
