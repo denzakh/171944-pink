@@ -26,7 +26,7 @@
 .main-price__table td {
   box-sizing: border-box;
   border: 2px solid $br-color-1;
-  width: $table-cell-width * 1px;
+  width: 278px;
   height: 61px;
   border-top: none;
   border-bottom: none;
@@ -45,6 +45,8 @@
 .main-price__table td {
   border: 2px solid $br-color-1;
   background-color: $bg-color-block-0;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .main-price__table .main-price__first-cell {
@@ -79,6 +81,10 @@
   width: 100%;
 }
 
+.main-price__legend--mobile {
+  display: none;
+}
+
 .main-price__table .foo-yes {
   background: $bg-color-block-0 url('../img/icon-yes.svg') 93% 50% no-repeat;
   background-size: 30px;
@@ -97,6 +103,43 @@
   @include inline-block
   @include no-btn
   @include indicator
+}
+
+.main-price__indicator.active {
+  @include indicator-active
+}
+
+
+@media #{$phone-widths-only} {
+
+  .main-price__slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main-price__table {
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0;
+  }
+
+  .main-price__table.active-2 {
+    margin-left: -278px;
+  }
+
+  .main-price__table.active-3 {
+    margin-left: -556px;
+  }
+
+  .main-price__legend--mobile {
+    display: inline-block;
+  }
+
+  .main-price__first-cell,
+  .main-price__legend-cell {
+    display: none;
+  }
+
 }
 
 /////////////// Tablet /////////////////////

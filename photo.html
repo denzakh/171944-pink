@@ -16,23 +16,25 @@
       <div class="page-header__top-line">
         <div class="container page-header__top-line-container">
           <h1 class="page-header__logo">
-            <span class="visually-hidden">Pink</span>
-            <picture>
-              <!-- десктоп -->
-              <source
-              media="(min-width: 1200px)"
-              srcset="img/logo-pink-white-desktop.svg">
-              <!-- планшет -->
-              <source
-              media="(min-width: 700px)"
-              srcset="img/logo-pink-white-tablet.svg">
-              <!-- мобильный -->
-              <source
-              media="(max-width: 699px)"
-              srcset="img/logo-pink-white-mobile.svg">
-              <!-- img -->
-              <img src="img/logo-pink-white-mobile.svg" alt="">
-            </picture>
+            <a href="index.html">
+              <span class="visually-hidden">Pink</span>
+              <picture>
+                <!-- десктоп -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="img/logo-pink-white-desktop.svg">
+                <!-- планшет -->
+                <source
+                media="(min-width: 700px)"
+                srcset="img/logo-pink-white-tablet.svg">
+                <!-- мобильный -->
+                <source
+                media="(max-width: 699px)"
+                srcset="img/logo-pink-white-mobile.svg">
+                <!-- img -->
+                <img src="img/logo-pink-white-mobile.svg" alt="">
+              </picture>
+            </a>
           </h1>
           <button class="page-header__toggle"></button>
           <nav class="main-nav">
@@ -329,17 +331,26 @@
 <!-- возможно, нужно сделать инлайн css спрайт для смены цвета в мобильном режиме и добавить скрипт переключения -->
             <div class="photo-editor__preference">
               <div class="photo-editor__ranges">
-                <div class="photo-editor__range  photo-editor__range-1">
+                <div class="photo-editor__range  photo-editor__range-1 active">
                   <div class="photo-editor__range-icon"><label for="editor-range-1" class="visually-hidden">Обрезать</label></div>
-                  <input type="range" id="editor-range-1" class="active">
+                  <input type="range" id="editor-range-1" class="hide-range">
+                  <div class="photo-editor__pseudo-range-box">
+                    <div class="photo-editor__pseudo-range" id="pseudo-range-1"></div>
+                  </div>
                 </div>
                 <div class="photo-editor__range  photo-editor__range-2">
                   <div class="photo-editor__range-icon inactive"><label for="editor-range-2" class="visually-hidden">Цветность</label></div>
-                  <input type="range" id="editor-range-2" class="">
+                  <input type="range" id="editor-range-2" class="hide-range">
+                  <div class="photo-editor__pseudo-range-box">
+                    <div class="photo-editor__pseudo-range" id="pseudo-range-2"></div>
+                  </div>
                 </div>
                 <div class="photo-editor__range  photo-editor__range-3">
                   <div class="photo-editor__range-icon inactive"><label for="editor-range-3" class="visually-hidden">Яркость</label></div>
-                  <input type="range" id="editor-range-3" class="">
+                  <input type="range" id="editor-range-3" class="hide-range">
+                  <div class="photo-editor__pseudo-range-box">
+                    <div class="photo-editor__pseudo-range" id="pseudo-range-3"></div>
+                  </div>
                 </div>
               </div>
               <div class="photo-editor__buttons">

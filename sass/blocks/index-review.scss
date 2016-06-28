@@ -18,6 +18,10 @@
   @include indicator
 }
 
+.main-review__indicator.active {
+  @include indicator-active
+}
+
 .main-review__slider {}
 
 .main-review__card {
@@ -64,10 +68,6 @@
 
     height: 58px;
   }
-}
-
-.main-review * {
-  outline: 1px solid red;
 }
 
 .main-review__card {

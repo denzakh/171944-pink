@@ -26,7 +26,6 @@ $social-bg: #ffffff;
 $br-color-1: #e5e5e5;  // серый
 $br-color-2-inactive: #dddfe0;  // серый
 
-$table-cell-width: 278;
 
 
 
@@ -41,4 +40,5 @@ $phone-widths-only: "(max-width: 699px)";
 $tablet-widths: "(min-width: 700px)";
 $desktop-widths: "(min-width: 1200px)";
 
-
+$desktop-max-widths: 1400px;
+$tablet-max-widths: 850px;

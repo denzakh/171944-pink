@@ -1,6 +1,5 @@
 
 .page-photo {
-  outline: 1px solid blue;
   background-color: $main-bg-color-1;
 }
 
@@ -16,6 +15,7 @@
 
 .photo-intro__panorama-photo {
   position: relative;
+  margin: 0 auto;
 }
 
 .photo-intro__panorama-title {
@@ -34,6 +34,7 @@
 
 .photo-intro__panorama-photo img {
   width: 100%;
+  height: auto;
 }
 
 /////////////// Tablet /////////////////////
@@ -58,6 +59,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    max-width: $tablet-max-widths;
   }
 
   .photo-intro__panorama-title {
@@ -80,6 +82,12 @@
     @include medium-tagline
 
     padding: 92px 60px 90px;
+  }
+
+  .photo-intro__panorama-photo {
+    max-width: $desktop-max-widths;
+    position: relative;
+    margin: 0 auto;
   }
 
   .photo-desc--panorama {
