@@ -1,18 +1,14 @@
 
-
-
-
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
 
-.page-photo__photos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-  padding: 40px 30px;
-}
-
+  .page-photo__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 40px 0;
+  }
 
 }

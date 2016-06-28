@@ -4,12 +4,8 @@
   background-color: $main-bg-color-1;
 }
 
-.photo-intro {
-
-}
-
 .photo-intro__tagline {
-  padding: 45px 20px 50px;
+  padding: 45px 0 50px;
   line-height: 30px;
   text-align: center;
 }
@@ -47,7 +43,7 @@
   .photo-intro__tagline {
     @include medium-tagline
 
-    padding: 92px 100px 78px;
+    padding: 92px 60px 78px;
   }
 
   .photo-intro__tagline p {
@@ -64,16 +60,30 @@
     text-align: center;
   }
 
-  .photo-intro__panorama-photo img {
-    width: auto;
-    height: 508px;
-    // непонятно, как выравнивать
-  }
-
   .photo-intro__panorama-title {
     position: absolute;
     top: 55px;
     right: 40px;
+  }
+
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+  .vanishing {
+    display: inline;
+  }
+
+  .photo-intro__tagline {
+    @include medium-tagline
+
+    padding: 92px 60px 90px;
+  }
+
+  .photo-desc--panorama {
+    padding: 20px 30px;
   }
 
 }

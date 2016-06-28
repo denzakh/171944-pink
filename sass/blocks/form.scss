@@ -3,7 +3,7 @@
 }
 
 .form-main__tagline {
-  padding: 45px 20px 18px;
+  padding: 45px 0 18px;
   line-height: 30px;
   text-align: center;
 }
@@ -17,6 +17,28 @@
   line-height: 30px;
 }
 
+.form__item input {
+  @include form-border
+
+  box-sizing: border-box;
+  background: $main-bg-color-1;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  color: $text-color-1;
+}
+
+.form__part-title-box {
+  text-align: center;
+}
+
+.form__part-title {
+  @include form-title
+}
+
+
+
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
@@ -24,7 +46,7 @@
   .form-main__tagline {
     @include medium-tagline
 
-    padding: 92px 70px 70px;
+    padding: 92px 40px 70px;
   }
 
   .form-main__tagline-onlytab {
@@ -35,5 +57,73 @@
     display: flex;
     flex-direction: column;
   }
+
+
+.form__section .form__part-title-box {
+ padding: 0;
+}
+
+.form__part-title-box {
+  position: absolute;
+  width: 100%;
+  top: -8px;
+}
+
+.form__part-title {
+  background-color: $bg-color-block-0;
+}
+
+.form__part-title {
+  @include form-title-tab
+}
+
+
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+  .form-main__tagline {
+    @include medium-tagline
+
+    padding: 92px 80px 70px;
+  }
+
+  .form .container {
+    margin: 0;
+    // width: 100%;
+  }
+
+  .form {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+    // заменить на margin: auto;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+.form__item input {
+  @include form-border
+
+  box-sizing: border-box;
+  background: $main-bg-color-1;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  color: $text-color-1;
+}
+
+  .form-main__tagline-onlytab {
+    display: inline;
+  }
+
+
 
 }

@@ -19,32 +19,44 @@ body {
 }
 
 
-body > * > *
-{
-  outline: 1px solid red;
+// body > * > *
+// {
+//   outline: 1px solid red;
 
-  & > * {
-    outline: 1px solid blue;
+//   & > * {
+//     outline: 1px solid blue;
 
-    & * {
-      outline: 1px dotted gray;
-    }
-  }
-}
+//     & * {
+//       outline: 1px dotted gray;
+//     }
+//   }
+// }
 
 
 .container {
   box-sizing: border-box;
-  width: 320px;
-  // margin: 0 auto;
+  position: relative;
+
+  width: 280px;
+  // заменить на margin: auto;
+  margin-left: 20px;
+  margin-right: auto;
 
   @media #{$tablet-widths} {
-    width: 700px;
+    width: 620px;
+    // заменить на margin: auto;
+    margin-left: 40px;
+    margin-right: auto;
   }
 
   @media #{$desktop-widths} {
-    width: 1200px;
+    width: 940px;
+    // заменить на margin: auto;
+    margin-left: 130px;
+    // margin-right: auto;
+    // outline: 1px solid green;
   }
+
 }
 
 img {

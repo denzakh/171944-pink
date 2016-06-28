@@ -1,9 +1,11 @@
-
 .intro {
   background-color: $main-bg-color;
-  padding: 26px 20px;
-  text-align: center;
   color: $text-color-2;
+}
+
+.intro_inner {
+  padding: 26px 0;
+  text-align: center;
 }
 
 .intro__download-btn {
@@ -44,7 +46,7 @@
 
 @media #{$tablet-widths} {
 
-  .intro {
+  .intro_inner {
     position: absolute;
     left: 40px;
     top: 202px;
@@ -81,10 +83,17 @@
 
 @media #{$desktop-widths} {
 
-  .intro {
+  .intro__container {
+    position: relative;
+  }
+
+  .intro_inner {
     position: absolute;
-    left: 130px;
-    top: 215px;
+    top: -636px;
+    left: 0;
+    // left: 130px;
+    // top: 215px;
+    margin: 0 auto;
   }
 
   .intro__tagline {
