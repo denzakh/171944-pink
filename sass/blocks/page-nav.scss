@@ -15,6 +15,7 @@
 
 .main-nav__item {
   list-style-type: none;
+  background-color: $main-bg-color;
 }
 
 .main-nav__item a {
@@ -29,7 +30,16 @@
   background-color: $main-bg-color;
   border-top: 1px solid $main-bg-color-light;
   border-bottom: 1px solid $main-bg-color-dark;
-  color: #ffffff;
+  color: $text-color-2;
+}
+
+.main-nav__item a:hover {
+  color: $text-color-3;
+}
+
+.main-nav__item a:active {
+  color: $text-color-2;
+  opacity: 0.3;
 }
 
 
@@ -59,6 +69,7 @@
 .main-nav__item {
   display: inline-flex;
   margin-left: 77px;
+  background-color: transparent;
 }
 
 .main-nav__item a {
@@ -69,8 +80,37 @@
   text-transform: none;
   background-color: transparent;
   border: none;
-  padding: 0;
+  border-bottom: 2px solid transparent;
   margin: 0;
+  padding: 15px 0;
+  margin-bottom: -17px;
 }
+
+.main-nav__item--checked a {
+  border-bottom: 2px solid $text-color-2;
+}
+
+.main-nav__item--checked a:hover {
+  border-bottom: 2px solid $text-color-3;
+}
+
+// .main-nav__item--checked a:before {
+//   content: "";
+//   position: absolute;
+//   width: 10%;
+//   height: 2px;
+//   bottom: 35px;
+//   background-color: $text-color-2;
+// }
+
+.main-nav__item a:hover {
+  color: $text-color-3;
+}
+
+.main-nav__item a:active {
+  color: $text-color-2;
+  opacity: 0.3;
+}
+
 
 }

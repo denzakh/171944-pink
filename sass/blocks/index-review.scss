@@ -18,9 +18,20 @@
   @include indicator
 }
 
-.main-review__indicator.active {
+.main-review__indicator.active,
+.main-review__indicator.active:hover,
+.main-review__indicator.active:active {
   @include indicator-active
 }
+
+.main-review__indicator:hover {
+  @include indicator-hover
+}
+
+.main-review__indicator:active {
+  @include indicator-press
+}
+
 
 .main-review__slider {}
 

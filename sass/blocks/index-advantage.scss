@@ -42,6 +42,13 @@
   display: none;
 }
 
+.advantage__effect a,
+.advantage__effect a:hover,
+.advantage__effect a:active,
+.advantage__effect a:visited {
+  color: $text-color-3;
+}
+
 @media (min-resolution: 1.5dppx) {
 
   .advantage__container {

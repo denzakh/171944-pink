@@ -106,9 +106,21 @@
   @include indicator
 }
 
-.main-price__indicator.active {
+.main-price__indicator.active,
+.main-price__indicator.active:hover,
+.main-price__indicator.active:active {
   @include indicator-active
 }
+
+.main-price__indicator:hover {
+  @include indicator-hover
+}
+
+.main-review__indicator:active {
+  @include indicator-press
+}
+
+
 
 .hit {
   overflow: hidden;
