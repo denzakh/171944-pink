@@ -27,9 +27,6 @@ $br-color-1: #e5e5e5;  // серый
 $br-color-2-inactive: #dddfe0;  // серый
 
 
-
-
-
 // -----Адаптивность------
 
 // Мобильная ширина 320/280
@@ -42,3 +39,7 @@ $desktop-widths: "(min-width: 1200px)";
 
 $desktop-max-widths: 1400px;
 $tablet-max-widths: 850px;
+
+$mobile-inner-width: 320px;
+$tablet-inner-width: 620px;
+$desktop-inner-width: 940px;

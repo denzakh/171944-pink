@@ -35,6 +35,7 @@
 }
 
 .main-price__table th {
+  position: relative;
   height: 97px;
   padding: 0 25px;
   background-color: $bg-color-block-2;
@@ -109,6 +110,27 @@
   @include indicator-active
 }
 
+.hit {
+  overflow: hidden;
+  position: relative;
+}
+
+.hit:before {
+  content: "ХИТ";
+  position: absolute;
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 6px;
+  font-weight: normal;
+  width: 100px;
+  background-color: $text-color-3;
+  сolor: #ffffff;
+  top: 8px;
+  left: -30px;
+  z-index: 5;
+  transform: rotate(-45deg);
+}
 
 @media #{$phone-widths-only} {
 
@@ -240,6 +262,10 @@ width: 100%;
   background-size: 26px;
 }
 
+.hit:before {
+  top: 7px;
+  left: -38px;
+}
 
 }
 
@@ -277,6 +303,12 @@ font-size: 18px;
 
 .main-price__table .main-price__legend-cell {
   padding-left: 20px;
+}
+
+.hit:before {
+  padding: 6px;
+  top: 10px;
+  left: -30px;
 }
 
 }
