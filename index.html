@@ -11,24 +11,18 @@
     </script>
   </head>
   <body class="no-js">
-    <header class="page-header page-header--closed">
+    <header class="page-header page-header--index page-header--closed">
       <div class="page-header__top-line">
         <div class="container page-header__top-line-container">
           <h1 class="page-header__logo">
             <span class="visually-hidden">Pink</span>
             <picture>
               <!-- десктоп -->
-              <source
-              media="(min-width: 1200px)"
-              srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 1200px)"srcset="img/logo-pink-white-desktop.svg">
               <!-- планшет -->
-              <source
-              media="(min-width: 700px)"
-              srcset="img/logo-pink-white-tablet.svg">
+              <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
               <!-- мобильный -->
-              <source
-              media="(max-width: 699px)"
-              srcset="img/logo-pink-white-mobile.svg">
+              <source media="(max-width: 699px)" srcset="img/logo-pink-white-mobile.svg">
               <!-- img -->
               <img src="img/logo-pink-white-mobile.svg" alt="">
             </picture>
@@ -116,7 +110,7 @@
             </bloquote>
           </div>
           <div class="main-review__indicators">
-            <button class="main-review__indicator"  id="review-1" ></button>
+            <button class="main-review__indicator active"  id="review-1" ></button>
             <button class="main-review__indicator"  id="review-2" ></button>
             <button class="main-review__indicator"  id="review-3" ></button>
           </div>
@@ -128,7 +122,7 @@
           <h2 class="main-price__title visually-hidden">Цены</h2>
 
           <div class="main-price__slider">
-            <table class="main-price__table main-price__table--2">
+            <table class="main-price__table  active-2">
               <tr>
                 <th class="main-price__first-cell">
                   Тариф
@@ -137,7 +131,7 @@
                   <b class="main-price__price-name">База</b>
                   <span class="main-price__price">1,99 USD</span>
                 </th>
-                <th>
+                <th class="hit">
                   <b class="main-price__price-name">Стандарт</b>
                   <span class="main-price__price">3,99 USD</span>
                 </th>
@@ -150,32 +144,57 @@
                 <td class="main-price__legend-cell">
                   <span class="main-price__legend main-price__legend--2">Розовый фильтр</span>
                 </td>
-                <td class="foo-yes"><span class="visually-hidden">Да</span></td>
-                <td class="foo-yes"><span class="visually-hidden">Да</span></td>
-                <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+                <td class="foo-yes">
+                  <span class="main-price__legend main-price__legend--mobile">Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="foo-yes">
+                  <span class="main-price__legend main-price__legend--mobile">Розовый фильтр</span><span class="visually-hidden">Да</span>
+                </td>
+                <td class="foo-yes">
+                  <span class="main-price__legend main-price__legend--mobile">Розовый фильтр</span><span class="visually-hidden">Да</span>
+                </td>
               </tr>
               <tr>
                 <td class="main-price__legend-cell">
-                  <span class="main-price__legend main-price__legend--2">Смайлики</span>
+                  <span class="main-price__legend">Смайлики</span>
                 </td>
-                <td class="foo-no"><span class="visually-hidden">Нет</span></td>
-                <td class="foo-yes"><span class="visually-hidden">Да</span></td>
-                <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+                <td class="foo-no">
+                  <span class="main-price__legend main-price__legend--mobile">Смайлики</span>
+                  <span class="visually-hidden">Нет</span>
+                </td>
+                <td class="foo-yes">
+                  <span class="main-price__legend main-price__legend--mobile">Смайлики</span>
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="foo-yes">
+                  <span class="main-price__legend main-price__legend--mobile">Смайлики</span>
+                  <span class="visually-hidden">Да</span>
+                </td>
               </tr>
               <tr>
                 <td class="main-price__legend-cell">
                   <span class="main-price__legend main-price__legend--2">Комментарии</span>
                 </td>
-                <td class="foo-no"><span class="visually-hidden">Нет</span></td>
-                <td class="foo-no"><span class="visually-hidden">Нет</span></td>
-                <td class="foo-yes"><span class="visually-hidden">Да</span></td>
+                <td class="foo-no">
+                  <span class="main-price__legend main-price__legend--mobile">Комментарии</span>
+                  <span class="visually-hidden">Нет</span>
+              </td>
+                <td class="foo-no">
+                  <span class="main-price__legend main-price__legend--mobile">Комментарии</span>
+                  <span class="visually-hidden">Нет</span>
+              </td>
+                <td class="foo-yes">
+                  <span class="main-price__legend main-price__legend--mobile">Комментарии</span>
+                  <span class="visually-hidden">Да</span>
+              </td>
               </tr>
             </table>
 
           </div>
           <div class="main-price__indicators">
             <button class="main-price__indicator"  id="price-1" ></button>
-            <button class="main-price__indicator"  id="price-2" ></button>
+            <button class="main-price__indicator active"  id="price-2" ></button>
             <button class="main-price__indicator"  id="price-3" ></button>
           </div>
         </div>
@@ -216,13 +235,9 @@
         <div class="page-footer__logo">
           <picture>
             <!-- десктоп -->
-            <source
-            media="(min-width: 1200px)"
-            srcset="logo-pink-blue-desktop.svg">
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
             <!-- планшет и мобильный -->
-            <source
-            media="(min-width: 700px)"
-            srcset="img/logo-pink-blue-mobile.svg">
+            <source media="(min-width: 700px)" srcset="img/logo-pink-blue-mobile.svg">
             <!-- img -->
             <img src="img/logo-pink-blue-mobile.svg" alt="">
           </picture>

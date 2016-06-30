@@ -20,18 +20,7 @@
   content: "";
   position: absolute;
   top: 0;
-  // outline: 1px solid green;
 }
-
-// @mixin oblique-angle2 {
-//   @include angle
-
-//   left: 0;
-//   width: 100%;
-//   background-image: url(../img/bg-triangle-white.svg);
-//   background-size: cover;
-//   z-index: 2;
-// }
 
 @mixin oblique-angle {
   @include angle
@@ -89,17 +78,39 @@
 }
 
 @mixin indicators {
-  margin: 37px auto;
+  margin: 35px auto;
   font-size: 0;
 }
 
 @mixin indicator {
+  display: inline-block;
   width: 5px;
   height: 5px;
   background-color: #bec2c7;
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 3px;
+}
+
+@mixin indicator-hover {
+  @include indicator
+  background-color: #7e868f;
+}
+
+@mixin indicator-press {
+  @include indicator
+  background-color: $social-br;
+}
+
+@mixin indicator-active {
+  background-color: transparent;
+  border: 3px solid #858E96;
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 0;
 }
 
 @mixin line-height($font-size, $line-height) {

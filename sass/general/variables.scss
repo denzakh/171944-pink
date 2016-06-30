@@ -14,6 +14,7 @@ $bg-color-block-2: #283645; // синий
 $text-color-1: #283645; // темный текст
 $text-color-2: #ffffff; // светлый текст
 $text-color-3: #d22856; // розовый
+$text-color-3-03: rgba(210,40,86,0.3); // розовый ослабленный
 $text-color-4: #000000; // некоторые заголовки
 
 $color-yes: #3dc644;
@@ -26,10 +27,6 @@ $social-bg: #ffffff;
 $br-color-1: #e5e5e5;  // серый
 $br-color-2-inactive: #dddfe0;  // серый
 
-$table-cell-width: 278;
-
-
-
 
 // -----Адаптивность------
 
@@ -41,4 +38,9 @@ $phone-widths-only: "(max-width: 699px)";
 $tablet-widths: "(min-width: 700px)";
 $desktop-widths: "(min-width: 1200px)";
 
+$desktop-max-widths: 1400px;
+$tablet-max-widths: 850px;
 
+$mobile-inner-width: 320px;
+$tablet-inner-width: 620px;
+$desktop-inner-width: 940px;

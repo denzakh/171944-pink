@@ -16,6 +16,20 @@
   margin-bottom: 32px;
 }
 
+.intro__download-btn:hover {
+  color: $text-color-3;
+  border: 3px solid $text-color-2;
+  background-color: $text-color-2;
+}
+
+.intro__download-btn:active {
+  color: $text-color-3-03;
+  border: 3px solid $text-color-2;
+  background-color: $text-color-2;
+}
+
+
+
 .intro__download-apps {
   text-align: center;
   font-size: 0;
@@ -46,14 +60,15 @@
 
 @media #{$tablet-widths} {
 
+  .intro__container {
+    position: relative;
+  }
+
   .intro_inner {
     position: absolute;
-    left: 40px;
-    top: 202px;
+    top: -555px;
+    left: 0;
     width: 300px;
-    padding: 0;
-    z-index: 0;
-    background-color: transparent;
   }
 
   .intro__tagline {
@@ -89,10 +104,8 @@
 
   .intro_inner {
     position: absolute;
-    top: -636px;
+    top: -660px;
     left: 0;
-    // left: 130px;
-    // top: 215px;
     margin: 0 auto;
   }
 
@@ -102,7 +115,7 @@
   }
 
   .intro__download-btn {
-    margin: 55px 0 65px;
+    margin: 50px 0 67px;
     font-size: 21px;
     line-height: 18px;
   }

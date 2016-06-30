@@ -29,11 +29,13 @@
 
 .photo-editor__ranges {
   position: relative;
-  padding: 110px 0 40px;
+  padding: 110px 0 30px;
+  border-bottom: 1px solid $br-color-2-inactive;
 }
 
 .photo-editor__range {
   display: flex;
+  font-size: 0;
 }
 
 .photo-editor__range-icon {
@@ -43,12 +45,6 @@
   width: 44px;
   height: 44px;
 }
-
-// @media #{$mobile-widths-only} {
-//   .photo-editor__range-icon.inactive {
-//     -webkit-filter: grayscale(100%);
-//   }
-// }
 
 .photo-editor__range-1 .photo-editor__range-icon {
   left: 18px;
@@ -67,13 +63,32 @@
   background: url("../img/icon-editor-contrast.svg") 50% 50% no-repeat;
 }
 
-.photo-editor__range input {
-  width: 100%;
+.hide-range {
   display: none;
 }
 
-.photo-editor__range input.active {
+.photo-editor__pseudo-range-box {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 1px;
+  margin: 10px 18px 18px;
+  background-color: $main-bg-color;
+}
+
+.photo-editor__range.active .photo-editor__pseudo-range-box {
   display: inline-block;
+}
+
+.photo-editor__pseudo-range {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -6px;
+  left: 15px;
+  background-color: $bg-color-block-1;
+  border-radius: 50%;
+  border: 2px solid $text-color-3;
 }
 
 .photo-editor__buttons {
@@ -132,6 +147,7 @@
     padding: 0;
     width: 274px;
     align-self: flex-end;
+    border: none;
   }
 
   .photo-editor__range {
@@ -157,13 +173,12 @@
     background-size: 70%;
 }
 
-
-  .photo-editor__range input {
+ .photo-editor__pseudo-range-box {
     display: inline-block;
-    margin: 0 18px;
-    padding: 0;
-    width: 202px;
-    height: 24px;
+    background-color: $br-color-1;
+    position: relative;
+    height: 1px;
+    margin: 10px 18px 10px 35px;
   }
 
   .photo-editor__buttons {
@@ -185,6 +200,8 @@
     color: $br-color-2-inactive;
     border: 3px solid $br-color-2-inactive;
   }
+
+
 
 }
 
@@ -219,17 +236,17 @@
     margin: 0 auto 0;
   }
 
+  .photo-editor__pseudo-range-box {
+    position: relative;
+    display: inline-block;
+    height: 1px;
+    margin: 10px 30px 10px 55px;
+  }
+
+
   .photo-editor__range .photo-editor__range-icon {
     width: 48px;
     height: 48px;
-  }
-
-  .photo-editor__range input {
-    display: inline-block;
-    margin: 0 30px;
-    padding: 0;
-    width: 290px;
-    height: 24px;
   }
 
   .photo-editor__buttons {

@@ -18,6 +18,18 @@
 .contact-item {
   margin-top: 24px;
 }
+
+.contact-item--mail a:hover {
+  color: $text-color-1;
+  text-decoration: underline;
+}
+
+.contact-item--mail a:active {
+  color: $text-color-1;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
 .contact-item__title {
   display: block;
   font-size: 18px;
@@ -37,92 +49,138 @@
   position: relative;
   box-sizing: border-box;
   height: 200px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
 
   &:before {
-  @include oblique-angle-map-l
-  z-index: 2;
+    @include oblique-angle-map-l
+    z-index: 2;
   }
 
   &:after {
-  @include oblique-angle-map-r
-  z-index: 2;
+    @include oblique-angle-map-r
+    z-index: 2;
   }
 }
 
-@media #{$phone-widths-only} {
-  .main-contact__map:before {
-  @include oblique-angle-map-l (53%)
-  z-index: 2;
-  height: 30px;
-  }
-
-  .main-contact__map:after {
-  @include oblique-angle-map-r (53%)
-  z-index: 2;
-  height: 30px;
-  }
+.ymaps-2-1-41-svg-icon {
+  width: 0;
+  height: 0;
+  background: none;
 }
 
+.ymaps-2-1-41-svg-icon:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  background-color: $text-color-3;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  left: -4px;
+}
 
 #ymapsid {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+#ymapsid:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: $text-color-3;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  left: 50%;
+  top: 60%;
 }
 
 #ymapsid [class$="controls__toolbar"] {
   display: none;
 }
 
-//icon-map-marker.svg
-// 55.75399400, 37.62209300
+@media #{$phone-widths-only} {
+
+  .main-contact__map:before {
+    @include oblique-angle-map-l (53%)
+    z-index: 2;
+    height: 30px;
+  }
+
+  .main-contact__map:after {
+    @include oblique-angle-map-r (53%)
+    z-index: 2;
+    height: 30px;
+  }
+}
+
 
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
 
-.main-contact {
-  position: relative;
-  padding: 50px 0 0;
-  text-align: center;
-}
-
-.main-contact__tagline {
-  margin: 0;
-}
-
-.main-contact__tagline p {
-  @include big-tagline
-
-  margin: 0;
-}
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 6px 0 10px;
-}
-
-.contact-item {
-  width: 250px;
-  margin: 30px auto 10px;
-}
-
-.contact-item__title {
-  margin: 5px 0;
-}
-
-.main-contact__map {
-  position: relative;
-  box-sizing: border-box;
-  height: 380px;
-
-  &:before,
-  &:after {
-   height: 73px;
+  .main-contact {
+    position: relative;
+    padding: 50px 0 0;
+    text-align: center;
   }
-}
 
+  .main-contact__tagline {
+    margin: 0;
+  }
+
+  .main-contact__tagline p {
+    @include big-tagline
+
+    margin: 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6px 0 10px;
+  }
+
+  .contact-item {
+    width: 250px;
+    margin: 30px auto 10px;
+  }
+
+  .contact-item__title {
+    margin: 5px 0;
+  }
+
+  .main-contact__map {
+    position: relative;
+    box-sizing: border-box;
+    height: 380px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: 50% 40%;
+
+    &:before,
+    &:after {
+     height: 73px;
+    }
+  }
+
+  .main-contact__map #ymapsid:before {
+    left: 62%;
+    top: 30%;
+    outline: 1px solid red;
+  }
+
+  .ymaps-2-1-41-svg-icon:after {
+    width: 16px;
+    height: 16px;
+    border: 10px solid #ffffff;
+  }
 
 }
 
@@ -131,42 +189,51 @@
 
 @media #{$desktop-widths} {
 
-.main-contact {
-  padding: 64px 0 0;
-}
-
-.main-contact__tagline p {
-  font-size: 50px;
-  outline: 1px solid red;
-}
-
-.contact {
-  padding: 20px 0 0;
-}
-
-.contact-item {
-  margin-bottom: 15px;
-}
-
-.contact-item--mail {
-  order: 3;
-}
-
-.contact-item__value {
-  margin-top: 25px;
-}
-
-.main-contact__map {
-  position: relative;
-  box-sizing: border-box;
-  height: 500px;
-
-  &:before,
-  &:after {
-    height: 105px;
+  .main-contact {
+    padding: 64px 0 0;
   }
 
+  .main-contact__tagline p {
+    font-size: 50px;
+  }
 
-}
+  .contact {
+    padding: 20px 0 0;
+  }
+
+  .contact-item {
+    margin-bottom: 15px;
+  }
+
+  .contact-item--mail {
+    order: 3;
+  }
+
+  .contact-item__value {
+    margin-top: 25px;
+  }
+
+  .main-contact__map {
+    position: relative;
+    box-sizing: border-box;
+    height: 500px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: 50% 35%;
+    max-width: 1900;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+      height: 105px;
+    }
+
+  }
+
+  .main-contact__map #ymapsid:before {
+    left: 56.4%;
+    top: 140px;
+    outline: 1px solid red;
+  }
 
 }
