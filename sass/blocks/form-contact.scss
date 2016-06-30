@@ -14,6 +14,15 @@
   position: relative;
 }
 
+.form__item--contact input:hover {
+  border-color: $text-color-1;
+}
+
+.form__item--contact input:focus {
+  border-color: $text-color-3;
+  outline: none;
+}
+
 .form__item--contact label {
   @include form-label
 

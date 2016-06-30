@@ -24,6 +24,15 @@
   height: 200px;
 }
 
+.emotion__textarea:hover {
+  border-color: $text-color-1;
+}
+
+.emotion__textarea:focus {
+  border-color: $text-color-3;
+  outline: none;
+}
+
 .emotion__placeholder {
   position: absolute;
   top: 15px;

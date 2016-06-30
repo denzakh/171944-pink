@@ -13,6 +13,15 @@
   flex-grow: 2;
 }
 
+.form__item--name input:hover {
+  border-color: $text-color-1;
+}
+
+.form__item--name input:focus {
+  border-color: $text-color-3;
+  outline: none;
+}
+
 .form__item--name label {
   @include form-label
 

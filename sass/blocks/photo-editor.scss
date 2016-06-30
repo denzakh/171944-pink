@@ -91,6 +91,11 @@
   border: 2px solid $text-color-3;
 }
 
+.photo-editor__pseudo-range:active {
+  background-color: $text-color-3;
+  border: 2px solid $text-color-3;
+}
+
 .photo-editor__buttons {
   padding: 15px 0;
 }
@@ -102,6 +107,85 @@
   border: 3px solid $text-color-3;
   background-color: transparent;
   margin: 10px 0;
+}
+
+.photo-editor__button:hover {
+  color: $text-color-2;
+  border: 3px solid $text-color-3;
+  background-color: $text-color-3;
+}
+
+.photo-editor__button:active {
+  color: rgba(255,255,255,0.3);
+  border: 3px solid $text-color-3;
+  background-color: $text-color-3;
+}
+
+.photo-editor__button[type="reset"] {
+  @include  big-btn
+
+  color: #dddfe0;
+  border: 3px solid #dddfe0;
+  background-color: transparent;
+  margin: 10px 0;
+}
+
+.photo-editor__button[type="reset"]:hover {
+  color: #c4c6c8;
+  border: 3px solid #b5b9be;
+  background-color: transparent;
+}
+
+.photo-editor__button[type="reset"]:active {
+  color: #c4c6c8;
+  border: 3px solid #b5b9be;
+  background-color: #b5b9be;
+}
+
+@media #{$phone-widths-only} {
+
+.photo-editor__range-1 .photo-editor__range-icon {
+  left: 18px;
+  background: url("../img/icon-editor-crop-gr.svg") 50% 50% no-repeat;
+}
+
+.photo-editor__range-2 .photo-editor__range-icon {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../img/icon-editor-fill-gr.svg") 50% 50% no-repeat;
+}
+
+.photo-editor__range-3 .photo-editor__range-icon {
+  right: 18px;
+  background: url("../img/icon-editor-contrast-gr.svg") 50% 50% no-repeat;
+}
+
+.photo-editor__range-1.active .photo-editor__range-icon {
+  left: 18px;
+  background: url("../img/icon-editor-crop.svg") 50% 50% no-repeat;
+}
+
+.photo-editor__range-2.active .photo-editor__range-icon {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../img/icon-editor-fill.svg") 50% 50% no-repeat;
+}
+
+.photo-editor__range-3.active .photo-editor__range-icon {
+  right: 18px;
+  background: url("../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+}
+
+.photo-editor__range .photo-editor__range-icon:hover {
+  opacity: 0.7;
+}
+
+.photo-editor__range.active .photo-editor__range-icon:hover {
+  opacity: 1;
+}
+
 }
 
 /////////////// Tablet /////////////////////

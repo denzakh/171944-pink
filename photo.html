@@ -6,9 +6,16 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+
     <script>// Маркер работающего javascript
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
+
   </head>
 
   <body class="no-js">
@@ -72,7 +79,7 @@
             <div class="photo-desc photo-desc--panorama">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Анна</b>
-                <time class="photo-text__pubdata" datetime="">5 минут назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">5 минут назад</time>
               </div>
               <p class="photo-desc__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="like like--panorama">
@@ -103,7 +110,7 @@
             <div class="photo-desc photo-desc--photo-card">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Левон</b>
-                <time class="photo-text__pubdata" datetime="">5 часов назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">5 часов назад</time>
               </div>
               <p class="photo-desc__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="like like--photo-card">
@@ -130,7 +137,7 @@
             <div class="photo-desc photo-desc--photo-card">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Антон</b>
-                <time class="photo-text__pubdata" datetime="">12 часов назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">12 часов назад</time>
               </div>
               <p class="photo-desc__text">Соседи будут рады!</p>
               <div class="like like--photo-card">
@@ -156,7 +163,7 @@
             <div class="photo-desc photo-desc--photo-card">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Борис</b>
-                <time class="photo-text__pubdata" datetime="">20 часов назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">20 часов назад</time>
               </div>
               <p class="photo-desc__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="like like--photo-card">
@@ -182,7 +189,7 @@
             <div class="photo-desc photo-desc--photo-card">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Сергей</b>
-                <time class="photo-text__pubdata" datetime="">5 часов назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">5 часов назад</time>
               </div>
               <p class="photo-desc__text">Самая кубанская в мире!</p>
               <div class="like like--photo-card">
@@ -208,7 +215,7 @@
             <div class="photo-desc photo-desc--photo-card">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Максим</b>
-                <time class="photo-text__pubdata" datetime="">0 часов назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">0 часов назад</time>
               </div>
               <p class="photo-desc__text">Где снег-то?</p>
               <div class="like like--photo-card">
@@ -234,7 +241,7 @@
             <div class="photo-desc photo-desc--photo-card">
               <div class="photo-desc__author">
                 <b class="photo-desc__name">Надежда</b>
-                <time class="photo-text__pubdata" datetime="">45 часов назад</time>
+                <time class="photo-text__pubdata" datetime="2012-12-23T08:23:11+07:00">45 часов назад</time>
               </div>
               <p class="photo-desc__text">Всем GM и взаимные лайки!</p>
               <div class="like like--photo-card">
@@ -287,7 +294,7 @@
               </div>
               <div class="photo-editor__buttons">
                 <input type="submit" value="Запостить" class="photo-editor__button ">
-                <input type="reset"  value="Отмена" class="photo-editor__button" disabled>
+                <input type="reset"  value="Отмена" class="photo-editor__button">
               </div>
             </div>
           </div>

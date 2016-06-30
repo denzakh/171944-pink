@@ -79,12 +79,24 @@
   background-position: 100% 0 ;
 }
 
+.page-header__toggle:hover {
+  background-image: url("../img/icon-menu-cross-pink.svg");
+}
+
 .page-header--closed .main-nav__list {
   display: none;
 }
 
 .page-header--closed .page-header__toggle {
  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.page-header--closed .page-header__toggle:hover {
+ background-image: url("../img/icon-menu-burger-pink.svg");
+}
+
+.page-header__toggle:active {
+  opacity: 0.3;
 }
 
 .page-header__tagline {
@@ -124,7 +136,6 @@
 
   .page-header--photo {
     min-height: 440px;
-    // background: #283645 url("../img/bg-back-tablet@1x.jpg") 50% 12%;
     background-size: 157%;
   }
 

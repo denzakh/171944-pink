@@ -20,6 +20,23 @@
   border-radius: 50%;
 }
 
+.form__part--os label:hover:before {
+  border-color: $text-color-1;
+}
+
+.form__part--os .radio:checked + label:before {
+  border-color: $text-color-3;
+}
+
+// .achievement__checkbox:checked + label:hover:before {
+//   border-color: $text-color-1;
+// }
+
+// .achievement__checkbox:checked + label:active:before {
+//   background: transparent;
+//   border-color: $text-color-3;
+// }
+
 .form__part--os .radio:checked + label:after {
   content: "";
   position: absolute;
@@ -32,6 +49,17 @@
   z-index: 3;
 }
 
+.form__part--os .radio:checked + label:hover:before {
+  border-color: $text-color-1;
+}
+
+.form__part--os .radio:checked + label:active:before {
+  border-color: $text-color-3;
+}
+
+.form__part--os .radio:checked + label:active:after {
+  background: transparent;
+}
 
 /////////////// Tablet /////////////////////
 

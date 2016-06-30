@@ -9,6 +9,22 @@
   background-color: $color-yes-2;
 }
 
+.form__btn--submit:hover {
+  background-color: #1c9b5e;
+}
+
+.form__btn--submit:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #1c9b5e;
+}
+
+.form__btn--submit[disabled] {
+  color: rgba(255,255,255,0.3);
+  background-color: #e5e5e5;
+}
+
+
+
 .form__note {
   text-align: center;
   font-size: 14px;

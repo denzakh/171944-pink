@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp run build && gulp serve"
+    "start": "gulp build && gulp serve"
   },
   "engines": {
     "node": "5.11"

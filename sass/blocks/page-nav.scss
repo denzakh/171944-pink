@@ -2,10 +2,11 @@
 
 .main-nav {
  position: absolute;
- width: 100%;
+ // width: 100%;
  z-index: 10;
  top: 70px;
- left: 0;
+ left: -20px;
+ right: -20px;
 }
 
 .main-nav__list {
@@ -38,7 +39,7 @@
 }
 
 .main-nav__item a:active {
-  color: $text-color-2;
+  color: $text-color-3;
   opacity: 0.3;
 }
 
@@ -48,6 +49,8 @@
 @media #{$tablet-widths} {
   .main-nav {
     top: 110px;
+    left: -30px;
+    right: -30px;
   }
 }
 
@@ -86,28 +89,26 @@
   margin-bottom: -17px;
 }
 
-.main-nav__item--checked a {
+.main-nav__item a:hover {
+  color: $text-color-2;
   border-bottom: 2px solid $text-color-2;
+}
+
+.main-nav__item a:active {
+  color: $text-color-2;
+  opacity: 0.3;
+}
+
+.main-nav__item--checked a {
+  color: $text-color-2;
 }
 
 .main-nav__item--checked a:hover {
   border-bottom: 2px solid $text-color-3;
-}
-
-// .main-nav__item--checked a:before {
-//   content: "";
-//   position: absolute;
-//   width: 10%;
-//   height: 2px;
-//   bottom: 35px;
-//   background-color: $text-color-2;
-// }
-
-.main-nav__item a:hover {
   color: $text-color-3;
 }
 
-.main-nav__item a:active {
+.main-nav__item--checked a:active {
   color: $text-color-2;
   opacity: 0.3;
 }

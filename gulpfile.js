@@ -102,3 +102,13 @@ gulp.task("serve", function() {
 });
 
 
+// gulp.task("serve", function() {
+//   server.init({
+//     server: "."
+//   });
+
+//   gulp.watch("sass/**/*.{scss,sass}", ["style", server.reload]);
+//   gulp.watch("*.html").on("change", server.reload);
+// });
+
+

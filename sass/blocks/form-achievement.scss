@@ -18,10 +18,24 @@
   @include pseudo-mark
 }
 
+.achievement label:hover:before {
+  border-color: $text-color-1;
+}
+
 .achievement__checkbox:checked + label:before {
   background: $bg-color-block-0 url('../img/icon-yes-pink.svg') 93% 50% no-repeat;
   background-size: 22px;
   background-position: 50%;
+  border-color: $text-color-3;
+}
+
+.achievement__checkbox:checked + label:hover:before {
+  border-color: $text-color-1;
+}
+
+.achievement__checkbox:checked + label:active:before {
+  background: transparent;
+  border-color: $text-color-3;
 }
 
 /////////////// Tablet /////////////////////

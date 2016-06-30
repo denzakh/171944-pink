@@ -30,7 +30,15 @@
   min-height: 35px;
   min-width: 130px;
   padding: 0;
+  background: transparent url('../img/logo-htmlacademy-pink.svg') 100% 50% no-repeat;
+}
+
+.page-footer__copyright:hover {
   background: transparent url('../img/logo-htmlacademy.svg') 100% 50% no-repeat;
+}
+
+.page-footer__copyright:active {
+  background: rgba(255,255,255,0.3) url('../img/logo-htmlacademy.svg') 100% 50% no-repeat;
 }
 
 .page-footer__copyright a,

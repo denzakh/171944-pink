@@ -52,7 +52,7 @@
 
 .main-price__table .main-price__first-cell {
   visibility: hidden;
-  border-bottom: none;
+  border: 2px solid transparent;
   border-bottom: 2px solid $br-color-1;
 }
 
@@ -231,10 +231,19 @@
 
   .main-price__table th:first-child {
   border-left: 2px solid  $bg-color-block-2;
+  border-bottom: 2px solid  $bg-color-block-2;
+  }
+
+  .main-price__table th.main-price__first-cell {
+  border: 2px solid transparent;
   }
 
   .main-price__table th:last-child {
   border-right: 2px solid  $bg-color-block-2;
+  }
+
+  .main-price__table td:first-child {
+  border-bottom: 2px solid  $bg-color-block-1;
   }
 
 .main-price__table .main-price__first-cell {
