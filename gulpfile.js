@@ -102,8 +102,6 @@ gulp.task("serve", function() {
 });
 
 
-
-
 // Локальная сборка стилей
 gulp.task("stylelocal", function() {
   gulp.src("sass/style.scss")
@@ -128,7 +126,7 @@ gulp.task("stylelocal", function() {
 });
 
 
-gulp.task("servelocal", function() {
+gulp.task("ls", function() {
   server.init({
     server: "."
   });
