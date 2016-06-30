@@ -16,18 +16,9 @@ var svgstore = require('gulp-svgstore');
 var imagemin = require('gulp-imagemin');
 var del = require("del");
 
-var runSequence = require('run-sequence');
+var run = require('run-sequence');
 var fs = require('fs');
 
-// var run = require('gulp-run');
-// npm i --save-dev css-mqpacker
-// npm i --save-dev gulp-csso
-// npm i --save-dev gulp-svgmin
-// npm i --save-dev gulp-svgstore
-// npm i --save-dev gulp-imagemin
-// npm i --save-dev del
-// npm i --save-dev gulp-rename
-// npm i --save-dev run-sequence
 
 // 1. очистка
 gulp.task("clean", function() {
@@ -49,7 +40,7 @@ gulp.task("copy", function() {
 
 // 3. сборка стилей
 gulp.task("style", function() {
-  gulp.src("build/sass/style.scss")
+  gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

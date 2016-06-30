@@ -9,4 +9,4 @@ Thumbs.db
 *.pdf
 css/*.css
 .snippets
-.build
+build
