@@ -8,17 +8,14 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync");
-
 var mqpacker = require("css-mqpacker");
 var minify = require('gulp-csso');
 var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
 var imagemin = require('gulp-imagemin');
 var del = require("del");
-
 var run = require('run-sequence');
 var fs = require('fs');
-
 
 // 1. очистка
 gulp.task("clean", function() {
@@ -82,7 +79,7 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-// запуск
+// запуск сборки
 gulp.task("build", function(fn) {
   run(
     "clean",
