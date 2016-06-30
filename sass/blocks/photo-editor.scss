@@ -280,7 +280,7 @@
     margin: 20px 0 0;
   }
 
-  .photo-editor__button:disabled {
+  .photo-editor__button[type="reset"] {
     color: $br-color-2-inactive;
     border: 3px solid $br-color-2-inactive;
   }
@@ -340,7 +340,8 @@
     padding: 0;
   }
 
-  .photo-editor__button {
+  .photo-editor__button,
+  .photo-editor__button[type="reset"] {
     margin: 0;
     width: 180px;
   }

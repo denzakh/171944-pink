@@ -102,13 +102,39 @@ gulp.task("serve", function() {
 });
 
 
-// gulp.task("serve", function() {
-//   server.init({
-//     server: "."
-//   });
 
-//   gulp.watch("sass/**/*.{scss,sass}", ["style", server.reload]);
-//   gulp.watch("*.html").on("change", server.reload);
-// });
+
+// Локальная сборка стилей
+gulp.task("stylelocal", function() {
+  gulp.src("sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({browsers: [
+        "last 1 version",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Opera versions",
+        "last 2 Edge versions"
+      ]}),
+      mqpacker({
+        sort: false
+      })
+    ]))
+    .pipe(gulp.dest("css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"));
+});
+
+
+gulp.task("servelocal", function() {
+  server.init({
+    server: "."
+  });
+
+  gulp.watch("sass/**/*.{scss,sass}", ["stylelocal", server.reload]);
+  gulp.watch("*.html").on("change", server.reload);
+});
 
 
