@@ -1,26 +1,23 @@
 .failure {
+  display: none;
+
   position: absolute;
   z-index: 10;
   left: 0;
   right: 0;
 }
 
-.failure * {
-  outline: 1px solid red;
-}
-
 .failure--error {
-  top: 0px;
+  top: 400px;
 }
 
 .failure--send {
-  top: 480px;
+  top: 880px;
 }
 
 .failure__inner {
   width: $mobile-inner-width;;
   margin: 0 auto;
-  outline: 1px solid red;
   text-align: center;
   background-color: $bg-color-block-0;
   box-shadow: rgba(0,0,0,0.25) 0 5px 20px 0;
