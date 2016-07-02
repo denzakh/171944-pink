@@ -67,6 +67,26 @@
   opacity: 0.3;
 }
 
+.page-header__logo-picture {
+  position: relative;
+}
+
+.page-header__logo-picture:hover {
+  visibility: hidden;
+}
+
+.page-header__logo-picture:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 40px;
+  visibility: visible;
+  background: transparent url('../img/logo-pink-white-mobile-pink.svg') 0 100% no-repeat;
+}
+
 .page-header__toggle {
   @include no-btn
 
@@ -151,18 +171,8 @@
     top: 10px;
   }
 
-  .page-header__logo-picture:hover {
-    position: relative;
-    visibility: hidden;
-  }
-
   .page-header__logo-picture:hover:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 104%;
-    visibility: visible;
-    background: transparent url('../img/logo-pink-white-tablet-pink.svg') 0 0 no-repeat;
+    background-image: url("../img/logo-pink-white-tablet-pink.svg")
   }
 
   .page-header__toggle {
@@ -253,13 +263,8 @@
   line-height: 0;
   }
 
-  .page-header__logo-picture:hover {
-    position: static;
-    visibility: visible;
-  }
-
   .page-header__logo-picture:hover:before {
-    display: none;
+    background-image: url("../img/logo-pink-white-desktop-pink.svg")
   }
 
 
