@@ -8,6 +8,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100% ;
   background-size: cover;
+  text-align: left;
 }
 
 .page-header--index:before {
@@ -45,6 +46,7 @@
   box-sizing: border-box;
   min-height: 68px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 20px;
@@ -61,6 +63,12 @@
   position: absolute;
   left: 0;
   top: -10px;
+}
+
+.no-js .page-header__logo {
+  position: static;
+  display: block;
+  padding-top: 10px;
 }
 
 .page-header__logo-link:active {
@@ -100,12 +108,20 @@
   background-position: 100% 0 ;
 }
 
+.no-js .page-header__toggle {
+  display: none;
+}
+
 .page-header__toggle:hover {
   background-image: url("../img/icon-menu-cross-pink.svg");
 }
 
 .page-header--closed .main-nav__list {
   display: none;
+}
+
+.no-js .main-nav__list {
+  display: block;
 }
 
 .page-header--closed .page-header__toggle {
@@ -248,6 +264,7 @@
   .page-header__top-line-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 

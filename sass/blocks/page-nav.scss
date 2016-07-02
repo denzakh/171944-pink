@@ -2,11 +2,15 @@
 
 .main-nav {
  position: absolute;
- // width: 100%;
  z-index: 10;
  top: 70px;
  left: -20px;
  right: -20px;
+}
+
+.no-js .main-nav {
+  position: static;
+  width: 100%;
 }
 
 .main-nav__list {
