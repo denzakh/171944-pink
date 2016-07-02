@@ -160,6 +160,17 @@
     transform: rotate(-135deg);
     left: 5px;
   }
+
+  &:hover:before,
+  &:hover:after {
+    border-top: 3px solid #7e868f;
+    border-right: 3px solid #7e868f;
+  }
+
+  &:active:before,
+  &:active:after {
+    opacity: 0.3;
+  }
 }
 
 .main-review__author {
