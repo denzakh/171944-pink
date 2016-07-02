@@ -6,8 +6,8 @@
   background-color: $main-bg-color;
   background-repeat: no-repeat;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 100% ;
-  background-size: cover;
+  background-position: 50% 0 ;
+  background-size: auto 465px;
   text-align: left;
 }
 
@@ -21,7 +21,7 @@
   right: 0;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 100%;
+  background-position: 0 174px;
   background-size: auto 286px;
 }
 
@@ -162,6 +162,8 @@
   .page-header {
     min-height: 730px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%;
+    background-size: cover;
   }
 
 .page-header--index:before {
