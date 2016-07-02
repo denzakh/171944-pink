@@ -1,0 +1,136 @@
+.failure {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+}
+
+.failure * {
+  outline: 1px solid red;
+}
+
+.failure--error {
+  top: 0px;
+}
+
+.failure--send {
+  top: 480px;
+}
+
+.failure__inner {
+  width: $mobile-inner-width;;
+  margin: 0 auto;
+  outline: 1px solid red;
+  text-align: center;
+  background-color: $bg-color-block-0;
+  box-shadow: rgba(0,0,0,0.25) 0 5px 20px 0;
+}
+
+.failure__text-part--error {
+  padding: 40px 20px 10px;
+}
+
+.failure__text-part--send {
+  padding: 40px 20px 30px;
+}
+
+.failure__header {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.failure__text {
+  margin: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.failure__btns-part {
+ padding: 30px 20px 50px;
+}
+
+.failure__btns-part--send {
+  padding: 50px 20px 50px;
+  background-color: $bg-color-block-1;
+}
+
+.failure__btn {
+  @include submit-btn
+  color: $text-color-2;
+  background-color: $color-yes-2;
+}
+
+.failure__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.failure__btn:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #1c9b5e;
+}
+
+/////////////// Tablet /////////////////////
+
+@media #{$tablet-widths} {
+
+  .failure__inner {
+    width: 460px;
+  }
+
+  .failure__text-part {
+    padding: 30px 80px 10px;
+  }
+
+  .failure__text-part--send {
+    padding: 30px 80px 35px;
+  }
+
+  .failure__header {
+    margin: 0 20px 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .failure__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .failure__btns-part--error {
+   padding: 30px 80px 50px;
+  }
+
+  .failure__btns-part--send {
+   padding: 40px 80px 60px;
+   background-color: $bg-color-block-1;
+  }
+
+}
+
+
+/////////////// Desktop /////////////////////
+
+@media #{$desktop-widths} {
+
+  .failure__inner--send {
+    width: 780px;
+  }
+
+  .failure__text-part--send {
+    padding: 40px 160px 40px;
+  }
+
+  .failure__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .failure__btns-part--send {
+   padding: 50px 160px 55px;
+   background-color: $bg-color-block-1;
+  }
+
+}
