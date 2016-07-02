@@ -79,11 +79,11 @@
   position: relative;
 }
 
-.page-header__logo-picture:hover {
+.page-header__logo-link:hover .page-header__logo-picture {
   visibility: hidden;
 }
 
-.page-header__logo-picture:hover:before {
+.page-header__logo-link:hover:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -187,7 +187,7 @@
     top: 10px;
   }
 
-  .page-header__logo-picture:hover:before {
+  .page-header__logo-link:hover:before {
     background-image: url("../img/logo-pink-white-tablet-pink.svg")
   }
 
@@ -270,7 +270,7 @@
 
   .page-header__logo {
 
-  position: static;
+  position: relative;
 
   display: inline-block;
   vertical-align: middle;
@@ -280,10 +280,9 @@
   line-height: 0;
   }
 
-  .page-header__logo-picture:hover:before {
+  .page-header__logo-link:hover:before {
     background-image: url("../img/logo-pink-white-desktop-pink.svg")
   }
-
 
   .page-header__toggle {
     display: none;

@@ -1,4 +1,15 @@
-// окно обратного ответа
+ //  Маркер работающего javascript
+
+function nojsreplace() {
+  if (document.body.className == "no-js") {
+    document.body.classList.remove("no-js");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", nojsreplace);
+
+
+// открытие и закрытие меню
 if ( (document.querySelector(".page-header") != null) &&
      (document.querySelector(".page-header__toggle") != null) ) {
 
