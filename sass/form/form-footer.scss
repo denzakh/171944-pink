@@ -1,41 +1,41 @@
 
-.form__btns {
+.form-footer__btns {
   padding: 20px 0;
 }
 
-.form__btn--submit {
+.form-footer__btn--submit {
   @include submit-btn
   color: $text-color-2;
   background-color: $color-yes-2;
 }
 
-.form__btn--submit:hover {
+.form-footer__btn--submit:hover {
   background-color: #1c9b5e;
 }
 
-.form__btn--submit:active {
+.form-footer__btn--submit:active {
   color: rgba(255,255,255,0.3);
   background-color: #1c9b5e;
 }
 
-.form__btn--submit[disabled] {
+.form-footer__btn--submit[disabled] {
   color: rgba(255,255,255,0.3);
   background-color: #e5e5e5;
 }
 
-.form__note {
+.form-footer__note {
   text-align: center;
   font-size: 14px;
   line-height: 30px;
-  text-transform: uppercase;
+  text-transform-footer: uppercase;
   font-weight: 300;
   padding: 16px 0 20px;
 }
-.form__requre-field {
+.form-footer__requre-field {
   color: $text-color-3;
 }
 
-.form__requre-only-desktop {
+.form-footer__requre-only-desktop {
   display: none;
 }
 
@@ -43,28 +43,28 @@
 
 @media #{$tablet-widths} {
 
-  .form__section--footer {
+  .form-footer {
     order: 6;
     padding-top: 0;
     padding-bottom: 36px;
     background-color: none;
   }
 
-  .form__part--footer {
+  .form-footer__inner {
     display: flex;
     flex-direction: row;
   }
 
-  .form__btns,
-  .form__note {
+  .form-footer__btns,
+  .form-footer__note {
     width: 300px;
   }
 
-  .form__btns {
+  .form-footer__btns {
     padding-right: 20px;
   }
 
-  .form__note {
+  .form-footer__note {
     text-align: right;
     padding: 38px 0 0;
     font-weight: normal;
@@ -75,19 +75,19 @@
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
-  .form__section--footer {
+  .form-footer {
     padding-bottom: 0;
   }
 
-  .form__part--footer {
+  .form-footer__inner {
     content-justify: space-between;
   }
 
-  .form__requre-only-desktop {
+  .form-footer__requre-only-desktop {
     display: inline;
   }
 
-  .form__note {
+  .form-footer__note {
     flex-grow: 3;
   }
 

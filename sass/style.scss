@@ -27,21 +27,21 @@
 
 // страница фото
 
-@import "blocks/photo-intro.scss";
-@import "blocks/photo-card.scss";
-@import "blocks/photo-desc.scss";
-@import "blocks/photo-photos.scss";
-@import "blocks/photo-editor.scss";
+@import "photo/photo-intro.scss";
+@import "photo/photo-card.scss";
+@import "photo/photo-desc.scss";
+@import "photo/photo-photos.scss";
+@import "photo/photo-editor.scss";
 
 // страница формы
 
-@import "blocks/form-main.scss";
-@import "blocks/form-general.scss";
-@import "blocks/form-name.scss";
-@import "blocks/form-achieve.scss";
-@import "blocks/form-contact.scss";
-@import "blocks/form-os.scss";
-@import "blocks/form-emotion.scss";
-@import "blocks/form-footer.scss";
-@import "blocks/form-failure.scss";
+@import "form/form-main.scss";
+@import "form/form-general.scss";
+@import "form/form-name.scss";
+@import "form/achievement.scss";
+@import "form/form-contact.scss";
+@import "form/form-os.scss";
+@import "form/emotion.scss";
+@import "form/form-footer.scss";
+@import "form/popup.scss";
 
