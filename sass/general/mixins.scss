@@ -68,6 +68,7 @@
 
 @mixin indicator {
   display: inline-block;
+  vertical-align: middle;
   width: 5px;
   height: 5px;
   background-color: #bec2c7;
@@ -89,7 +90,7 @@
 
 @mixin indicator-active {
   background-color: transparent;
-  border: 3px solid #858E96;
+  border: 3px solid #283645;
   width: 12px;
   height: 12px;
   margin-left: 7px;

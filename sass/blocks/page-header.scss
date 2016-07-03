@@ -3,8 +3,8 @@
   box-sizing: border-box;
   position: relative;
   min-height: 460px;
-  background-color: $main-bg-color;
   background-repeat: no-repeat;
+  background-color: $main-bg-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 0 ;
   background-size: auto 465px;
@@ -19,11 +19,11 @@
   margin: 0 auto;
   left: 0;
   right: 0;
+  background-color: transparent;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 174px;
   background-size: auto 286px;
-  outline: 1px solid red;
 }
 
 .page-header--photo {
@@ -94,6 +94,14 @@
   min-height: 40px;
   visibility: visible;
   background: transparent url('../img/logo-pink-white-mobile-pink.svg') 0 100% no-repeat;
+}
+
+.page-header__logo-link:active .page-header__logo-picture {
+  visibility: visible;
+}
+
+.page-header__logo-link:active:before {
+  visibility: hidden;
 }
 
 .page-header__toggle {

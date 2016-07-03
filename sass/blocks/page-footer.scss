@@ -47,6 +47,14 @@
   background: transparent url("../img/logo-pink-white-tablet-pink.svg") 0 100% no-repeat;
 }
 
+.page-footer__logo-link:active .page-footer__logo-picture {
+  visibility: visible;
+}
+
+.page-footer__logo-link:active:before {
+  visibility: hidden;
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;

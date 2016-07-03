@@ -78,6 +78,7 @@
 
 .photo-editor__range.active .photo-editor__pseudo-range-box {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .photo-editor__pseudo-range {
@@ -259,6 +260,7 @@
 
  .photo-editor__pseudo-range-box {
     display: inline-block;
+    vertical-align: middle;
     background-color: $br-color-1;
     position: relative;
     height: 1px;
@@ -323,6 +325,7 @@
   .photo-editor__pseudo-range-box {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     height: 1px;
     margin: 10px 30px 10px 55px;
   }

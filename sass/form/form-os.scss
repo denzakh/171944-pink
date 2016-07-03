@@ -14,8 +14,14 @@
 
 .form-os label {
   position: relative;
-  display: block;
-  padding: 4px 0 41px 70px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px;
+  padding-left: 70px;
+}
+
+.form-os__item {
+  padding: 0 0 41px;
 }
 
 .form-os label:before {
@@ -68,10 +74,15 @@
 
   .form-os__inner {
     @include form-part-tab
+    padding-bottom: 16px;
   }
 
   .form-os label {
-    padding: 4px 0 41px 60px;
+    padding-left: 60px;
+  }
+
+  .form-os__item {
+    padding-bottom: 38px;
   }
 
   .form-os__title-box {
@@ -100,10 +111,10 @@
   margin: 0;
  }
 
-.form-os label {
-  padding: 4px 0 40px 60px;
-  margin-left: 15px;
-}
-
+  .form-os__inner {
+    @include form-part-tab
+    padding-bottom: 16px;
+    padding-left: 75px;
+  }
 
 }
