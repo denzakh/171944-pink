@@ -121,8 +121,6 @@
   @include indicator-press
 }
 
-
-
 .price__hit {
   overflow: hidden;
   position: relative;
@@ -230,63 +228,63 @@
   }
 
   .price__table th:first-child {
-  border-left: 2px solid  $bg-color-block-2;
-  border-bottom: 2px solid  $bg-color-block-2;
+    border-left: 2px solid  $bg-color-block-2;
+    border-bottom: 2px solid  $bg-color-block-2;
   }
 
   .price__table th.price__first-cell {
-  border: 2px solid transparent;
+    border: 2px solid transparent;
   }
 
   .price__table th:last-child {
-  border-right: 2px solid  $bg-color-block-2;
+    border-right: 2px solid  $bg-color-block-2;
   }
 
   .price__table td:first-child {
-  border-bottom: 2px solid  $bg-color-block-1;
+    border-bottom: 2px solid  $bg-color-block-1;
   }
 
-.price__table .price__first-cell {
-  visibility: hidden;
-  border-bottom: none;
-  border-bottom: 2px solid $br-color-1;
-}
+  .price__table .price__first-cell {
+    visibility: hidden;
+    border-bottom: none;
+    border-bottom: 2px solid $br-color-1;
+  }
 
-.price__price-name {
-  display: block;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
+  .price__price-name {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 
-.price__price {
-  display: block;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
-}
+  .price__price {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+  }
 
-.price__legend {
-font-size: 14px;
-line-height: 30px;
-text-transform: none;
-width: 100%;
-}
+  .price__legend {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+    width: 100%;
+  }
 
-.price__table .foo-yes {
-  background: $bg-color-block-0 url("../img/icon-yes.svg") 50% 50% no-repeat;
-  background-size: 30px;
-}
+  .price__table .foo-yes {
+    background: $bg-color-block-0 url("../img/icon-yes.svg") 50% 50% no-repeat;
+    background-size: 30px;
+  }
 
-.price__table .foo-no {
-  background: $bg-color-block-0 url("../img/icon-no.svg") 50% 49% no-repeat;
-  background-size: 26px;
-}
+  .price__table .foo-no {
+    background: $bg-color-block-0 url("../img/icon-no.svg") 50% 49% no-repeat;
+    background-size: 26px;
+  }
 
-.price__hit:before {
-  top: 7px;
-  left: -38px;
-}
+  .price__hit:before {
+    top: 7px;
+    left: -38px;
+  }
 
 }
 
@@ -304,32 +302,32 @@ width: 100%;
     }
   }
 
-.price__price-name {
-  font-size: 18px;
-}
+  .price__price-name {
+    font-size: 18px;
+  }
 
-.price__price {
-  font-size: 24px;
-  padding-bottom: 5px;
-}
+  .price__price {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
 
-.price__table th,
-.price__table td {
-  padding: 15px;
-}
+  .price__table th,
+  .price__table td {
+    padding: 15px;
+  }
 
-.price__legend {
-font-size: 18px;
-}
+  .price__legend {
+    font-size: 18px;
+  }
 
-.price__table .price__legend-cell {
-  padding-left: 20px;
-}
+  .price__table .price__legend-cell {
+    padding-left: 20px;
+  }
 
-.price__hit:before {
-  padding: 6px;
-  top: 10px;
-  left: -30px;
-}
+  .price__hit:before {
+    padding: 6px;
+    top: 10px;
+    left: -30px;
+  }
 
 }

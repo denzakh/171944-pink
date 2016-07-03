@@ -9,47 +9,9 @@ body {
   min-width: 320px;
 }
 
-
-// body > * > *
-// {
-//   outline: 1px solid red;
-
-//   & > * {
-//     outline: 1px solid blue;
-
-//     & * {
-//       outline: 1px dotted gray;
-//     }
-//   }
-// }
-
-
-// .container {
-//   box-sizing: border-box;
-//   position: relative;
-
-//   width: 280px;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   @media #{$tablet-widths} {
-//     width: 620px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-
-//   @media #{$desktop-widths} {
-//     width: 940px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-
-// }
-
 .container {
   box-sizing: border-box;
   position: relative;
-
   width: $mobile-inner-width;
   margin-left: auto;
   margin-right: auto;
@@ -86,9 +48,6 @@ img {
   border-color: $br-color-2-inactive;
 }
 
-
-
-//////////////////////////
 .page-photo {
   background-color: $main-bg-color-1;
 }

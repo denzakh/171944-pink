@@ -8,8 +8,6 @@
   @include form-title
 }
 
-.form-contact__inner {}
-
 .form-contact__item  {
   display: flex;
   flex-direction: column-reverse;
@@ -41,20 +39,12 @@
   padding: 15px 0 0 22px;
 }
 
-.form-contact__item  label:before {
-  @include placeholder
-
-  left: 2px;
-  top: 52px;
-}
-
 @media #{$phone-widths-only} {
   .form-contact__title-box {
     @include visually-hidden
   }
 
 }
-
 
 
 /////////////// Tablet /////////////////////
@@ -68,14 +58,14 @@
     padding-bottom: 52px;
   }
 
-.form-contact__title-box {
-  @include form-title-box-tab
-}
+  .form-contact__title-box {
+    @include form-title-box-tab
+  }
 
- .form-contact__title {
-  @include form-title-tab
-  background-color: $bg-color-block-0;
-}
+   .form-contact__title {
+    @include form-title-tab
+    background-color: $bg-color-block-0;
+  }
 
   .form-contact__inner {
     @include form-part-tab
@@ -107,16 +97,15 @@
     background-repeat: no-repeat;
   }
 
-.form-contact__item--tel  label:after {
-  background-image: url("../img/icon-phone.svg");
-}
+  .form-contact__item--tel  label:after {
+    background-image: url("../img/icon-phone.svg");
+  }
 
-.form-contact__item--email  label:after {
-  background-image: url("../img/icon-mail.svg");
-}
+  .form-contact__item--email  label:after {
+    background-image: url("../img/icon-mail.svg");
+  }
 
 }
-
 
 
 /////////////// Desktop /////////////////////
@@ -139,9 +128,9 @@
   }
 
   .form-contact__item  {
-  width: 370px;
-  margin: 0;
-  padding: 0;
+    width: 370px;
+    margin: 0;
+    padding: 0;
   }
 
   .form-contact__item  label {

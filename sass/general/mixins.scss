@@ -224,22 +224,6 @@
   @include form-border
 }
 
-@mixin placeholder {
-  // content: "";
-  // position: absolute;
-  // display: flex;
-  // align-items: center;
-  // width: 90%;
-  // height: 60px;
-  // font-family: "Open Sans", "Arial", sans-serif;
-  // font-size: 18px;
-  // line-height: 30px;
-  // text-transform: none;
-  // color: $text-color-1;
-  // padding-left: 20px;
-  // z-index: 2;
-}
-
 @mixin form-title-box-tab {
   position: absolute;
   width: 100%;

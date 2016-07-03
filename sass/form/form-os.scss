@@ -86,12 +86,12 @@
   }
 
   .form-os__title-box {
-  @include form-title-box-tab
-}
+    @include form-title-box-tab
+  }
 
- .form-os__title {
-  @include form-title-tab
-}
+  .form-os__title {
+    @include form-title-tab
+  }
 
 }
 
@@ -107,8 +107,8 @@
   }
 
  .form-os .container {
-  width: auto;
-  margin: 0;
+    width: auto;
+    margin: 0;
  }
 
   .form-os__inner {

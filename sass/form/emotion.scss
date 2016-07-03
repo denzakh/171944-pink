@@ -81,6 +81,7 @@
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
+
   .emotion {
     margin: 0;
     padding: 46px 0;
@@ -93,4 +94,5 @@
   .emotion__textarea {
     height: 125px;
   }
+
 }

@@ -14,9 +14,10 @@
 
 .review__indicator {
   @include inline-block
-  vertical-align: middle;
   @include no-btn
   @include indicator
+
+  vertical-align: middle;
 }
 
 .review__indicator.active,
@@ -32,7 +33,6 @@
 .review__indicator:active {
   @include indicator-press
 }
-
 
 .review__slider-btns {
   display: none;
@@ -70,57 +70,56 @@
 }
 
 
-
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
 
-.review {
-  padding: 15px 0;
+  .review {
+    padding: 15px 0;
 
-  &:before {
+    &:before {
 
-    height: 58px;
-  }
-}
-
-.review__card {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.review__text {
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 35px;
-
-  &:before {
-    content: "\ab";
+      height: 58px;
+    }
   }
 
-  &:after {
-    content: "\bb";
+  .review__card {
+    display: flex;
+    flex-direction: column-reverse;
   }
-}
 
-.review__author {
-  display: block;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 0;
-}
+  .review__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
 
-.review__author-desc {
-  display: block;
-  font-size: 14px;
-  line-height: 30px;
-}
+    &:before {
+      content: "\ab";
+    }
 
-.review__indicators {
-  @include indicators
+    &:after {
+      content: "\bb";
+    }
+  }
 
-  margin-bottom: 6px;
-}
+  .review__author {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  .review__author-desc {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .review__indicators {
+    @include indicators
+
+    margin-bottom: 6px;
+  }
 
 }
 
@@ -129,75 +128,75 @@
 
 @media #{$desktop-widths} {
 
-.review {
-  min-height: 200px;
-  padding: 185px 0 25px;
-  background-image: url("../img/icon-quotes.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: auto;
-  position: relative;
-}
-
-.review__text {
-  position: relative;
-  padding: 0 125px;
-  margin: 0 0 30px;
-
-  &:before,
-  &:after {
-    display: none;
+  .review {
+    min-height: 200px;
+    padding: 185px 0 25px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: auto;
+    position: relative;
   }
-}
 
-.review__author {
-  font-size: 24px;
-  line-height: 30px;
-  margin: 5px;
-}
+  .review__text {
+    position: relative;
+    padding: 0 125px;
+    margin: 0 0 30px;
 
-.review__author-desc {
-  @include medium-tagline
-}
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
 
-.review__indicators {
-  @include visually-hidden
-}
+  .review__author {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 5px;
+  }
 
-.review__slider-btns {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  bottom: 125px;
-  padding: 0 5px;
-}
+  .review__author-desc {
+    @include medium-tagline
+  }
 
-.review__slider-btn {
-  @include no-btn
+  .review__indicators {
+    @include visually-hidden
+  }
 
-  width: 32px;
-  height: 32px;
-  border-bottom: 3px solid $br-color-1;
-  border-left: 3px solid $br-color-1;
-}
+  .review__slider-btns {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 125px;
+    padding: 0 5px;
+  }
 
-.review__slider-btn--prev {
-  transform: rotate(45deg);
-}
+  .review__slider-btn {
+    @include no-btn
 
-.review__slider-btn--next {
-  transform: rotate(-135deg);
-}
+    width: 32px;
+    height: 32px;
+    border-bottom: 3px solid $br-color-1;
+    border-left: 3px solid $br-color-1;
+  }
 
-.review__slider-btn:hover {
-  border-bottom: 3px solid #7e868f;
-  border-left: 3px solid #7e868f;
-}
+  .review__slider-btn--prev {
+    transform: rotate(45deg);
+  }
 
-.review__slider-btn:active {
-  border-bottom: 3px solid #e9ebec;
-  border-left: 3px solid #e9ebec;
-}
+  .review__slider-btn--next {
+    transform: rotate(-135deg);
+  }
+
+  .review__slider-btn:hover {
+    border-bottom: 3px solid #7e868f;
+    border-left: 3px solid #7e868f;
+  }
+
+  .review__slider-btn:active {
+    border-bottom: 3px solid #e9ebec;
+    border-left: 3px solid #e9ebec;
+  }
 
 }

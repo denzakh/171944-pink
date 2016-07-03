@@ -2,29 +2,29 @@
 
 // плейсхолдер
 .form-main *::-webkit-input-placeholder {
- color:$text-color-1;
+  color:$text-color-1;
 }
 .form-main *::-moz-placeholder {
-color:$text-color-1;
+  color:$text-color-1;
 }/* Firefox 19+ */
 .form-main *:-moz-placeholder {
-color:$text-color-1;
+  color:$text-color-1;
 }/* Firefox 18- */
 .form-main *:-ms-input-placeholder {
- color:$text-color-1;
+  color:$text-color-1;
 }
 
 // скрытие
 .form-main *:focus::-webkit-input-placeholder {
- color: transparent
+  color: transparent
 }
 .form-main *:focus::-moz-placeholder {
- color: transparent
+  color: transparent
 }
 .form-main *:focus:-moz-placeholder {
- color: transparent
+  color: transparent
 }
 .form-main *:focus:-ms-input-placeholder {
- color: transparent
+  color: transparent
 }
 

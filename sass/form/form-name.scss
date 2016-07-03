@@ -55,9 +55,11 @@
 
 }
 
+
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
+
   .form-name {
     width: 435px;
     padding: 0;
@@ -65,13 +67,12 @@
     margin-right: 70px;
   }
 
- .form-name .container {
-  width: auto;
- }
+  .form-name .container {
+    width: auto;
+  }
 
- .form-name__item input {
-  @include form-imput-desktop
-}
-
+  .form-name__item input {
+    @include form-imput-desktop
+  }
 
 }

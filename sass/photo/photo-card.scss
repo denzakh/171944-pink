@@ -1,5 +1,4 @@
 
-
 .photo-card {
   display: flex;
   flex-direction: column;
@@ -12,10 +11,10 @@
   overflow: hidden;
 }
 
-  .photo-card__photo img {
-    width: 100%;
-    height: auto;
-  }
+.photo-card__photo img {
+  width: 100%;
+  height: auto;
+}
 
 
 /////////////// Tablet /////////////////////

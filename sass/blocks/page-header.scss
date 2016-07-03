@@ -230,8 +230,6 @@
 
 }
 
-
-
 @media #{$tablet-widths} and (min-resolution: 1.5dppx) {
 
   .page-header {
@@ -241,6 +239,7 @@
 .page-header--index:before {
     background-image: url("../img/iphone-hand-tablet@2x.png");
   }
+
 }
 
 /////////////// Desktop /////////////////////
@@ -280,16 +279,14 @@
   }
 
   .page-header__logo {
-
-  position: relative;
-
-  display: inline-block;
-  vertical-align: middle;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
   }
 
   .page-header__logo-link:hover:before {

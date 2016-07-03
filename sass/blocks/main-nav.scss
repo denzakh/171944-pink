@@ -1,10 +1,10 @@
 
 .main-nav {
- position: absolute;
- z-index: 10;
- top: 70px;
- left: 1px;
- right: 1px;
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  left: 1px;
+  right: 1px;
 }
 
 .no-js .main-nav {
@@ -50,11 +50,13 @@
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
+
   .main-nav {
     top: 110px;
     left: 1px;
     right: 1px;
   }
+
 }
 
 
@@ -62,61 +64,60 @@
 
 @media #{$desktop-widths} {
 
-.main-nav {
-  position: static;
-  width: auto;
-  margin-top: 30px;
-}
+  .main-nav {
+    position: static;
+    width: auto;
+    margin-top: 30px;
+  }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.main-nav__item {
-  display: inline-flex;
-  margin-left: 77px;
-  background-color: transparent;
-}
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-nav__item {
+    display: inline-flex;
+    margin-left: 77px;
+    background-color: transparent;
+  }
 
-.main-nav__item a {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: normal;
-  text-transform: none;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid transparent;
-  margin: 0;
-  padding: 15px 0;
-  margin-bottom: -17px;
-}
+  .main-nav__item a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin: 0;
+    padding: 15px 0;
+    margin-bottom: -17px;
+  }
 
-.main-nav__item a:hover {
-  color: $text-color-2;
-  border-bottom: 2px solid $text-color-2;
-}
+  .main-nav__item a:hover {
+    color: $text-color-2;
+    border-bottom: 2px solid $text-color-2;
+  }
 
-.main-nav__item a:active {
-  color: $text-color-2;
-  opacity: 0.3;
-}
+  .main-nav__item a:active {
+    color: $text-color-2;
+    opacity: 0.3;
+  }
 
-.main-nav__item--checked a {
-  color: $text-color-3;
-}
+  .main-nav__item--checked a {
+    color: $text-color-3;
+  }
 
-.main-nav__item--checked a:hover {
-  border-bottom: 2px solid $text-color-3;
-  color: $text-color-3;
-}
+  .main-nav__item--checked a:hover {
+    border-bottom: 2px solid $text-color-3;
+    color: $text-color-3;
+  }
 
-.main-nav__item--checked a:active {
-  color: $text-color-3;
-  opacity: 0.3;
-}
-
+  .main-nav__item--checked a:active {
+    color: $text-color-3;
+    opacity: 0.3;
+  }
 
 }
