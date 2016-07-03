@@ -1,20 +1,4 @@
 
-@mixin padding-section
-{
-  //   @media #{$phone-widths-only} {
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
-
-  // @media #{$tablet-widths} {
-  //   padding-left: 40px;
-  //   padding-right: 40px;
-  // }
-
-  // @media #{$desktop-widths} {
-
-  // }
-}
 
 @mixin angle {
   content: "";
@@ -223,6 +207,7 @@
 @mixin form-title-tab {
   @include form-title
   padding: 0 35px;
+  background-color: $bg-color-block-0;
 }
 
 @mixin pseudo-mark {
@@ -239,18 +224,49 @@
 }
 
 @mixin placeholder {
-  content: "";
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 90%;
-  height: 60px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: none;
-  color: $text-color-1;
-  padding-left: 20px;
-  z-index: 2;
+  // content: "";
+  // position: absolute;
+  // display: flex;
+  // align-items: center;
+  // width: 90%;
+  // height: 60px;
+  // font-family: "Open Sans", "Arial", sans-serif;
+  // font-size: 18px;
+  // line-height: 30px;
+  // text-transform: none;
+  // color: $text-color-1;
+  // padding-left: 20px;
+  // z-index: 2;
 }
 
+@mixin form-title-box-tab {
+  position: absolute;
+  width: 100%;
+  top: -8px;
+  text-align: center;
+  padding: 0;
+}
+
+@mixin form-imput {
+  @include form-border
+
+  box-sizing: border-box;
+  background: $main-bg-color-1;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  color: $text-color-1;
+}
+
+@mixin form-imput-desktop {
+  @include form-border
+
+  box-sizing: border-box;
+  background: $main-bg-color-1;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  color: $text-color-1;
+}

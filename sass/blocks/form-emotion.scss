@@ -1,14 +1,19 @@
 
-.form__section--emotion {
+.emotion {
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
-.emotion .form__part-title-box {
+.emotion__title-box {
   padding-bottom: 5px;
+  text-align: center;
 }
 
-.form__item--emotion-box {
+.emotion__title {
+  @include form-title
+}
+
+.emotion__box {
   position: relative;
 }
 
@@ -22,6 +27,8 @@
   padding: 15px 20px;
   max-width: 100%;
   height: 200px;
+  background-color: transparent;
+  z-index: 4;
 }
 
 .emotion__textarea:hover {
@@ -33,23 +40,11 @@
   outline: none;
 }
 
-.emotion__placeholder {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  right: 20px;
-  z-index: 2;
-}
-
-.emotion__textarea:focus + .emotion__placeholder {
-  display: none;
-}
-
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
 
-  .form__section--emotion {
+  .emotion {
     background-color: none;
     order: 5;
     margin: 0;
@@ -57,12 +52,21 @@
     padding-bottom: 48px;
   }
 
-  .form__part--emotion {
+  .emotion__inner {
     @include form-part-tab
     padding: 45px 60px 45px;
   }
 
-  .form__part--emotion textarea {
+
+.emotion__title-box {
+  @include form-title-box-tab
+}
+
+ .emotion__title {
+  @include form-title-tab
+}
+
+  .emotion__textarea {
     box-sizing: border-box;
     font-size: 18px;
     line-height: 30px;
@@ -77,17 +81,17 @@
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
-  .form__section--emotion {
+  .emotion {
     margin: 0;
     padding-top: 52px;
     padding-bottom: 48px;
   }
 
-  .form__part--emotion {
+  .emotion__inner {
     padding: 45px 60px 35px;
   }
 
-  .form__part--emotion textarea {
+  .emotion__textarea {
     height: 125px;
   }
 }

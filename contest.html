@@ -56,50 +56,52 @@
         </div>
       </div>
 
-      <form action="contest.php" method="post" class="form">
+      <form action="contest.php" method="post" class="form-main__form">
 
-        <section class="form__section form__section--name">
-          <div class="container form__section-container">
-              <div class="form__item form__item--name form__item--name-1">
-                <input type="text" id="name-1" name="name-1" >
-                <label for="name-1" class="">Фамилия:</label>
+        <section class="form-name">
+          <div class="container">
+              <div class="form-name__item  form-name__item-1">
+                <input type="text" id="name-1" name="name-1" placeholder="Укажите фамилию">
+                <label for="name-1" >Фамилия:</label>
               </div>
-              <div class="form__item form__item--name form__item--name-2">
-                <input type="text" id="name-2" name="name-2" >
+              <div class="form-name__item  form-name__item-2">
+                <input type="text" id="name-2" name="name-2" placeholder="Введите ваше имя">
                 <label for="name-2" class="">Имя:</label>
               </div>
-              <div class="form__item form__item--name form__item--name-3">
-                <input type="text" id="name-3" name="name-3" >
+              <div class="form-os__item form-name__item  form-name__item-3">
+                <input type="text" id="name-3" name="name-3"  placeholder="Ну и отчество тоже">
                 <label for="name-3" class="">Отчество:</label>
               </div>
           </div>
         </section>
 
-        <section class="form__section form__section--achievement">
+        <section class="achievement">
           <div class="container form__section-container">
-            <div class="form__part-title-box  form__part-title-box--achievement"><h2 class="form__part-title">Ваши безбашенные достижения в путешествии</h2></div>
-            <div class="form__part  form__part--achievement  achievement  ">
-              <div class="form__item form__item--achievement">
+            <div class="achievement__title-box">
+              <h2 class="achievement__title">Ваши безбашенные достижения в путешествии</h2>
+            </div>
+            <div class="achievement__inner-part ">
+              <div class="achievement__item">
                 <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-1" name="achievement-1">
                 <label for="achievement-1">Сделал селфи с акулой</label>
               </div>
-              <div class="form__item form__item--achievement">
+              <div class="achievement__item">
                 <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-2" name="achievement-2">
                 <label for="achievement-2">Обгорел на пляже</label>
               </div>
-              <div class="form__item form__item--achievement">
+              <div class="achievement__item">
                 <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-3" name="achievement-3">
                 <label for="achievement-3">Видел Чака Норриса</label>
               </div>
-              <div class="form__item form__item--achievement">
+              <div class="achievement__item">
                 <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-4" name="achievement-4">
                 <label for="achievement-4">Накупил сувениров</label>
               </div>
-              <div class="form__item form__item--achievement">
+              <div class="achievement__item">
                 <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-5" name="achievement-5">
                 <label for="achievement-5">Удержал башню</label>
               </div>
-              <div class="form__item form__item--achievement">
+              <div class="achievement__item">
                 <input type="checkbox" class="visually-hidden achievement__checkbox" id="achievement-6" name="achievement-6">
                 <label for="achievement-6">Разгромил отель</label>
               </div>
@@ -107,38 +109,40 @@
           </div>
         </section>
 
-        <section class="form__section form__section--contact">
-          <div class="container form__section-container">
-            <div class="form__part-title-box  form__part-title-box--contact"><h2 class="form__part-title ">Контактная информация</h2></div>
-            <div class="form__part  form__part--contact  ">
+        <section class="form-contact">
+          <div class="container">
+            <div class="form-contact__title-box">
+              <h2 class="form-contact__title">Контактная информация</h2>
+            </div>
+            <div class="form-contact__inner">
 
-              <div class="form__item form__item--contact  form__item--contact-tel">
-                <input type="tel" id="contact-tel" name="contact-tel" data-placeholder-tel="Номер, пожалуйста" data-placeholder-tab="+7 XXX XXX-XX-XX">
-                <label for="contact-tel" data-phone="Номерок телефончика">Номер телефона</label>
+              <div class="form-contact__item form-contact__item--tel">
+                <input type="tel" id="contact-tel" name="contact-tel" placeholder="+7 XXX XXX-XX-XX">
+                <label for="contact-tel">Номер телефона</label>
               </div>
-              <div class="form__item form__item--contact  form__item--contact-email">
-                <input type="email" id="contact-email" name="contact-email" data-placeholder-tel="E-mail, пожалуйста" data-placeholder-tab="Введите почту">
-                <label for="contact-email" data-phone="Адресок почты">Адрес почты</label>
+              <div class="form-contact__item  form-contact__item--email">
+                <input type="email" id="contact-email" name="contact-email" placeholder="Введите почту">
+                <label for="contact-email">Адрес почты</label>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="form__section form__section--os">
-          <div class="container form__section-container">
-            <div class="form__part-title-box  form__part-title-box--os">
-              <h2 class="form__part-title">С каким приложением путешествовали?</h2>
+        <section class="form-os">
+          <div class="container">
+            <div class="form-os__title-box">
+              <h2 class="form-os__title">С каким приложением путешествовали?</h2>
             </div>
-            <div class="form__part  form__part--os  " >
-                <div class="form__item form__item--os-1">
+            <div class="form-os__inner">
+                <div class="form-os__item form-os__item-1">
                   <input type="radio" class="visually-hidden radio" id="os-1" name="os">
                   <label for="os-1">Pink для iOS</label>
                 </div>
-                <div class="form__item form__item--os-2">
+                <div class="form-os__item form-os__item-2">
                   <input type="radio" class="visually-hidden radio" id="os-2" name="os">
                   <label for="os-2">Pink на Android</label>
                 </div>
-                <div class="form__item form__item--os-3">
+                <div class="form-os__item form-os__item-3">
                   <input type="radio" class="visually-hidden radio" id="os-3" name="os">
                   <label for="os-3">Windows Phone</label>
                 </div>
@@ -146,15 +150,14 @@
           </div>
         </section>
 
-        <section class="form__section form__section--emotion emotion">
-          <div class="container form__section-container">
-            <div class="form__part-title-box">
-              <h2 class="form__part-title">Опишите свои эмоции</h2>
+        <section class="emotion">
+          <div class="container">
+            <div class="emotion__title-box">
+              <h2 class="emotion__title">Опишите свои эмоции</h2>
             </div>
-            <div class="form__part  form__part--emotion ">
-              <div class="form__item form__item--emotion-box">
-                <textarea name="emotion" cols="30"     class="emotion__textarea"></textarea>
-                <div class="emotion__placeholder">Можно прям в красках, не стесняясь в выражениях</div>
+            <div class="emotion__inner">
+              <div class="emotion__box">
+                <textarea name="emotion" cols="30" class="emotion__textarea"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </div>
           </div>

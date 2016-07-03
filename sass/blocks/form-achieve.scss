@@ -1,24 +1,29 @@
 
-.form__section--achievement {
+.achievement  {
   background-color: $bg-color-block-1;
   padding-bottom: 5px;
 }
 
-.form__part-title-box--achievement {
-    padding: 35px 0 40px;
+.achievement__title-box {
+  padding: 35px 0 40px;
+  text-align: center;
 }
 
-.achievement label {
+.achievement__title {
+  @include form-title
+}
+
+.achievement__item label {
   position: relative;
   display: block;
   padding: 4px 0 48px 70px;
 }
 
-.achievement label:before {
+.achievement__item label:before {
   @include pseudo-mark
 }
 
-.achievement label:hover:before {
+.achievement__item label:hover:before {
   border-color: $text-color-1;
 }
 
@@ -42,23 +47,27 @@
 
 @media #{$tablet-widths} {
 
-  .form__section--achievement {
+  .achievement  {
     background-color: $bg-color-block-0;
     order: 4;
   }
 
-  .form__part--achievement {
+  .achievement__inner-part {
     @include form-part-tab
-    padding: 52px 60px 5px;
   }
 
-  .form__item--achievement {
-   margin: 0;
+  .achievement__title-box {
+    @include form-title-box-tab
   }
 
-  .form__item--achievement label {
+  .achievement__title {
+    @include form-title-tab
+  }
+
+  .achievement__item label {
     padding-left: 60px;
-    padding-right: 50px;
+    // margin-right: 50px;
+    // padding-right: 50px;
   }
 }
 
@@ -66,14 +75,13 @@
 
 @media #{$desktop-widths} {
 
-  .form__section--achievement {
+  .achievement {
     background-color: $bg-color-block-0;
     order: 4;
   }
 
-  .form__part--achievement {
-    @include form-part-tab
-    padding: 55px 0 0;
+  .achievement__inner-part {
+    padding: 30px 0 30px;
     height: 170px;
     display: flex;
     flex-direction: column;
@@ -81,14 +89,19 @@
     align-content: flex-end;
   }
 
-  .form__item--achievement {
-   padding-left: 10px;
-   margin: 0;
+  .achievement__item {
+   margin-top: 20px;
+   margin-bottom: 25px;
+   margin-left: 20px;
+   margin-right: 40px;
+   padding: 0;
   }
 
-  .form__item--achievement label {
+  .achievement__item label {
+    padding: 4px;
+    margin: 0;
     padding-left: 60px;
-    padding-right: 50px;
+
   }
 }
 

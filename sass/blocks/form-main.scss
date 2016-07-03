@@ -12,32 +12,10 @@
   display: none;
 }
 
-.form {
+.form-main__form {
   font-size: 18px;
   line-height: 30px;
 }
-
-.form__item input {
-  @include form-border
-
-  box-sizing: border-box;
-  background: $main-bg-color-1;
-  height: 63px;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 20px;
-  color: $text-color-1;
-}
-
-.form__part-title-box {
-  text-align: center;
-}
-
-.form__part-title {
-  @include form-title
-}
-
-
 
 /////////////// Tablet /////////////////////
 
@@ -53,30 +31,10 @@
     display: block;
   }
 
-  .form {
+  .form-main__form {
     display: flex;
     flex-direction: column;
   }
-
-
-.form__section .form__part-title-box {
- padding: 0;
-}
-
-.form__part-title-box {
-  position: absolute;
-  width: 100%;
-  top: -8px;
-}
-
-.form__part-title {
-  background-color: $bg-color-block-0;
-}
-
-.form__part-title {
-  @include form-title-tab
-}
-
 
 }
 
@@ -91,12 +49,11 @@
     padding: 92px 80px 70px;
   }
 
-  .form .container {
+  .form-main__form .container {
     margin: 0;
-    // width: 100%;
   }
 
-  .form {
+  .form-main__form {
     margin: 0 auto;
     padding: 0;
     width: 940px;
@@ -105,23 +62,8 @@
     flex-wrap: wrap;
   }
 
-
-.form__item input {
-  @include form-border
-
-  box-sizing: border-box;
-  background: $main-bg-color-1;
-  height: 63px;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 20px;
-  color: $text-color-1;
-}
-
   .form-main__tagline-onlytab {
     display: inline;
   }
-
-
 
 }

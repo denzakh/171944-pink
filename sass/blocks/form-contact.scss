@@ -1,29 +1,36 @@
 
-.form__section--contact {
+.form-contact {
   padding-top: 13px;
   padding-bottom: 54px;
 }
 
-.form__item--contact {
+.contact__title {
+  @include form-title
+}
+
+.form-contact__inner {}
+
+.form-contact__item  {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.form__item--contact input {
+.form-contact__item  input {
+  @include form-imput
   width: 100%;
   position: relative;
 }
 
-.form__item--contact input:hover {
+.form-contact__item  input:hover {
   border-color: $text-color-1;
 }
 
-.form__item--contact input:focus {
+.form-contact__item  input:focus {
   border-color: $text-color-3;
   outline: none;
 }
 
-.form__item--contact label {
+.form-contact__item  label {
   @include form-label
 
   box-sizing: border-box;
@@ -34,28 +41,15 @@
   padding: 15px 0 0 22px;
 }
 
-.form__item--contact label:before {
+.form-contact__item  label:before {
   @include placeholder
 
   left: 2px;
   top: 52px;
 }
 
-.form__item--contact-tel label:before {
-  content: "Номер, пожалуйста";
-  }
-
-.form__item--contact-email label:before {
-  content: "E-mail, пожалуйста";
-  }
-
-.form__item--contact input:focus + label:before {
-  display: none;
-}
-
-
 @media #{$phone-widths-only} {
-  .form__part-title-box--contact {
+  .form-contact__title-box {
     @include visually-hidden
   }
 
@@ -67,46 +61,39 @@
 
 @media #{$tablet-widths} {
 
-  .form__section--contact {
+  .form-contact {
     background-color: none;
     order: 3;
     padding-top: 54px;
     padding-bottom: 52px;
   }
 
-  .form__part--contact {
+.form-contact__title-box {
+  @include form-title-box-tab
+}
+
+ .form-contact__title {
+  @include form-title-tab
+  background-color: $bg-color-block-0;
+}
+
+  .form-contact__inner {
     @include form-part-tab
     padding: 35px 60px 5px;
   }
 
-  .form__item--contact {
+  .form-contact__item  {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
   }
 
-.form__item--contact label {
+.form-contact__item  label {
     padding: 10px 20px 20px;
     position: relative;
   }
 
-.form__item--contact label:before {
-    top: -61px;
-  }
-
-.form__item--contact-tel label:before {
-    content: "+7 XXX XXX-XX-XX";
-  }
-
-.form__item--contact-email label:before {
-    content: "Введите почту";
-  }
-
-.form__item--contact input:focus + label:before {
-    display: none;
-  }
-
-.form__item--contact label:after {
+.form-contact__item  label:after {
     content: "";
     position: absolute;
     width: 60px;
@@ -120,11 +107,11 @@
     background-repeat: no-repeat;
   }
 
-.form__item--contact-tel  label:after {
+.form-contact__item--tel  label:after {
   background-image: url("../img/icon-phone.svg");
 }
 
-.form__item--contact-email  label:after {
+.form-contact__item--email  label:after {
   background-image: url("../img/icon-mail.svg");
 }
 
@@ -136,13 +123,13 @@
 
 @media #{$desktop-widths} {
 
-  .form__section--contact {
+  .form-contact {
     padding-top: 0;
     padding-bottom: 55px;
     margin: 0;
   }
 
-  .form__part--contact {
+  .form-contact__inner {
     @include form-part-tab
     padding: 40px 60px 0;
     display: flex;
@@ -151,13 +138,13 @@
     justify-content: space-between;
   }
 
-  .form__item--contact {
+  .form-contact__item  {
   width: 370px;
   margin: 0;
   padding: 0;
   }
 
-  .form__item--contact label {
+  .form-contact__item  label {
     padding: 10px 20px 0px;
     position: relative;
   }

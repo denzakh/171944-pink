@@ -1,67 +1,46 @@
 
-.form__section--name {
+.form-name {
   padding-bottom: 44px;
   text-align: left;
 }
 
-.form__item--name {
+.form-name__item  {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.form__item--name input {
+.form-name__item input {
   flex-grow: 2;
+  @include form-imput
 }
 
-.form__item--name input:hover {
+.form-name__item  input:hover {
   border-color: $text-color-1;
 }
 
-.form__item--name input:focus {
+.form-name__item  input:focus {
   border-color: $text-color-3;
   outline: none;
 }
 
-.form__item--name label {
+.form-name__item  label {
   @include form-label
 
   margin: 17px 20px 5px;
   position: relative;
 }
 
-.form__item--name label:before {
-  @include placeholder
-
-  left: -20px;
-  top: 36px;
-}
-
-.form__item--name-1 label:before {
-  content: "Укажите фамилию";
-}
-
-.form__item--name-2 label:before {
-  content: "Введите ваше имя";
-}
-
-.form__item--name-3 label:before {
-  content: "Ну и отчество тоже";
-}
-
-.form__item--name input:focus + label:before {
-  display: none;
-}
 
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
 
-  .form__section--name {
+  .form-name {
     padding-bottom: 0;
     order: 1;
   }
 
-  .form__item--name {
+  .form-name__item  {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
@@ -69,18 +48,9 @@
     margin-bottom: 53px;
   }
 
-  .form__item--name label {
+  .form-name__item  label {
     margin: auto 0;
     margin-right: 20px;
-  }
-
-  .form__item--name label:before {
-
-    min-width: 100px;
-    min-width: 300px;
-    left: 100%;
-    margin-left: 20px;
-    top: -15px;
   }
 
 }
@@ -88,15 +58,20 @@
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
-  .form__section--name {
+  .form-name {
     width: 435px;
     padding: 0;
     padding-top: 15px;
     margin-right: 70px;
   }
 
- .form__section--name .container {
+ .form-name .container {
   width: auto;
  }
+
+ .form-name__item input {
+  @include form-imput-desktop
+}
+
 
 }

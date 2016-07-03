@@ -1,43 +1,38 @@
-.form__section--os {
+.form-os {
   background-color: $bg-color-block-1;
   padding-bottom: 5px;
 }
 
-.form__part-title-box--os {
+.form-os__title-box {
   padding: 35px 0 35px;
+  text-align: center;
 }
 
+.form-os__title {
+  @include form-title
+}
 
-.form__part--os label {
+.form-os label {
   position: relative;
   display: block;
   padding: 4px 0 41px 70px;
 }
 
-.form__part--os label:before {
+.form-os label:before {
   @include pseudo-mark
 
   border-radius: 50%;
 }
 
-.form__part--os label:hover:before {
+.form-os label:hover:before {
   border-color: $text-color-1;
 }
 
-.form__part--os .radio:checked + label:before {
+.form-os .radio:checked + label:before {
   border-color: $text-color-3;
 }
 
-// .achievement__checkbox:checked + label:hover:before {
-//   border-color: $text-color-1;
-// }
-
-// .achievement__checkbox:checked + label:active:before {
-//   background: transparent;
-//   border-color: $text-color-3;
-// }
-
-.form__part--os .radio:checked + label:after {
+.form-os .radio:checked + label:after {
   content: "";
   position: absolute;
   width: 15px;
@@ -49,15 +44,15 @@
   z-index: 3;
 }
 
-.form__part--os .radio:checked + label:hover:before {
+.form-os .radio:checked + label:hover:before {
   border-color: $text-color-1;
 }
 
-.form__part--os .radio:checked + label:active:before {
+.form-os .radio:checked + label:active:before {
   border-color: $text-color-3;
 }
 
-.form__part--os .radio:checked + label:active:after {
+.form-os .radio:checked + label:active:after {
   background: transparent;
 }
 
@@ -65,41 +60,47 @@
 
 @media #{$tablet-widths} {
 
-  .form__section--os {
+  .form-os {
     order: 2;
     padding: 0;
     background-color: $bg-color-block-0;
   }
 
-  .form__part--os {
+  .form-os__inner {
     @include form-part-tab
   }
 
-  .form__part--os label {
+  .form-os label {
     padding: 4px 0 41px 60px;
   }
 
+  .form-os__title-box {
+  @include form-title-box-tab
 }
 
+ .form-os__title {
+  @include form-title-tab
+}
+
+}
 
 
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
-  .form__section--os {
+  .form-os {
     width: auto;
     padding: 0;
     padding-top: 3px;
     flex-grow: 2;
   }
 
- .form__section--os .container {
+ .form-os .container {
   width: auto;
+  margin: 0;
  }
 
-
-
-.form__part--os label {
+.form-os label {
   padding: 4px 0 40px 60px;
   margin-left: 15px;
 }
