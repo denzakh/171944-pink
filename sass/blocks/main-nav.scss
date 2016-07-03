@@ -2,9 +2,9 @@
 .main-nav {
   position: absolute;
   z-index: 10;
-  top: 70px;
-  left: 1px;
-  right: 1px;
+  top: 69px;
+  left: -20px;
+  right: -20px;
 }
 
 .no-js .main-nav {
@@ -47,7 +47,7 @@
 }
 
 
-/////////////// Tablet /////////////////////
+/* Tablet */
 
 @media #{$tablet-widths} {
 
@@ -60,7 +60,7 @@
 }
 
 
-/////////////// Desktop /////////////////////
+/* Desktop */
 
 @media #{$desktop-widths} {
 

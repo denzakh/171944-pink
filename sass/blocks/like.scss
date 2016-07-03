@@ -23,7 +23,7 @@
 }
 
 
-/////////////// Tablet /////////////////////
+/* Tablet */
 
 @media #{$tablet-widths} {
 
@@ -46,7 +46,7 @@
 
 }
 
-/////////////// Desktop /////////////////////
+/* Desktop */
 
 @media #{$desktop-widths} {
   .like--photo-card {

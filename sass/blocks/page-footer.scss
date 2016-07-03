@@ -82,7 +82,7 @@
   text-decoration: none;
 }
 
-/////////////// Tablet /////////////////////
+/* Tablet */
 
 @media #{$tablet-widths} {
 
@@ -117,7 +117,7 @@
 }
 
 
-/////////////// Desktop /////////////////////
+/* Desktop */
 
 @media #{$desktop-widths} {
 

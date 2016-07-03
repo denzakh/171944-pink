@@ -17,7 +17,8 @@
   line-height: 30px;
 }
 
-/////////////// Tablet /////////////////////
+
+/* Tablet */
 
 @media #{$tablet-widths} {
 
@@ -39,7 +40,7 @@
 }
 
 
-/////////////// Desktop /////////////////////
+/* Desktop */
 
 @media #{$desktop-widths} {
 

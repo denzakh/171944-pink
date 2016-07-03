@@ -62,7 +62,7 @@
   background: transparent;
 }
 
-/////////////// Tablet /////////////////////
+/* Tablet */
 
 @media #{$tablet-widths} {
 
@@ -96,7 +96,7 @@
 }
 
 
-/////////////// Desktop /////////////////////
+/* Desktop */
 
 @media #{$desktop-widths} {
   .form-os {

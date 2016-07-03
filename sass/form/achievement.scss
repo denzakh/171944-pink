@@ -43,7 +43,7 @@
   border-color: $text-color-3;
 }
 
-/////////////// Tablet /////////////////////
+/* Tablet */
 
 @media #{$tablet-widths} {
 
@@ -70,7 +70,7 @@
 
 }
 
-/////////////// Desktop /////////////////////
+/* Desktop */
 
 @media #{$desktop-widths} {
 
