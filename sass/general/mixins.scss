@@ -114,8 +114,8 @@
 }
 
 @mixin line-height($font-size, $line-height) {
-  font-size: $font-size + 'px';
-  line-height: ($line-height / $font-size) + 'em';
+  font-size: $font-size + "px";
+  line-height: ($line-height / $font-size) + "em";
 }
 
 @mixin inline-block($valign: top) {
