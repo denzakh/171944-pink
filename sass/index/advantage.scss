@@ -15,7 +15,7 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 109%;
-  background-size: auto;
+  background-size: 160px;
 }
 
 .advantage__container:before {
@@ -83,6 +83,7 @@
     margin-top: 38px;
     padding: 86px 0 5px;
     background: $bg-color-block-1;
+    background-image: none;
   }
 
   .advantage__container:before  {
@@ -101,7 +102,7 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0 100%;
-    background-size: auto;
+    background-size: 270px auto;
   }
 
   .advantage__card-container {
@@ -159,6 +160,10 @@
 
 @media #{$tablet-widths} and (min-resolution: 1.5dppx) {
 
+  .advantage__container {
+    background-image: none;
+  }
+
   .advantage__container:after {
     background-image: url("../img/iphone-screen-3-tablet@2x.png");
   }
@@ -212,13 +217,14 @@
 .advantage__card {
   box-sizing: border-box;
   width: 300px;
-  height: 600px;
+  min-height: 600px;
   margin: 0;
   padding-top: 355px;
   z-index: 5;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: 286px auto;
 }
 
 .advantage__card--mood {

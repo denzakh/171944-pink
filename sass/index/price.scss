@@ -122,12 +122,12 @@
 
 
 
-.hit {
+.price__hit {
   overflow: hidden;
   position: relative;
 }
 
-.hit:before {
+.price__hit:before {
   content: "ХИТ";
   position: absolute;
   display: block;
@@ -146,23 +146,21 @@
 
 @media #{$phone-widths-only} {
 
+  .price .container {
+    width: auto;
+  }
+
   .price__slider {
-    width: 100%;
+    width: 320px;
     overflow: hidden;
+    margin: 0 auto;
   }
 
   .price__table {
     box-sizing: border-box;
     width: 800px;
     margin: 0;
-  }
-
-  .price__table.active-2 {
-    margin-left: -278px;
-  }
-
-  .price__table.active-3 {
-    margin-left: -556px;
+    margin-left: -258px;
   }
 
   .price__legend--mobile {
@@ -283,7 +281,7 @@ width: 100%;
   background-size: 26px;
 }
 
-.hit:before {
+.price__hit:before {
   top: 7px;
   left: -38px;
 }
@@ -326,7 +324,7 @@ font-size: 18px;
   padding-left: 20px;
 }
 
-.hit:before {
+.price__hit:before {
   padding: 6px;
   top: 10px;
   left: -30px;
