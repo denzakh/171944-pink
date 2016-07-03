@@ -18,39 +18,9 @@
   }
 
 
-.photo-desc {
-  padding: 18px;
-  background-color: $bg-color-block-1;
-  line-height: 24px;
-}
-
-.photo-desc--panorama {
-  margin: 0;
-}
-
-.photo-desc__text {
-  margin: 0 0 9px;
-}
-
-.photo-text__pubdata {
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 24px;
-  text-transform: uppercase;
-
-  &:before {
-    content: "(";
-  }
-  &:after {
-    content: ")";
-  }
-}
-
-
 /////////////// Tablet /////////////////////
 
 @media #{$tablet-widths} {
-
 
   .photo-card {
     box-sizing: border-box;
@@ -67,32 +37,6 @@
     overflow: hidden;
   }
 
-  .photo-desc {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 3;
-    padding: 26px 28px 22px;
-    background-color: $bg-color-block-1;
-    line-height: 24px;
-  }
-
-  .photo-desc--panorama {
-    padding: 24px;
-  }
-
-  .photo-desc__text {
-    flex-grow: 3;
-    margin: 0px;
-  }
-
-  .like--panorama {
-    position: absolute;
-    top: 26px;
-    right: 26px;
-  }
-
-
 }
 
 /////////////// Desktop /////////////////////
@@ -102,9 +46,6 @@
   .photo-card {
     min-height: 555px;
     margin: 26px 0;
-  }
-
-  .photo-desc--panorama {
   }
 
 }

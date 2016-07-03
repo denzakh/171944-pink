@@ -34,13 +34,32 @@ $br-color-2-inactive: #dddfe0;  // серый
 // Планшет 700/620
 // Компьютер 1200/940
 
-$phone-widths-only: "(max-width: 699px)";
-$tablet-widths: "(min-width: 700px)";
-$desktop-widths: "(min-width: 1200px)";
+// Мобильная ширина 320-659
+// Планшет 660-959
+// Компьютер 959-1200
 
-$desktop-max-widths: 1400px;
-$tablet-max-widths: 850px;
+// $phone-widths-only: "(max-width: 699px)";
+// $tablet-widths: "(min-width: 700px)";
+// $desktop-widths: "(min-width: 1200px)";
 
-$mobile-inner-width: 320px;
+
+// Перестройка состояний должна происходить в следующих точках:
+// 320px — мобильная версия,
+// 660px — планшетная версия,
+// 960px — десктопная версия.
+// Размеры вьюпортов определены по крайним направляющим в макетах.
+
+$phone-widths-only: "(max-width: 659px)";
+$tablet-widths: "(min-width: 660px)";
+$desktop-widths: "(min-width: 960px)";
+
+$desktop-max-widths: 1200px;
+$tablet-max-widths: 699px;
+
+// $mobile-inner-width: 320px;
+// $tablet-inner-width: 620px;
+// $desktop-inner-width: 940px;
+
+$mobile-inner-width: 280px;
 $tablet-inner-width: 620px;
 $desktop-inner-width: 940px;

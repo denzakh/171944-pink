@@ -1,5 +1,5 @@
 
-.main-review {
+.review {
   position: relative;
   min-height: 200px;
   position: relative;
@@ -8,53 +8,53 @@
   background-color: $body-bg;
 }
 
-.main-review__indicators {
+.review__indicators {
   @include indicators
 }
 
-.main-review__indicator {
+.review__indicator {
   @include inline-block
   @include no-btn
   @include indicator
 }
 
-.main-review__indicator.active,
-.main-review__indicator.active:hover,
-.main-review__indicator.active:active {
+.review__indicator.active,
+.review__indicator.active:hover,
+.review__indicator.active:active {
   @include indicator-active
 }
 
-.main-review__indicator:hover {
+.review__indicator:hover {
   @include indicator-hover
 }
 
-.main-review__indicator:active {
+.review__indicator:active {
   @include indicator-press
 }
 
 
-.main-review__slider-btns {
+.review__slider-btns {
   display: none;
 }
 
-.main-review__card {
+.review__card {
   margin: 0;
 }
 
-.main-review__info {
+.review__info {
   font-style: normal;
   margin: 0;
 }
 
-.main-review__author {
+.review__author {
   @include mobile-title
 }
 
-.main-review__author-desc {
+.review__author-desc {
   display: none;
 }
 
-.main-review__text {
+.review__text {
   font-size: 14px;
   line-height: 30px;
   margin-top: 18px;
@@ -74,7 +74,7 @@
 
 @media #{$tablet-widths} {
 
-.main-review {
+.review {
   padding: 15px 0;
 
   &:before {
@@ -83,12 +83,12 @@
   }
 }
 
-.main-review__card {
+.review__card {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.main-review__text {
+.review__text {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 35px;
@@ -102,20 +102,20 @@
   }
 }
 
-.main-review__author {
+.review__author {
   display: block;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 0;
 }
 
-.main-review__author-desc {
+.review__author-desc {
   display: block;
   font-size: 14px;
   line-height: 30px;
 }
 
-.main-review__indicators {
+.review__indicators {
   @include indicators
 
   margin-bottom: 6px;
@@ -128,7 +128,7 @@
 
 @media #{$desktop-widths} {
 
-.main-review {
+.review {
   min-height: 200px;
   padding: 185px 0 25px;
   background-image: url("../img/icon-quotes.svg");
@@ -138,7 +138,7 @@
   position: relative;
 }
 
-.main-review__text {
+.review__text {
   position: relative;
   padding: 0 125px;
   margin: 0 0 30px;
@@ -149,21 +149,21 @@
   }
 }
 
-.main-review__author {
+.review__author {
   font-size: 24px;
   line-height: 30px;
   margin: 5px;
 }
 
-.main-review__author-desc {
+.review__author-desc {
   @include medium-tagline
 }
 
-.main-review__indicators {
+.review__indicators {
   @include visually-hidden
 }
 
-.main-review__slider-btns {
+.review__slider-btns {
   position: absolute;
   width: 100%;
   display: flex;
@@ -172,7 +172,7 @@
   padding: 0 5px;
 }
 
-.main-review__slider-btn {
+.review__slider-btn {
   @include no-btn
 
   width: 32px;
@@ -181,20 +181,20 @@
   border-left: 3px solid $br-color-1;
 }
 
-.main-review__slider-btn--prev {
+.review__slider-btn--prev {
   transform: rotate(45deg);
 }
 
-.main-review__slider-btn--next {
+.review__slider-btn--next {
   transform: rotate(-135deg);
 }
 
-.main-review__slider-btn:hover {
+.review__slider-btn:hover {
   border-bottom: 3px solid #7e868f;
   border-left: 3px solid #7e868f;
 }
 
-.main-review__slider-btn:active {
+.review__slider-btn:active {
   border-bottom: 3px solid #e9ebec;
   border-left: 3px solid #e9ebec;
 }

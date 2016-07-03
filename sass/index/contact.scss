@@ -1,42 +1,42 @@
 
-.main-contact {
+.contact {
   position: relative;
   padding-top: 40px;
   text-align: center;
   background-color: $main-bg-color-1;
 }
 
-.main-contact__tagline p {
+.contact__tagline p {
   @include tagline
   margin: 0 auto;
 }
 
-.contact {
+.contact__items {
   padding: 10px 0 40px;
 }
 
-.contact-item {
+.contact__item-box {
   margin-top: 24px;
 }
 
-.contact-item--mail a:hover {
+.contact__item-box--mail a:hover {
   color: $text-color-1;
   text-decoration: underline;
 }
 
-.contact-item--mail a:active {
+.contact__item-box--mail a:active {
   color: $text-color-1;
   opacity: 0.3;
   text-decoration: none;
 }
 
-.contact-item__title {
+.contact__item-title {
   display: block;
   font-size: 18px;
   line-height: 24px;
 }
 
-.contact-item__value {
+.contact__item-value {
   display: block;
   font-size: 24px;
   line-height: 30px;
@@ -45,7 +45,7 @@
   text-decoration: none;
 }
 
-.main-contact__map {
+.contact__map {
   position: relative;
   box-sizing: border-box;
   height: 200px;
@@ -107,13 +107,13 @@
 
 @media #{$phone-widths-only} {
 
-  .main-contact__map:before {
+  .contact__map:before {
     @include oblique-angle-map-l (53%)
     z-index: 2;
     height: 30px;
   }
 
-  .main-contact__map:after {
+  .contact__map:after {
     @include oblique-angle-map-r (53%)
     z-index: 2;
     height: 30px;
@@ -125,7 +125,7 @@
 
 @media #{$tablet-widths} {
 
-  .main-contact {
+  .contact {
     position: relative;
     padding: 50px 0 0;
     text-align: center;
@@ -135,29 +135,29 @@
     margin: 0;
   }
 
-  .main-contact__tagline p {
+  .contact__tagline p {
     @include big-tagline
 
     margin: 0;
   }
 
-  .contact {
+  .contact__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 6px 0 10px;
   }
 
-  .contact-item {
+  .contact__item-box {
     width: 250px;
     margin: 30px auto 10px;
   }
 
-  .contact-item__title {
+  .contact__item-title {
     margin: 5px 0;
   }
 
-  .main-contact__map {
+  .contact__map {
     position: relative;
     box-sizing: border-box;
     height: 380px;
@@ -170,7 +170,7 @@
     }
   }
 
-  .main-contact__map #ymapsid:before {
+  .contact__map #ymapsid:before {
     left: 62%;
     top: 30%;
   }
@@ -188,31 +188,31 @@
 
 @media #{$desktop-widths} {
 
-  .main-contact {
+  .contact {
     padding: 64px 0 0;
   }
 
-  .main-contact__tagline p {
+  .contact__tagline p {
     font-size: 50px;
   }
 
-  .contact {
+  .contact__items {
     padding: 20px 0 0;
   }
 
-  .contact-item {
+  .contact__item-box {
     margin-bottom: 15px;
   }
 
-  .contact-item--mail {
+  .contact__item-box--mail {
     order: 3;
   }
 
-  .contact-item__value {
+  .contact__item-value {
     margin-top: 25px;
   }
 
-  .main-contact__map {
+  .contact__map {
     position: relative;
     box-sizing: border-box;
     height: 500px;
@@ -229,7 +229,7 @@
 
   }
 
-  .main-contact__map #ymapsid:before {
+  .contact__map #ymapsid:before {
     left: 56.4%;
     top: 140px;
     outline: 1px solid red;

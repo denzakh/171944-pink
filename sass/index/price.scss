@@ -1,5 +1,5 @@
 
-.main-price {
+.price {
   position: relative;
   background-color: $bg-color-block-1;
   padding-top: 93px;
@@ -14,7 +14,7 @@
 
 }
 
-.main-price__table {
+.price__table {
   box-sizing: border-box;
   table-layout: fixed;
   border-collapse: collapse;
@@ -22,8 +22,8 @@
   margin-bottom: 43px;
 }
 
-.main-price__table th,
-.main-price__table td {
+.price__table th,
+.price__table td {
   box-sizing: border-box;
   border: 2px solid $br-color-1;
   width: 278px;
@@ -34,7 +34,7 @@
   line-height: 30px;
 }
 
-.main-price__table th {
+.price__table th {
   position: relative;
   height: 97px;
   padding: 0 25px;
@@ -43,80 +43,80 @@
   border-bottom: 2px solid  $bg-color-block-2;
 }
 
-.main-price__table td {
+.price__table td {
   border: 2px solid $br-color-1;
   background-color: $bg-color-block-0;
   text-align: left;
   padding-left: 20px;
 }
 
-.main-price__table .main-price__first-cell {
+.price__table .price__first-cell {
   visibility: hidden;
   border: 2px solid transparent;
   border-bottom: 2px solid $br-color-1;
 }
 
-.main-price__price-name {
+.price__price-name {
   display: block;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.main-price__price {
+.price__price {
   display: block;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
 }
 
-.main-price__legend-cell {
+.price__legend-cell {
   text-align: left;
   position: relative;
 }
 
-.main-price__legend {
+.price__legend {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   width: 100%;
 }
 
-.main-price__legend--mobile {
+.price__legend--mobile {
   display: none;
 }
 
-.main-price__table .foo-yes {
+.price__table .foo-yes {
   background: $bg-color-block-0 url('../img/icon-yes.svg') 93% 50% no-repeat;
   background-size: 30px;
 }
 
-.main-price__table .foo-no {
+.price__table .foo-no {
   background: $bg-color-block-0 url('../img/icon-no.svg') 92% 49% no-repeat;
   background-size: 26px;
 }
 
-.main-price__indicators {
+.price__indicators {
   @include indicators
 }
 
-.main-price__indicator {
+.price__indicator {
   @include inline-block
   @include no-btn
   @include indicator
 }
 
-.main-price__indicator.active,
-.main-price__indicator.active:hover,
-.main-price__indicator.active:active {
+.price__indicator.active,
+.price__indicator.active:hover,
+.price__indicator.active:active {
   @include indicator-active
 }
 
-.main-price__indicator:hover {
+.price__indicator:hover {
   @include indicator-hover
 }
 
-.main-review__indicator:active {
+.review__indicator:active {
   @include indicator-press
 }
 
@@ -146,31 +146,31 @@
 
 @media #{$phone-widths-only} {
 
-  .main-price__slider {
+  .price__slider {
     width: 100%;
     overflow: hidden;
   }
 
-  .main-price__table {
+  .price__table {
     box-sizing: border-box;
     width: 800px;
     margin: 0;
   }
 
-  .main-price__table.active-2 {
+  .price__table.active-2 {
     margin-left: -278px;
   }
 
-  .main-price__table.active-3 {
+  .price__table.active-3 {
     margin-left: -556px;
   }
 
-  .main-price__legend--mobile {
+  .price__legend--mobile {
     display: inline-block;
   }
 
-  .main-price__first-cell,
-  .main-price__legend-cell {
+  .price__first-cell,
+  .price__legend-cell {
     display: none;
   }
 
@@ -180,7 +180,7 @@
 
 @media #{$tablet-widths} {
 
-  .main-price {
+  .price {
     padding: 93px 0 25px;
 
     &:before {
@@ -190,11 +190,11 @@
     }
   }
 
-  .main-price__indicators {
+  .price__indicators {
     display: none;
   }
 
-  .main-price__table {
+  .price__table {
     box-sizing: border-box;
     display: table;
     table-layout: fixed;
@@ -202,8 +202,8 @@
     width: 100%;
   }
 
-  .main-price__table th,
-  .main-price__table td {
+  .price__table th,
+  .price__table td {
     box-sizing: border-box;
     display: table-cell;
     border: 2px solid $br-color-1;
@@ -217,68 +217,68 @@
     border-bottom: 2px solid $br-color-1;
   }
 
-  .main-price__table td {
+  .price__table td {
     padding: 6px 15px;
     border: 2px solid $br-color-1;
     background-color: $bg-color-block-0;
   }
 
-  .main-price__table th {
+  .price__table th {
     background-color: $bg-color-block-2;
     color: $text-color-2;
     border-bottom: 2px solid  $bg-color-block-2;
   }
 
-  .main-price__table th:first-child {
+  .price__table th:first-child {
   border-left: 2px solid  $bg-color-block-2;
   border-bottom: 2px solid  $bg-color-block-2;
   }
 
-  .main-price__table th.main-price__first-cell {
+  .price__table th.price__first-cell {
   border: 2px solid transparent;
   }
 
-  .main-price__table th:last-child {
+  .price__table th:last-child {
   border-right: 2px solid  $bg-color-block-2;
   }
 
-  .main-price__table td:first-child {
+  .price__table td:first-child {
   border-bottom: 2px solid  $bg-color-block-1;
   }
 
-.main-price__table .main-price__first-cell {
+.price__table .price__first-cell {
   visibility: hidden;
   border-bottom: none;
   border-bottom: 2px solid $br-color-1;
 }
 
-.main-price__price-name {
+.price__price-name {
   display: block;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.main-price__price {
+.price__price {
   display: block;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
 }
 
-.main-price__legend {
+.price__legend {
 font-size: 14px;
 line-height: 30px;
 text-transform: none;
 width: 100%;
 }
 
-.main-price__table .foo-yes {
+.price__table .foo-yes {
   background: $bg-color-block-0 url('../img/icon-yes.svg') 50% 50% no-repeat;
   background-size: 30px;
 }
 
-.main-price__table .foo-no {
+.price__table .foo-no {
   background: $bg-color-block-0 url('../img/icon-no.svg') 50% 49% no-repeat;
   background-size: 26px;
 }
@@ -294,7 +294,7 @@ width: 100%;
 
 @media #{$desktop-widths} {
 
-  .main-price {
+  .price {
     padding: 154px 0 50px;
 
     &:before {
@@ -304,25 +304,25 @@ width: 100%;
     }
   }
 
-.main-price__price-name {
+.price__price-name {
   font-size: 18px;
 }
 
-.main-price__price {
+.price__price {
   font-size: 24px;
   padding-bottom: 5px;
 }
 
-.main-price__table th,
-.main-price__table td {
+.price__table th,
+.price__table td {
   padding: 15px;
 }
 
-.main-price__legend {
+.price__legend {
 font-size: 18px;
 }
 
-.main-price__table .main-price__legend-cell {
+.price__table .price__legend-cell {
   padding-left: 20px;
 }
 

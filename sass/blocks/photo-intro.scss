@@ -1,8 +1,4 @@
 
-.page-photo {
-  background-color: $main-bg-color-1;
-}
-
 .photo-intro__tagline {
   padding: 45px 0 50px;
   line-height: 30px;
@@ -51,7 +47,7 @@
     display: inline-block;
   }
 
-  .vanishing {
+  .photo-intro__vanishing {
     display: none;
   }
 
@@ -74,7 +70,8 @@
 /////////////// Desktop /////////////////////
 
 @media #{$desktop-widths} {
-  .vanishing {
+
+  .photo-intro__vanishing {
     display: inline;
   }
 

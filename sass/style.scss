@@ -13,24 +13,24 @@
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 
-@import "blocks/page-nav.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/social.scss";
 @import "blocks/like.scss";
 @import "blocks/range.scss";
 
 // главная страница
 
-@import "blocks/index-advantage.scss";
-@import "blocks/index-intro.scss";
-@import "blocks/index-price.scss";
-
-@import "blocks/index-review.scss";
-@import "blocks/index-contact.scss";
+@import "index/advantage.scss";
+@import "index/intro.scss";
+@import "index/price.scss";
+@import "index/review.scss";
+@import "index/contact.scss";
 
 // страница фото
 
 @import "blocks/photo-intro.scss";
 @import "blocks/photo-card.scss";
+@import "blocks/photo-desc.scss";
 @import "blocks/photo-photos.scss";
 @import "blocks/photo-editor.scss";
 
