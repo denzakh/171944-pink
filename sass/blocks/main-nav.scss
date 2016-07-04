@@ -64,17 +64,28 @@
 
 @media #{$desktop-widths} {
 
-  .main-nav {
-    position: static;
-    width: auto;
-    margin-top: 30px;
+  .main-nav,
+  .no-js .main-nav {
+    position: relative;
+    width: $desktop-inner-width;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    outline: 1px solid orange;
   }
 
   .main-nav__list {
+    position: absolute;
+    right: 0;
+    top: -80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
   .main-nav__item {
     display: inline-flex;
     margin-left: 77px;

@@ -1,17 +1,41 @@
 .intro {
+  position: static;
   background-color: #1d2631;
-  color: $text-color-2;
+}
+
+.intro * {
+  outline: 1px solid red;
 }
 
 .intro__inner {
-  margin-top: 390px;
+  margin-top: 394px;
   padding: 28px 0 26px;
   text-align: center;
+  color: $text-color-2;
 }
 
-.no-js .intro__inner {
-  margin-top: 96px;
+.intro__inner:before {
+  outline: 1px solid green;
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 286px;
+  top: -286px;
+  left: -20px;
+  background-color: transparent;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 286px;
+  z-index: 2;
 }
+
+@media (min-resolution: 1.5dppx) {
+  .intro__inner:before {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
+}
+
 
 .intro__download-btn {
   @include  big-btn
@@ -72,10 +96,32 @@
   }
 
   .intro__inner {
+    height: 619px;
     width: 300px;
     margin: 0;
     padding-top: 90px;
   }
+
+  .intro__inner:before {
+    display: none;
+  }
+
+  .intro__container {
+  outline: 1px solid green;
+  min-height: 546px;
+  background-color: transparent;
+  background-image: url("../img/iphone-hand-tablet@1x.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 546px 470px;
+}
+
+@media #{$tablet-widths} and (min-resolution: 1.5dppx) {
+
+  .intro__container {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+  }
+}
 
   .intro__tagline {
     @include big-tagline
@@ -106,7 +152,25 @@
 
   .intro__container {
     position: relative;
+
   }
+
+  .intro__container {
+  outline: 1px solid green;
+  min-height: 546px;
+  background-color: transparent;
+  background-image: url("../img/iphone-hand-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 645px 558px ;
+}
+
+@media #{$tablet-widths} and (min-resolution: 1.5dppx) {
+
+  .intro__container {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+  }
+}
 
   .intro__inner {
     padding-top: 105px;
