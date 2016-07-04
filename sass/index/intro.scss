@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.no-js .intro__inner {
+  margin-top: 96px;
+}
+
 .intro__download-btn {
   @include  big-btn
 

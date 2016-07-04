@@ -93,7 +93,15 @@
   height: 100%;
   min-height: 40px;
   visibility: visible;
-  background: transparent url('../img/logo-pink-white-mobile-pink.svg') 0 100% no-repeat;
+  background: transparent url("../img/logo-pink-white-mobile-pink.svg") 0 100% no-repeat;
+}
+
+.no-js .page-header__logo-link:hover:before {
+  visibility: hidden;
+}
+
+.no-js .page-header__logo-link:hover .page-header__logo-picture {
+  visibility: visible;
 }
 
 .page-header__logo-link:active .page-header__logo-picture {
